@@ -43,7 +43,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git switch -C main
-          git add data figures main.pdf main.bbl response_to_review.pdf manifest.json verification.json release
+          git add data figures main.pdf main.bbl response_to_review.pdf response_to_review.bbl manifest.json verification.json release
           git diff --cached --quiet && exit 0
           git commit -m "Build verified research snapshot from ${SOURCE_SHA}"
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git HEAD:main
