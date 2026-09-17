@@ -1,0 +1,3 @@
+case,baseline_gain,revised_gain,zero_increment_component,positive_increment_component,multiplier,gain_weighted_factor
+Zero initial stock,5.0,6.0,0.0,6.0,1.2,1.2
+Zero baseline increment retained,10.0,17.0,5.0,12.0,1.7,1.2

@@ -1,0 +1,292 @@
+{
+  "version": "5.0",
+  "revision_date": "2026-09-16",
+  "historical": {
+    "stock_pgc": 723.97,
+    "comparison_stocks_pgc": [
+      285.1,
+      228.7
+    ],
+    "baseline_share": 0.103,
+    "ecofys_total_gtco2e": 48.629,
+    "baseline_year": 2010,
+    "baseline_category": "Deforestation / afforestation and Land Use CO2",
+    "baseline_scope": "Combined land-use CO2 category within a multi-gas CO2e total; not identified as gross tropical deforestation.",
+    "matched_density_provenance": false,
+    "interpretation": "Arithmetic reconstruction only; not an empirical stock-to-flux correction or a 2025 estimate."
+  },
+  "density_audit": {
+    "reported_total_area_ha": 2799053606.91,
+    "reported_total_stock_pgc": 723.97,
+    "carbon_fraction_for_conversion": 0.47,
+    "carbon_fraction_sensitivity": [
+      0.43,
+      0.5
+    ],
+    "feldpausch_area_ha": 1667500000,
+    "rows": [
+      {
+        "class": 5,
+        "range_mgc_ha": [
+          478,
+          605
+        ],
+        "stock_pgc": 285.03,
+        "area_ha": 531449420.52,
+        "printed_density": 531.05,
+        "printed_percentage": "39.37"
+      },
+      {
+        "class": 4,
+        "range_mgc_ha": [
+          336,
+          478
+        ],
+        "stock_pgc": 281.76,
+        "area_ha": 668896502.68,
+        "printed_density": 417.09,
+        "printed_percentage": "38.91"
+      },
+      {
+        "class": 2,
+        "range_mgc_ha": [
+          58,
+          183
+        ],
+        "stock_pgc": 105.54,
+        "area_ha": 419412183.77,
+        "printed_density": 249.16,
+        "printed_percentage": "14.57"
+      },
+      {
+        "class": 3,
+        "range_mgc_ha": [
+          183,
+          336
+        ],
+        "stock_pgc": 40.66,
+        "area_ha": 350688503.17,
+        "printed_density": 114.8,
+        "printed_percentage": "5.61"
+      },
+      {
+        "class": 1,
+        "range_mgc_ha": [
+          1,
+          58
+        ],
+        "stock_pgc": 10.96,
+        "area_ha": 828606996.75,
+        "printed_density": 13.1,
+        "printed_percentage": "1.51"
+      }
+    ],
+    "status": "Exact transcription of Table 3, arXiv:1508.03667v2, p.41; inconsistencies are flagged, not silently repaired.",
+    "feldpausch_stock_pgc": 285.1,
+    "swap_status": "Cross-interval transposition hypothesis tested on published table only; original workbook and classified raster not available in this audit.",
+    "original_measured_fraction_range": [
+      0.4111,
+      0.4999
+    ],
+    "effective_pantropical_fraction_available": false,
+    "carbon_fraction_status": "0.47 is an IPCC-default sensitivity, not the reconstructed original effective fraction. Measured-range transport to entire map is conditional."
+  },
+  "synthetic_paired": {
+    "forest_source": 6.0,
+    "forest_removal": 5.8,
+    "other_sources": 50.0,
+    "unit": "arbitrary common annual mass units, not observed 2025 emissions",
+    "cases": [
+      {
+        "case": "Reference",
+        "r_source": 1.0,
+        "r_removal": 1.0
+      },
+      {
+        "case": "Source only",
+        "r_source": 2.5,
+        "r_removal": 1.0
+      },
+      {
+        "case": "Paired uniform",
+        "r_source": 2.5,
+        "r_removal": 2.5
+      },
+      {
+        "case": "Paired differential",
+        "r_source": 2.5,
+        "r_removal": 2.6
+      }
+    ]
+  },
+  "validation": {
+    "seed": 20260916,
+    "cases": 1000,
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-12
+  },
+  "gonzalez_validation": {
+    "sample_total_trees": 29,
+    "calibration_trees": 9,
+    "validation_trees": 20,
+    "allometric_bias_percent": [
+      -15.22,
+      -24.5,
+      -34.99,
+      -35.67
+    ],
+    "tls_bias_percent": -3.68,
+    "bias_definition": "100 * mean(model minus reference) / mean(reference); ratio of sample totals, not mean of individual relative errors",
+    "reference_type": "Harvest-based geometric volume times assigned wood density, with small-branch expansion; not direct weighing of entire reference masses",
+    "source": "Gonzalez de Tanago et al. (2018), sections 2.3.3-2.4, equation 3, Table 4 and section 4.1.1"
+  },
+  "regrowth_cases": [
+    {
+      "case": "Zero initial stock",
+      "area_ha": [
+        1.0
+      ],
+      "c0": [
+        0.0
+      ],
+      "c1": [
+        5.0
+      ],
+      "r0": [
+        2.0
+      ],
+      "r1": [
+        1.2
+      ],
+      "dt_years": 1.0
+    },
+    {
+      "case": "Zero baseline increment retained",
+      "area_ha": [
+        2.0,
+        1.0
+      ],
+      "c0": [
+        0.0,
+        10.0
+      ],
+      "c1": [
+        5.0,
+        10.0
+      ],
+      "r0": [
+        1.0,
+        1.0
+      ],
+      "r1": [
+        1.2,
+        1.5
+      ],
+      "dt_years": 1.0
+    }
+  ],
+  "size_calibration_example": {
+    "alpha": 0.005,
+    "survivor_count": 12,
+    "survivor_initial": 80.0,
+    "survivor_final": 90.0,
+    "dead_initial": 100.0,
+    "calibration": "m(x) = x * (1 + alpha*x), m(0)=0; synthetic mass units",
+    "hypothesis_case_gain_factor": 1.2,
+    "hypothesis_case_loss_factor": 1.5,
+    "status": "Synthetic examples, not field observations or fitted allometries"
+  },
+  "extended_validation": {
+    "seed": 20260917,
+    "cases": 20000
+  },
+  "power_screen_counterexample": {
+    "initial": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      500.0
+    ],
+    "final": [
+      1.01,
+      1.01,
+      1.01,
+      1.01,
+      1.01,
+      1.01,
+      1.01,
+      1.01,
+      1.01,
+      500.01
+    ],
+    "deaths": [
+      100.0
+    ],
+    "status": "Synthetic finite-interval counterexample; arithmetic ratio fails but power b=1.5 supports loss>gain."
+  },
+  "timing_example": {
+    "stocks": [
+      50.0,
+      50.0
+    ],
+    "corrections": [
+      1.0,
+      3.0
+    ],
+    "first_fractions": [
+      0.8,
+      0.1
+    ],
+    "status": "Synthetic matched cohort; remaining carbon fully oxidized later."
+  },
+  "edgar_land": [
+    {
+      "category": "Forest Land",
+      "value": -5.5,
+      "unit": "GtCO2/year",
+      "status": "rounded source estimate",
+      "scope": "Living biomass; remaining forest and converted-to-forest land"
+    },
+    {
+      "category": "Deforestation",
+      "value": 3.7,
+      "unit": "GtCO2/year",
+      "status": "rounded source estimate",
+      "scope": "Global; includes tropical forest-fire CO2"
+    },
+    {
+      "category": "Fires",
+      "value": 2.2,
+      "unit": "GtCO2e/year",
+      "status": "rounded source estimate",
+      "scope": "EDGAR allocation excludes tropical forest-fire CO2 and crop-burning CH4/N2O counted elsewhere"
+    },
+    {
+      "category": "Organic Soils CO2 subtotal",
+      "value": 1.1,
+      "unit": "GtCO2/year",
+      "status": "rounded source subtotal",
+      "scope": "Organic Soils also includes N2O; do not treat this CO2 subtotal as complete CO2e category"
+    },
+    {
+      "category": "Other / unresolved rounded remainder",
+      "value": -0.6,
+      "unit": "GtCO2e/year",
+      "status": "derived closure diagnostic; NOT independently extracted Other value",
+      "scope": "Absorbs omitted subcomponents and rounding"
+    },
+    {
+      "category": "Net LULUCF",
+      "value": 0.9,
+      "unit": "GtCO2e/year",
+      "status": "rounded source estimate",
+      "scope": "Total of five land categories"
+    }
+  ]
+}

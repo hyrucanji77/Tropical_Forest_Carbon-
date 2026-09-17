@@ -1,0 +1,7 @@
+category,value,unit,status,scope
+Forest Land,-5.5,GtCO2/year,rounded source estimate,Living biomass; remaining forest and converted-to-forest land
+Deforestation,3.7,GtCO2/year,rounded source estimate,Global; includes tropical forest-fire CO2
+Fires,2.2,GtCO2e/year,rounded source estimate,EDGAR allocation excludes tropical forest-fire CO2 and crop-burning CH4/N2O counted elsewhere
+Organic Soils CO2 subtotal,1.1,GtCO2/year,rounded source subtotal,Organic Soils also includes N2O; do not treat this CO2 subtotal as complete CO2e category
+Other / unresolved rounded remainder,-0.6,GtCO2e/year,derived closure diagnostic; NOT independently extracted Other value,Absorbs omitted subcomponents and rounding
+Net LULUCF,0.9,GtCO2e/year,rounded source estimate,Total of five land categories

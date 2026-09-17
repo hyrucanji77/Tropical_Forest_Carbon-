@@ -1,0 +1,3 @@
+case,baseline_gain,baseline_loss,baseline_net,gain_multiplier,loss_multiplier,revised_gain,revised_loss,revised_net,common_gain_scaled_net,differential_penalty
+Loss-weighted hypothesis,120.0,100.0,20.0,1.2,1.5,144.0,150.0,-6.0,24.0,30.000000000000004
+Increasing-size counterexample,120.0,100.0,20.0,1.85,1.5,222.0,150.0,72.0,37.0,-35.00000000000001

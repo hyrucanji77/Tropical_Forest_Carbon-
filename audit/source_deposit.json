@@ -1,0 +1,29 @@
+{
+  "snapshot": "5.0",
+  "source_archive_sha256": "01aac3035a917daf866658187d12ba75c8eca23eba1c4ed42d2f9f75c595ddcd",
+  "source_files": [
+    "CHANGES.md",
+    "CITATION.cff",
+    "README.md",
+    "RIGHTS.md",
+    "SOURCE_AVAILABILITY.md",
+    "data/inputs.json",
+    "data/source_provenance.csv",
+    "figure_plates.tex",
+    "main.tex",
+    "references.bib",
+    "response_to_review.tex",
+    "scripts/audit_extensions.py",
+    "scripts/build_local.sh",
+    "scripts/extensions.py",
+    "scripts/make_manifest.py",
+    "scripts/package_release.py",
+    "scripts/rebuild_artwork.py",
+    "scripts/reproduce.py",
+    "scripts/verify_package.py",
+    "source_figures/figure_1_reported_2025.svg",
+    "source_figures/figure_2_forest_carbon_reassessment.svg"
+  ],
+  "source_transport_commit": "eb12432c4eb792ed9ae454531abd5d01712dfb87",
+  "scope": "Source and numerical publication; PDF build is a separate workflow."
+}

@@ -1,0 +1,658 @@
+{
+  "revision_date": "2026-09-16",
+  "historical": [
+    {
+      "comparison_stock_pgc": 285.1,
+      "stock_ratio": 2.539354612416696,
+      "fixed_total_percent": 26.155352507891966,
+      "retained_others_percent": 22.575868910424564,
+      "hypothetical_total_gtco2e": 56.33929937106278
+    },
+    {
+      "comparison_stock_pgc": 228.7,
+      "stock_ratio": 3.165588106689987,
+      "fixed_total_percent": 32.60555749890686,
+      "retained_others_percent": 26.65909723619737,
+      "hypothetical_total_gtco2e": 59.47596955614341
+    }
+  ],
+  "ecofys_implied_component_gtco2": 5.008787,
+  "density_summary": {
+    "total_area_ha": 2799053606.91,
+    "total_stock_pgc": 723.97,
+    "carbon_density_mgc_ha": 258.64813671761823,
+    "dry_agb_mg_ha": 550.3151845055708,
+    "dry_agb_sensitivity_mg_ha": [
+      517.2962734352365,
+      601.5072946921355
+    ],
+    "high_classes_area_ha": 1200345923.1999998,
+    "high_classes_stock_pgc": 566.79,
+    "high_classes_carbon_density_mgc_ha": 472.18888242565583,
+    "high_classes_dry_agb_mg_ha": 1004.6571966503316,
+    "row_stock_sum_pgc": 723.9499999999999,
+    "row_area_sum_ha": 2799053606.89,
+    "domain_area_ratio_to_feldpausch": 1.6785928677121438,
+    "feldpausch_density_mgc_ha": 170.9745127436282,
+    "mixed_domain_density_ratio": 1.5127876814332808,
+    "high_class_density_ratio": 2.7617501278315717,
+    "high_class_stock_ratio": 1.9880392844615922,
+    "high_class_area_ratio": 0.7198476301049475
+  },
+  "paired_examples": [
+    {
+      "case": "Reference",
+      "r_source": 1.0,
+      "r_removal": 1.0,
+      "forest_source": 6.0,
+      "forest_removal": 5.8,
+      "forest_net": 0.20000000000000018,
+      "total_net": 50.2,
+      "gross_source_share_percent": 10.714285714285714,
+      "net_forest_share_percent": 0.39840637450199234
+    },
+    {
+      "case": "Source only",
+      "r_source": 2.5,
+      "r_removal": 1.0,
+      "forest_source": 15.0,
+      "forest_removal": 5.8,
+      "forest_net": 9.2,
+      "total_net": 59.2,
+      "gross_source_share_percent": 23.076923076923077,
+      "net_forest_share_percent": 15.540540540540539
+    },
+    {
+      "case": "Paired uniform",
+      "r_source": 2.5,
+      "r_removal": 2.5,
+      "forest_source": 15.0,
+      "forest_removal": 14.5,
+      "forest_net": 0.5,
+      "total_net": 50.5,
+      "gross_source_share_percent": 23.076923076923077,
+      "net_forest_share_percent": 0.9900990099009901
+    },
+    {
+      "case": "Paired differential",
+      "r_source": 2.5,
+      "r_removal": 2.6,
+      "forest_source": 15.0,
+      "forest_removal": 15.08,
+      "forest_net": -0.08000000000000007,
+      "total_net": 49.92,
+      "gross_source_share_percent": 23.076923076923077,
+      "net_forest_share_percent": -0.16025641025641038
+    }
+  ],
+  "cancellation_ratio": 0.016949152542372895,
+  "two_unit_examples": [
+    {
+      "r_stock": 2.0,
+      "r_flux": 1.0,
+      "mean_weight": 0.01,
+      "covariance": -0.01,
+      "bound": 1.0,
+      "stock_total": 100.0,
+      "baseline_flux": 1.0
+    },
+    {
+      "r_stock": 2.0,
+      "r_flux": 3.0,
+      "mean_weight": 0.01,
+      "covariance": 0.01,
+      "bound": 1.0,
+      "stock_total": 100.0,
+      "baseline_flux": 1.0
+    }
+  ],
+  "harvest_bias_replacement_factors": [
+    1.179523472517103,
+    1.3245033112582782,
+    1.5382248884786958,
+    1.55448468832582
+  ],
+  "support_comparison": [
+    {
+      "domain": "Feldpausch forest mask",
+      "area_mha": 1667.5,
+      "stock_pgc": 285.1,
+      "density_mgc_ha": 170.9745127436282,
+      "area_ratio_to_feldpausch": 1.0,
+      "density_ratio_to_feldpausch": 1.0,
+      "stock_ratio_to_feldpausch": 1.0
+    },
+    {
+      "domain": "Historical mixed domain",
+      "area_mha": 2799.05360691,
+      "stock_pgc": 723.97,
+      "density_mgc_ha": 258.64813671761823,
+      "area_ratio_to_feldpausch": 1.6785928677121438,
+      "density_ratio_to_feldpausch": 1.5127876814332808,
+      "stock_ratio_to_feldpausch": 2.539354612416696
+    },
+    {
+      "domain": "Historical classes 4 and 5",
+      "area_mha": 1200.3459231999998,
+      "stock_pgc": 566.79,
+      "density_mgc_ha": 472.18888242565583,
+      "area_ratio_to_feldpausch": 0.7198476301049475,
+      "density_ratio_to_feldpausch": 2.7617501278315717,
+      "stock_ratio_to_feldpausch": 1.9880392844615922
+    }
+  ],
+  "interval_swap_diagnostic": [
+    {
+      "class_id": 2,
+      "recalculated_density": 251.6378972382851,
+      "own_interval": "58,183",
+      "other_class": 3,
+      "other_interval": "183,336",
+      "fits_other_interval": true,
+      "printed_density_fits_other_interval": true,
+      "correction_confirmed": false
+    },
+    {
+      "class_id": 3,
+      "recalculated_density": 115.94335038776458,
+      "own_interval": "183,336",
+      "other_class": 2,
+      "other_interval": "58,183",
+      "fits_other_interval": true,
+      "printed_density_fits_other_interval": true,
+      "correction_confirmed": false
+    }
+  ],
+  "regrowth_examples": [
+    {
+      "case": "Zero initial stock",
+      "baseline_gain": 5.0,
+      "revised_gain": 6.0,
+      "zero_increment_component": 0.0,
+      "positive_increment_component": 6.0,
+      "multiplier": 1.2,
+      "gain_weighted_factor": 1.2
+    },
+    {
+      "case": "Zero baseline increment retained",
+      "baseline_gain": 10.0,
+      "revised_gain": 17.0,
+      "zero_increment_component": 5.0,
+      "positive_increment_component": 12.0,
+      "multiplier": 1.7,
+      "gain_weighted_factor": 1.2
+    }
+  ],
+  "size_differential_examples": [
+    {
+      "case": "Loss-weighted hypothesis",
+      "baseline_gain": 120.0,
+      "baseline_loss": 100.0,
+      "baseline_net": 20.0,
+      "gain_multiplier": 1.2,
+      "loss_multiplier": 1.5,
+      "revised_gain": 144.0,
+      "revised_loss": 150.0,
+      "revised_net": -6.0,
+      "common_gain_scaled_net": 24.0,
+      "differential_penalty": 30.000000000000004
+    },
+    {
+      "case": "Increasing-size counterexample",
+      "baseline_gain": 120.0,
+      "baseline_loss": 100.0,
+      "baseline_net": 20.0,
+      "gain_multiplier": 1.85,
+      "loss_multiplier": 1.5,
+      "revised_gain": 222.0,
+      "revised_loss": 150.0,
+      "revised_net": 72.0,
+      "common_gain_scaled_net": 37.0,
+      "differential_penalty": -35.00000000000001
+    }
+  ],
+  "normalization_diagnostic": [
+    {
+      "class_id": 5,
+      "printed_to_recalculated_ratio": 0.9901631925311231,
+      "factor_lower": 0.9901365008416095,
+      "factor_upper": 0.9901898851571048,
+      "effective_denominator_multiplier": 1.0099345315429584,
+      "exact_one_percent_denominator_compatible": false
+    },
+    {
+      "class_id": 4,
+      "printed_to_recalculated_ratio": 0.9901690882410603,
+      "factor_lower": 0.9901396476432571,
+      "factor_upper": 0.9901985298837643,
+      "effective_denominator_multiplier": 1.0099285181447175,
+      "exact_one_percent_denominator_compatible": false
+    },
+    {
+      "class_id": 2,
+      "printed_to_recalculated_ratio": 0.9901529250344248,
+      "factor_lower": 0.9900861494714914,
+      "factor_upper": 0.9902197069246965,
+      "effective_denominator_multiplier": 1.009945004167142,
+      "exact_one_percent_denominator_compatible": true
+    },
+    {
+      "class_id": 3,
+      "printed_to_recalculated_ratio": 0.9901387152955239,
+      "factor_lower": 0.9899738527191978,
+      "factor_upper": 0.9903036184234628,
+      "effective_denominator_multiplier": 1.0099594981512594,
+      "exact_one_percent_denominator_compatible": true
+    },
+    {
+      "class_id": 1,
+      "printed_to_recalculated_ratio": 0.9903970490351277,
+      "factor_lower": 0.9895675898199519,
+      "factor_upper": 0.9912272654015769,
+      "effective_denominator_multiplier": 1.0096960617706079,
+      "exact_one_percent_denominator_compatible": true
+    }
+  ],
+  "normalization_intersection": [
+    0.9901396476432571,
+    0.9901898851571048
+  ],
+  "carbon_fraction_sensitivity": [
+    {
+      "fraction": 0.4111,
+      "mixed_domain_biomass": 629.1611206947658,
+      "high_class_biomass": 1148.5985950514614,
+      "status": "sensitivity; measured-range applicability to mapped domain is conditional"
+    },
+    {
+      "fraction": 0.4999,
+      "mixed_domain_biomass": 517.3997533859136,
+      "high_class_biomass": 944.566678186949,
+      "status": "sensitivity; measured-range applicability to mapped domain is conditional"
+    },
+    {
+      "fraction": 0.47,
+      "mixed_domain_biomass": 550.3151845055708,
+      "high_class_biomass": 1004.6571966503316,
+      "status": "sensitivity; measured-range applicability to mapped domain is conditional"
+    },
+    {
+      "fraction": 0.5,
+      "mixed_domain_biomass": 517.2962734352365,
+      "high_class_biomass": 944.3777648513117,
+      "status": "sensitivity; measured-range applicability to mapped domain is conditional"
+    }
+  ],
+  "exact_census_criteria": [
+    {
+      "family": "quadratic",
+      "gain_factor": 1.5090500000002833,
+      "loss_factor": 1.5,
+      "difference": -0.009050000000283331,
+      "arithmetic_size_ratio": 1.9644435713599908,
+      "status": "synthetic exact event calculation"
+    },
+    {
+      "family": "power b=1.5",
+      "gain_factor": 4.707488132689884,
+      "loss_factor": 10.0,
+      "difference": 5.292511867310116,
+      "arithmetic_size_ratio": 1.9644435713599908,
+      "status": "synthetic exact event calculation"
+    }
+  ],
+  "power_thresholds": [
+    {
+      "b": 1.0001,
+      "threshold": 2.718145926825225
+    },
+    {
+      "b": 1.01,
+      "threshold": 2.7048138294215263
+    },
+    {
+      "b": 1.1,
+      "threshold": 2.5937424600999996
+    },
+    {
+      "b": 1.25,
+      "threshold": 2.44140625
+    },
+    {
+      "b": 1.5,
+      "threshold": 2.25
+    },
+    {
+      "b": 1.75,
+      "threshold": 2.108874481153326
+    },
+    {
+      "b": 2.0,
+      "threshold": 2.0
+    }
+  ],
+  "timing_example": [
+    {
+      "period": "Initial year",
+      "baseline_release": 45.0,
+      "corrected_release": 55.00000000000001,
+      "stock_multiplier": 2.0,
+      "release_multiplier": 1.2222222222222223,
+      "covariance": -0.35
+    },
+    {
+      "period": "Later combined",
+      "baseline_release": 55.0,
+      "corrected_release": 145.0,
+      "stock_multiplier": 2.0,
+      "release_multiplier": 2.6363636363636362,
+      "covariance": 0.35000000000000003
+    },
+    {
+      "period": "Lifetime",
+      "baseline_release": 100.0,
+      "corrected_release": 200.0,
+      "stock_multiplier": 2.0,
+      "release_multiplier": 2.0,
+      "covariance": 0.0
+    }
+  ],
+  "edgar_land_reference": [
+    {
+      "category": "Forest Land",
+      "value": -5.5,
+      "unit": "GtCO2/year",
+      "status": "rounded source estimate",
+      "scope": "Living biomass; remaining forest and converted-to-forest land"
+    },
+    {
+      "category": "Deforestation",
+      "value": 3.7,
+      "unit": "GtCO2/year",
+      "status": "rounded source estimate",
+      "scope": "Global; includes tropical forest-fire CO2"
+    },
+    {
+      "category": "Fires",
+      "value": 2.2,
+      "unit": "GtCO2e/year",
+      "status": "rounded source estimate",
+      "scope": "EDGAR allocation excludes tropical forest-fire CO2 and crop-burning CH4/N2O counted elsewhere"
+    },
+    {
+      "category": "Organic Soils CO2 subtotal",
+      "value": 1.1,
+      "unit": "GtCO2/year",
+      "status": "rounded source subtotal",
+      "scope": "Organic Soils also includes N2O; do not treat this CO2 subtotal as complete CO2e category"
+    },
+    {
+      "category": "Other / unresolved rounded remainder",
+      "value": -0.6,
+      "unit": "GtCO2e/year",
+      "status": "derived closure diagnostic; NOT independently extracted Other value",
+      "scope": "Absorbs omitted subcomponents and rounding"
+    },
+    {
+      "category": "Net LULUCF",
+      "value": 0.9,
+      "unit": "GtCO2e/year",
+      "status": "rounded source estimate",
+      "scope": "Total of five land categories"
+    }
+  ],
+  "display_precision_audit": {
+    "normalization": [
+      {
+        "display_model": "nearest",
+        "class_id": 5,
+        "q_lower": "0.990136500841609539179399021172838423351518234602768081112846",
+        "q_upper": "0.990189885157105078501885799491272695377598456275765283747040",
+        "one_over_1_01_compatible": false
+      },
+      {
+        "display_model": "nearest",
+        "class_id": 4,
+        "q_lower": "0.990139647643257235639628768654730005501038099125157489397193",
+        "q_upper": "0.990198529883764529467090202480878777661443452645028482191975",
+        "one_over_1_01_compatible": false
+      },
+      {
+        "display_model": "nearest",
+        "class_id": 2,
+        "q_lower": "0.990086149471491543891231228385996494386280733336491543891231",
+        "q_upper": "0.990219706924696783057753351968541242241910266736153882598190",
+        "one_over_1_01_compatible": true
+      },
+      {
+        "display_model": "nearest",
+        "class_id": 3,
+        "q_lower": "0.989973852719197713021025451862781261527111766875691626706013",
+        "q_upper": "0.990303618423462673717869880703480506702742590087320132824991",
+        "one_over_1_01_compatible": true
+      },
+      {
+        "display_model": "nearest",
+        "class_id": 1,
+        "q_lower": "0.989567589819952120383036935704514363885088919288645690834473",
+        "q_upper": "0.991227265401576905522592423550890004564125969876768598813327",
+        "one_over_1_01_compatible": true
+      },
+      {
+        "display_model": "truncation",
+        "class_id": 5,
+        "q_lower": "0.990128454838429694078024136963233230423800168397417906258771",
+        "q_upper": "0.990181837935171034627933901694558467529733712240816756130934",
+        "one_over_1_01_compatible": false
+      },
+      {
+        "display_model": "truncation",
+        "class_id": 4,
+        "q_lower": "0.990133947200912801220853887922773893601164069986158923945062",
+        "q_upper": "0.990192828194204287336740488358886996024985803520726859738785",
+        "one_over_1_01_compatible": false
+      },
+      {
+        "display_model": "truncation",
+        "class_id": 2,
+        "q_lower": "0.990059116135795357650402652771198484130743723353860729512080",
+        "q_upper": "0.990192664700233086981239340534394542353610005685048322910745",
+        "one_over_1_01_compatible": true
+      },
+      {
+        "display_model": "truncation",
+        "class_id": 3,
+        "q_lower": "0.989895258517728055077452667814113597246127366609294320137694",
+        "q_upper": "0.990224964340772257747171667486473192326610919822921790457452",
+        "one_over_1_01_compatible": true
+      },
+      {
+        "display_model": "truncation",
+        "class_id": 1,
+        "q_lower": "0.989494225836371923427529626253418413855970829535095715587967",
+        "q_upper": "0.991153077328795620437956204379562043795620437956204379562044",
+        "one_over_1_01_compatible": true
+      }
+    ],
+    "joint": {
+      "nearest": {
+        "lower": "0.990139647643257235639628768654730005501038099125157489397193",
+        "upper": "0.990189885157105078501885799491272695377598456275765283747040"
+      },
+      "truncation": {
+        "lower": "0.990133947200912801220853887922773893601164069986158923945062",
+        "upper": "0.990181837935171034627933901694558467529733712240816756130934"
+      }
+    },
+    "percentages": [
+      {
+        "class_id": 5,
+        "source_percentage": "39.37",
+        "calculated_percentage": "39.3704159012113761619956628037073359393345028108899540036189",
+        "truncated_percentage": "39.37",
+        "rounded_percentage": "39.37"
+      },
+      {
+        "class_id": 4,
+        "source_percentage": "38.91",
+        "calculated_percentage": "38.9187397267842590162575797339668770805420114093125405748857",
+        "truncated_percentage": "38.91",
+        "rounded_percentage": "38.92"
+      },
+      {
+        "class_id": 2,
+        "source_percentage": "14.57",
+        "calculated_percentage": "14.5779521250880561349227177921737088553393096399022058925094",
+        "truncated_percentage": "14.57",
+        "rounded_percentage": "14.58"
+      },
+      {
+        "class_id": 3,
+        "source_percentage": "5.61",
+        "calculated_percentage": "5.61625481718855753691451303230796856223324170891059021782671",
+        "truncated_percentage": "5.61",
+        "rounded_percentage": "5.62"
+      },
+      {
+        "class_id": 1,
+        "source_percentage": "1.51",
+        "calculated_percentage": "1.51387488431841098388054753650013122090694365788637650731384",
+        "truncated_percentage": "1.51",
+        "rounded_percentage": "1.51"
+      }
+    ],
+    "nearest_percentage_denominator_fixed_numerators": {
+      "bounds": [
+        "724.131789848619768477292965271593944790739091718610863757792",
+        "724.069604979042296456242855328337355518861933189381430204496"
+      ],
+      "feasible": false
+    },
+    "nearest_percentage_denominator_with_rounded_numerators": {
+      "bounds": [
+        "724.082332761578044596912521440823327615780445969125214408233",
+        "724.082306617553664422710529658325924044201702019560523307507"
+      ],
+      "feasible": false,
+      "interpretation": "Even with half-unit latent stock uncertainty the exact joint intersection is empty by about 0.000026 PgC; a value near 724.08 is only approximate, not a compatible exact solution."
+    },
+    "sum_gaps": {
+      "stock_pgc": "0.02",
+      "area_ha": "0.02"
+    },
+    "gap_probabilities": {
+      "assumptions": "Five components with independent uniform hidden last-digit fractions; total computed from exact component sum and displayed under the same rule; ties have zero probability.",
+      "positive_two_unit_gap_truncation": {
+        "exact": "11/20",
+        "decimal": 0.55
+      },
+      "positive_two_unit_gap_nearest": {
+        "exact": "1/120",
+        "decimal": 0.008333333333333333
+      },
+      "absolute_two_unit_gap_nearest": {
+        "exact": "1/60",
+        "decimal": 0.016666666666666666
+      },
+      "interpretation": "Conditional diagnostic only. Stock and area displays are not assumed independent; probabilities are not multiplied."
+    },
+    "historical_endpoints": [
+      {
+        "comparison_stock": "285.1",
+        "fixed_share_full": "26.1553525078919677306208347948088390038582953349701858996843",
+        "truncated": "26.15",
+        "rounded": "26.16",
+        "published": "26.15"
+      },
+      {
+        "comparison_stock": "228.7",
+        "fixed_share_full": "32.6055574989068648885002186270222999562745955400087450808920",
+        "truncated": "32.60",
+        "rounded": "32.61",
+        "published": "32.60"
+      }
+    ],
+    "baseline_share_interval_nearest": [
+      "0.102966649170545740845615149799024821470502921391770377225576",
+      "0.102998238877301545644156525822893213807201955882149812837549"
+    ],
+    "causal_display_rule_confirmed": false
+  },
+  "annual_cohort_examples": [
+    {
+      "scenario": "Constant clearing",
+      "latest_activity": 1.0,
+      "previous_activity": 1.0,
+      "baseline_release": 100.0,
+      "corrected_release": 200.0,
+      "annual_multiplier": 2.0
+    },
+    {
+      "scenario": "Latest doubled",
+      "latest_activity": 2.0,
+      "previous_activity": 1.0,
+      "baseline_release": 145.0,
+      "corrected_release": 255.0,
+      "annual_multiplier": 1.7586206896551724
+    },
+    {
+      "scenario": "Latest halved",
+      "latest_activity": 0.5,
+      "previous_activity": 1.0,
+      "baseline_release": 77.5,
+      "corrected_release": 172.5,
+      "annual_multiplier": 2.225806451612903
+    }
+  ],
+  "nearlinear_examples": [
+    {
+      "case": 0,
+      "epsilon": "0.000001",
+      "exact_difference": 4.1549497708785497e-07,
+      "first_order": 4.1549441899471934e-07,
+      "coefficient": 0.41549441899471934,
+      "loss_log_mean": 2.761679311922061,
+      "gain_log_mean": 1.4420682203876616
+    },
+    {
+      "case": 1,
+      "epsilon": "0.000001",
+      "exact_difference": 3.600906878625396e-07,
+      "first_order": 3.600900027779542e-07,
+      "coefficient": 0.3600900027779542,
+      "loss_log_mean": 3.1101903277142395,
+      "gain_log_mean": 1.833198017885044
+    },
+    {
+      "case": 2,
+      "epsilon": "0.000001",
+      "exact_difference": 3.739075051668422e-07,
+      "first_order": 3.7390646038094175e-07,
+      "coefficient": 0.3739064603809418,
+      "loss_log_mean": 2.9358016536154494,
+      "gain_log_mean": 1.6481812994762635
+    }
+  ],
+  "subset_comparison": {
+    "nested_support_lower_bound": 1.9880392844615922,
+    "uniform_domain_mean_benchmark": 2.7617501278315713,
+    "upper_bound_without_extra_assumption": null,
+    "scenarios": [
+      {
+        "conventional_local_density_mgc_ha": 85.4872563718141,
+        "conventional_subset_stock_pgc": 102.61427967146027,
+        "required_stock_factor": 5.5235002556631425
+      },
+      {
+        "conventional_local_density_mgc_ha": 170.9745127436282,
+        "conventional_subset_stock_pgc": 205.22855934292053,
+        "required_stock_factor": 2.7617501278315713
+      },
+      {
+        "conventional_local_density_mgc_ha": 205.16941529235382,
+        "conventional_subset_stock_pgc": 246.2742712115046,
+        "required_stock_factor": 2.3014584398596427
+      }
+    ]
+  }
+}

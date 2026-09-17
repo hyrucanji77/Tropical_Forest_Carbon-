@@ -1,0 +1,4 @@
+scenario,latest_activity,previous_activity,baseline_release,corrected_release,annual_multiplier
+Constant clearing,1.0,1.0,100.0,200.0,2.0
+Latest doubled,2.0,1.0,145.0,255.0,1.7586206896551724
+Latest halved,0.5,1.0,77.5,172.5,2.225806451612903

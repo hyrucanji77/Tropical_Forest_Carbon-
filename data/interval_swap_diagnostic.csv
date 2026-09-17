@@ -1,0 +1,3 @@
+class_id,recalculated_density,own_interval,other_class,other_interval,fits_other_interval,printed_density_fits_other_interval,correction_confirmed
+2,251.6378972382851,"58,183",3,"183,336",True,True,False
+3,115.94335038776458,"183,336",2,"58,183",True,True,False

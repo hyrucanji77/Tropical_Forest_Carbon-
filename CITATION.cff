@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cite this research snapshot and include the immutable GitHub commit used."
+title: "From tropical forest-carbon measurement to annual carbon accounts"
+authors:
+  - family-names: "Arellano-Peña"
+    given-names: "Henry"
+    affiliation: "NEBIOT S.A.S."
+    email: "harellano@unal.edu.co"
+version: "5.0"
+date-released: "2026-09-16"
+url: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-"
+repository-code: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-"
+abstract: "Research article and reproducible published-data audit on stock-to-flux covariance, paired carbon accounts, census calibration, display precision and annual disturbance cohorts."
+keywords:
+  - tropical forest carbon
+  - stock-to-flux transfer
+  - census calibration
+  - annual carbon accounts
+  - published-data audit

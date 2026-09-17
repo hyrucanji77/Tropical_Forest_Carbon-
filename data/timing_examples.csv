@@ -1,0 +1,4 @@
+period,baseline_release,corrected_release,stock_multiplier,release_multiplier,covariance
+Initial year,45.0,55.00000000000001,2.0,1.2222222222222223,-0.35
+Later combined,55.0,145.0,2.0,2.6363636363636362,0.35000000000000003
+Lifetime,100.0,200.0,2.0,2.0,0.0

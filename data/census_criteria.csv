@@ -1,0 +1,3 @@
+family,gain_factor,loss_factor,difference,arithmetic_size_ratio,status
+quadratic,1.5090500000002833,1.5,-0.009050000000283331,1.9644435713599908,synthetic exact event calculation
+power b=1.5,4.707488132689884,10.0,5.292511867310116,1.9644435713599908,synthetic exact event calculation

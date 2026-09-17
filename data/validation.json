@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "revision_date": "2026-09-16",
+  "seed": 20260916,
+  "randomized_cases": 1000,
+  "assertions": 257167,
+  "absolute_tolerance": 1e-10,
+  "relative_tolerance": 1e-12,
+  "max_absolute_residuals": {
+    "transfer": 1.3322676295501878e-15,
+    "paired_covariance": 8.171241461241152e-14,
+    "uniform_net": 5.684341886080802e-14,
+    "differential_net": 8.881784197001252e-14,
+    "census": 2.842170943040401e-14,
+    "regrowth_increment": 2.5011104298755527e-12,
+    "regrowth_aggregation": 0.0,
+    "support_decomposition": 4.440892098500626e-16,
+    "size_growth_factor": 1.1812772982011666e-13,
+    "census_differential": 5.684341886080802e-14,
+    "bias_conversion": 0.0
+  },
+  "evidence_status": "Numerical algebra checks only; not empirical validation.",
+  "baseline_assertions": 14030,
+  "extended_tests": {
+    "seed": 20260917,
+    "randomized_cases": 20000,
+    "assertions": 240019,
+    "max_absolute_residuals": {
+      "quadratic_exact": 6.128431095930864e-14,
+      "quadratic_scale": 3.552713678800501e-15,
+      "power_exact": 4.007461029686965e-12,
+      "power_scale": 0.0,
+      "power_quadratic_equivalence": 3.410605131648481e-13,
+      "opposite_order": 1.6653345369377348e-16,
+      "cumulative_recovery": 8.881784197001252e-16,
+      "late_release": 1.3322676295501878e-15
+    },
+    "normalization_intersection": [
+      0.9901396476432571,
+      0.9901898851571048
+    ],
+    "normalization_cause_confirmed": false,
+    "exact_one_percent_denominator_compatible": false,
+    "arithmetic_prescreen_counterexample": {
+      "quadratic": {
+        "gain_factor": 1.5090500000002833,
+        "loss_factor": 1.5,
+        "gain_mean_midpoint": 50.90499999995911,
+        "loss_mean_stock": 100.0,
+        "difference": -0.009050000000283331,
+        "criterion": -0.009049999999591093,
+        "arithmetic_size_ratio": 1.9644435713599908
+      },
+      "power": {
+        "exponent": 1.5,
+        "gain_factor": 4.707488132689884,
+        "loss_factor": 10.0,
+        "gain_power_moment": 3.1383254217932555,
+        "loss_power_moment": 10.0,
+        "log_power_mean_ratio": 2.3177914809860902,
+        "log_threshold": 0.8109302162163288,
+        "power_mean_ratio": 10.153225933841904,
+        "threshold": 2.25,
+        "difference": 5.292511867310116
+      }
+    },
+    "exact_power_criterion": "Finite-interval growth distribution; not a midpoint approximation"
+  },
+  "randomized_cases_total": 22100,
+  "audit_extensions": {
+    "seed": 20260918,
+    "randomized_cases": 1100,
+    "assertions": 3118,
+    "max_residuals": {
+      "annual": 1.3322676295501878e-15,
+      "nearlinear_scaled_remainder": 3.625265792924393
+    },
+    "probability_scope": "Explicit display-error reference models, not posterior model selection."
+  }
+}
