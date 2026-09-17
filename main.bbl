@@ -1,0 +1,295 @@
+\begin{thebibliography}{31}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Arellano-P. and Rangel-Ch.(2016)]{Arellano2016}
+H.~Arellano-P. and J.~O. Rangel-Ch.
+\newblock A solution for reducing high bias in estimates of stored carbon in
+  tropical forests (aboveground biomass).
+\newblock arXiv:1508.03667v2, 2016.
+\newblock URL \url{https://arxiv.org/abs/1508.03667}.
+\newblock Preprint. First posted 14 August 2015; version 2, 17 June 2016.
+
+\bibitem[Arellano~Pe{\~n}a(2021)]{Arellano2021}
+Henry Arellano~Pe{\~n}a.
+\newblock Threats to the {Amazon}: A call to think outside the box.
+\newblock NEBIOT, 2021.
+\newblock URL
+  \url{https://www.nebiot.org/single-post/threats-to-the-amazon-a-call-to-think-outside-the-box}.
+\newblock 14 July 2021; updated 15 July 2021. Interpretive essay.
+
+\bibitem[{Gonzalez de Tanago} et~al.(2018){Gonzalez de Tanago}, Lau,
+  Bartholomeus, Herold, Avitabile, Raumonen, Martius, Goodman, Disney, Manuri,
+  Burt, and Calders]{Gonzalez2018}
+J.~{Gonzalez de Tanago}, A.~Lau, H.~Bartholomeus, M.~Herold, V.~Avitabile,
+  P.~Raumonen, C.~Martius, R.~C. Goodman, M.~Disney, S.~Manuri, A.~Burt, and
+  K.~Calders.
+\newblock Estimation of above-ground biomass of large tropical trees with
+  terrestrial {LiDAR}.
+\newblock \emph{Methods in Ecology and Evolution}, 9\penalty0 (2):\penalty0
+  223--234, 2018.
+\newblock \doi{10.1111/2041-210X.12904}.
+\newblock URL \url{https://discovery.ucl.ac.uk/id/eprint/10022856/}.
+
+\bibitem[{Momo Takoudjou} et~al.(2018){Momo Takoudjou}, Ploton, Sonk{\'e},
+  Hackenberg, Griffon, de~Coligny, Kamdem, Libalah, Mofack, Le~Mogu{\'e}dec,
+  P{\'e}lissier, and Barbier]{Momo2018}
+S.~{Momo Takoudjou}, P.~Ploton, B.~Sonk{\'e}, J.~Hackenberg, S.~Griffon,
+  F.~de~Coligny, N.~G. Kamdem, M.~Libalah, G.~I. Mofack, G.~Le~Mogu{\'e}dec,
+  R.~P{\'e}lissier, and N.~Barbier.
+\newblock Using terrestrial laser scanning data to estimate large tropical
+  trees biomass and calibrate allometric models: A comparison with traditional
+  destructive approach.
+\newblock \emph{Methods in Ecology and Evolution}, 9\penalty0 (4):\penalty0
+  905--916, 2018.
+\newblock \doi{10.1111/2041-210X.12933}.
+
+\bibitem[Demol et~al.(2024)]{Demol2024}
+Miro Demol et~al.
+\newblock Multi-scale lidar measurements suggest miombo woodlands contain
+  substantially more carbon than thought.
+\newblock \emph{Communications Earth \& Environment}, 5:\penalty0 366, 2024.
+\newblock \doi{10.1038/s43247-024-01448-x}.
+\newblock URL \url{https://www.nature.com/articles/s43247-024-01448-x}.
+
+\bibitem[Huertas et~al.(2025)Huertas, Fischer, Aubry-Kientz, Ball, Derroire,
+  and Vincent]{Huertas2025}
+Claudia Huertas, Fabian~J{\"o}rg Fischer, M{\'e}laine Aubry-Kientz, James Ball,
+  G{\'e}raldine Derroire, and Gr{\'e}goire Vincent.
+\newblock The value of local allometries from airborne laser scanning for
+  tropical forest biomass estimates.
+\newblock \emph{Peer Community Journal}, 5:\penalty0 e103, 2025.
+\newblock \doi{10.24072/pcjournal.625}.
+\newblock URL
+  \url{https://peercommunityjournal.org/articles/10.24072/pcjournal.625/}.
+
+\bibitem[Baumert et~al.(2005)Baumert, Herzog, and Pershing]{WRI2005}
+Kevin~A. Baumert, Tim Herzog, and Jonathan Pershing.
+\newblock Navigating the numbers: Greenhouse gas data and international climate
+  policy.
+\newblock Technical report, World Resources Institute, Washington, DC, 2005.
+\newblock URL \url{https://www.wri.org/research/navigating-numbers}.
+\newblock Visual precedent for sector--end-use--gas emissions diagrams. ISBN
+  1-56973-599-9.
+
+\bibitem[{Ecofys}(2013)]{Ecofys2013}
+{Ecofys}.
+\newblock World {GHG} emissions flow chart 2010.
+\newblock Original chart, 2013 edition; archived copy, 2013.
+\newblock URL
+  \url{https://twosides.info/includes/files/upload/files/UK/Myths_and_Facts_2016_Sources/8-9/ECOFYS_2013-world-ghg-emissions-flow-chart-2010.pdf}.
+\newblock Single-page chart. World total 48,629 Mt CO2e; 10.3 percent category
+  combines deforestation, afforestation and land-use CO2. Accessed 16 September
+  2026.
+
+\bibitem[Crippa et~al.(2026)Crippa, Guizzardi, Pagani, Banja, Ciarlantini,
+  et~al.]{Crippa2026}
+Monica Crippa, Diego Guizzardi, Federico Pagani, Manjola Banja, Sara
+  Ciarlantini, et~al.
+\newblock {GHG} emissions of all world countries: 2026 report.
+\newblock Technical Report JRC147815; EUR 40827, Publications Office of the
+  European Union, Luxembourg, 2026.
+\newblock URL \url{https://data.europa.eu/doi/10.2760/7717504}.
+\newblock PDF edition, doi:\,10.2760/7717504. Sections 2--3 and Annex 2;
+  estimates through 2025.
+
+\bibitem[Friedlingstein et~al.(2026)]{Friedlingstein2026}
+Pierre Friedlingstein et~al.
+\newblock {Global Carbon Budget 2025}.
+\newblock \emph{Earth System Science Data}, 18:\penalty0 3211--3288, 2026.
+\newblock \doi{10.5194/essd-18-3211-2026}.
+\newblock URL \url{https://essd.copernicus.org/articles/18/3211/2026/}.
+
+\bibitem[Arellano-Pe{\~n}a(2026)]{Repository2026}
+Henry Arellano-Pe{\~n}a.
+\newblock Tropical forest carbon: manuscript, published-data audit and
+  reproducible analytical code.
+\newblock GitHub research repository, snapshot 5.0, 2026.
+\newblock URL \url{https://github.com/hyrucanji77/Tropical_Forest_Carbon-}.
+\newblock Source, input data, provenance, manifest, validation and figure
+  materials. No DOI assigned.
+
+\bibitem[{IPCC}(2006)]{IPCC2006}
+{IPCC}.
+\newblock \emph{2006 {IPCC} Guidelines for National Greenhouse Gas Inventories,
+  Volume 4: Agriculture, Forestry and Other Land Use}.
+\newblock Institute for Global Environmental Strategies, Hayama, Japan, 2006.
+\newblock URL \url{https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html}.
+\newblock Chapters 2, 4 and 12; Chapter 4, Table 4.3.
+
+\bibitem[Grassi et~al.(2023)Grassi, Schwingshackl, Gasser, Houghton, Sitch,
+  Canadell, Cescatti, Ciais, Federici, Friedlingstein, and Kurz]{Grassi2023}
+Giacomo Grassi, Clemens Schwingshackl, Thomas Gasser, Richard~A. Houghton,
+  Stephen Sitch, Josep~G. Canadell, Alessandro Cescatti, Philippe Ciais, Sandro
+  Federici, Pierre Friedlingstein, and Werner~A. Kurz.
+\newblock Harmonising the land-use flux estimates of global models and national
+  inventories for 2000--2020.
+\newblock \emph{Earth System Science Data}, 15:\penalty0 1093--1114, 2023.
+\newblock \doi{10.5194/essd-15-1093-2023}.
+
+\bibitem[Chave et~al.(2014)Chave, R{\'e}jou-M{\'e}chain, B{\'u}rquez,
+  Chidumayo, Colgan, Delitti, et~al.]{Chave2014}
+J{\'e}r{\^o}me Chave, Maxime R{\'e}jou-M{\'e}chain, Alberto B{\'u}rquez,
+  Emmanuel Chidumayo, Matthew~S. Colgan, Welington B.~C. Delitti, et~al.
+\newblock Improved allometric models to estimate the aboveground biomass of
+  tropical trees.
+\newblock \emph{Global Change Biology}, 20:\penalty0 3177--3190, 2014.
+\newblock \doi{10.1111/gcb.12629}.
+
+\bibitem[Martin and Thomas(2011)]{Martin2011}
+Adam~R. Martin and Sean~C. Thomas.
+\newblock A reassessment of carbon content in tropical trees.
+\newblock \emph{PLOS ONE}, 6\penalty0 (8):\penalty0 e23533, 2011.
+\newblock \doi{10.1371/journal.pone.0023533}.
+
+\bibitem[Feldpausch et~al.(2012)Feldpausch, Lloyd, Lewis, Brienen, Gloor,
+  Monteagudo~Mendoza, Lopez-Gonzalez, Banin, Salim, Affum-Baffoe,
+  et~al.]{Feldpausch2012}
+T.~R. Feldpausch, J.~Lloyd, S.~L. Lewis, R.~J.~W. Brienen, M.~Gloor,
+  A.~Monteagudo~Mendoza, G.~Lopez-Gonzalez, L.~Banin, K.~A. Salim,
+  K.~Affum-Baffoe, et~al.
+\newblock Tree height integrated into pantropical forest biomass estimates.
+\newblock \emph{Biogeosciences}, 9:\penalty0 3381--3403, 2012.
+\newblock \doi{10.5194/bg-9-3381-2012}.
+\newblock URL \url{https://bg.copernicus.org/articles/9/3381/2012/}.
+\newblock Table 5: forest area 1667.5 million hectares; height-integrated
+  carbon 285.1 PgC.
+
+\bibitem[Baccini et~al.(2012)Baccini, Goetz, Walker, Laporte, Sun,
+  Sulla-Menashe, Hackler, Beck, Dubayah, Friedl, Samanta, and
+  Houghton]{Baccini2012}
+A.~Baccini, S.~J. Goetz, W.~S. Walker, N.~T. Laporte, M.~Sun, D.~Sulla-Menashe,
+  J.~Hackler, P.~S.~A. Beck, R.~Dubayah, M.~A. Friedl, S.~Samanta, and R.~A.
+  Houghton.
+\newblock Estimated carbon dioxide emissions from tropical deforestation
+  improved by carbon-density maps.
+\newblock \emph{Nature Climate Change}, 2:\penalty0 182--185, 2012.
+\newblock \doi{10.1038/nclimate1354}.
+
+\bibitem[Avitabile et~al.(2016)Avitabile, Herold, Heuvelink, Lewis, Phillips,
+  Asner, et~al.]{Avitabile2016}
+Valerio Avitabile, Martin Herold, Gerard B.~M. Heuvelink, Simon~L. Lewis,
+  Oliver~L. Phillips, Gregory~P. Asner, et~al.
+\newblock An integrated pan-tropical biomass map using multiple reference
+  datasets.
+\newblock \emph{Global Change Biology}, 22:\penalty0 1406--1420, 2016.
+\newblock \doi{10.1111/gcb.13139}.
+
+\bibitem[Kauffman et~al.(1995)Kauffman, Cummings, Ward, and
+  Babbitt]{Kauffman1995}
+J.~Boone Kauffman, D.~L. Cummings, D.~E. Ward, and R.~Babbitt.
+\newblock Fire in the {Brazilian Amazon}: 1. biomass, nutrient pools, and
+  losses in slashed primary forests.
+\newblock \emph{Oecologia}, 104\penalty0 (4):\penalty0 397--408, 1995.
+\newblock \doi{10.1007/BF00341336}.
+
+\bibitem[Malhi et~al.(2006)Malhi, Wood, Baker, Wright, Phillips, Cochrane,
+  Meir, Chave, Almeida, Arroyo, et~al.]{Malhi2006}
+Y.~Malhi, D.~Wood, T.~R. Baker, J.~Wright, O.~L. Phillips, T.~Cochrane,
+  P.~Meir, J.~Chave, S.~Almeida, L.~Arroyo, et~al.
+\newblock The regional variation of aboveground live biomass in old-growth
+  {Amazonian} forests.
+\newblock \emph{Global Change Biology}, 12\penalty0 (7):\penalty0 1107--1138,
+  2006.
+\newblock \doi{10.1111/j.1365-2486.2006.01120.x}.
+\newblock URL
+  \url{https://repository.si.edu/bitstreams/86059b1f-a772-4e97-9445-b81712c2053d/download}.
+
+\bibitem[Lewis et~al.(2013)Lewis, Sonk{\'e}, Sunderland, Begne, Lopez-Gonzalez,
+  van~der Heijden, Phillips, Affum-Baffoe, Baker, Banin, et~al.]{Lewis2013}
+S.~L. Lewis, B.~Sonk{\'e}, T.~Sunderland, S.~K. Begne, G.~Lopez-Gonzalez,
+  G.~M.~F. van~der Heijden, O.~L. Phillips, K.~Affum-Baffoe, T.~R. Baker,
+  L.~Banin, et~al.
+\newblock Above-ground biomass and structure of 260 {African} tropical forests.
+\newblock \emph{Philosophical Transactions of the Royal Society B},
+  368\penalty0 (1625):\penalty0 20120295, 2013.
+\newblock \doi{10.1098/rstb.2012.0295}.
+
+\bibitem[Price(1970)]{Price1970}
+George~R. Price.
+\newblock Selection and covariance.
+\newblock \emph{Nature}, 227:\penalty0 520--521, 1970.
+\newblock \doi{10.1038/227520a0}.
+
+\bibitem[Brienen et~al.(2015)Brienen, Phillips, Feldpausch, Gloor, Baker,
+  Lloyd, Lopez-Gonzalez, Monteagudo-Mendoza, Malhi, Lewis, et~al.]{Brienen2015}
+R.~J.~W. Brienen, O.~L. Phillips, T.~R. Feldpausch, E.~Gloor, T.~R. Baker,
+  J.~Lloyd, G.~Lopez-Gonzalez, A.~Monteagudo-Mendoza, Y.~Malhi, S.~L. Lewis,
+  et~al.
+\newblock Long-term decline of the {Amazon} carbon sink.
+\newblock \emph{Nature}, 519:\penalty0 344--348, 2015.
+\newblock \doi{10.1038/nature14283}.
+\newblock URL \url{https://eprints.whiterose.ac.uk/id/eprint/84240/}.
+
+\bibitem[Carvalho et~al.(1998)Carvalho, Higuchi, Ara{\'u}jo, and
+  Santos]{Carvalho1998}
+J.~A. Carvalho, Jr., N.~Higuchi, T.~M. Ara{\'u}jo, and J.~C. Santos.
+\newblock Combustion completeness in a rainforest clearing experiment in
+  {Manaus, Brazil}.
+\newblock \emph{Journal of Geophysical Research: Atmospheres}, 103\penalty0
+  (D11):\penalty0 13195--13199, 1998.
+\newblock \doi{10.1029/98JD00172}.
+\newblock URL \url{https://doi.org/10.1029/98JD00172}.
+
+\bibitem[Chaplin-Kramer et~al.(2015)Chaplin-Kramer, Ramler, Sharp, Haddad,
+  Gerber, West, Mandle, Engstrom, Baccini, Sim, Mueller, and
+  King]{ChaplinKramer2015}
+Rebecca Chaplin-Kramer, Ivan Ramler, Richard Sharp, Nick~M. Haddad, James~S.
+  Gerber, Paul~C. West, Lisa Mandle, Peder Engstrom, Alessandro Baccini, Sarah
+  Sim, Carina Mueller, and Henry King.
+\newblock Degradation in carbon stocks near tropical forest edges.
+\newblock \emph{Nature Communications}, 6:\penalty0 10158, 2015.
+\newblock \doi{10.1038/ncomms10158}.
+\newblock URL \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC4703854/}.
+
+\bibitem[Poorter et~al.(2016)Poorter, Bongers, Aide, Almeyda~Zambrano,
+  Balvanera, Becknell, et~al.]{Poorter2016}
+Lourens Poorter, Frans Bongers, T.~Mitchell Aide, Ang{\'e}lica~M.
+  Almeyda~Zambrano, Patricia Balvanera, Justin~M. Becknell, et~al.
+\newblock Biomass resilience of {Neotropical} secondary forests.
+\newblock \emph{Nature}, 530:\penalty0 211--214, 2016.
+\newblock \doi{10.1038/nature16512}.
+\newblock URL \url{https://doi.org/10.1038/nature16512}.
+
+\bibitem[Gatti et~al.(2021)]{Gatti2021}
+Luciana~V. Gatti et~al.
+\newblock Amazonia as a carbon source linked to deforestation and climate
+  change.
+\newblock \emph{Nature}, 595:\penalty0 388--393, 2021.
+\newblock \doi{10.1038/s41586-021-03629-6}.
+
+\bibitem[Lapola et~al.(2023)]{Lapola2023}
+David~M. Lapola et~al.
+\newblock The drivers and impacts of {Amazon} forest degradation.
+\newblock \emph{Science}, 379\penalty0 (6630):\penalty0 eabp8622, 2023.
+\newblock \doi{10.1126/science.abp8622}.
+
+\bibitem[Smith et~al.(2023)Smith, Baker, and Spracklen]{Smith2023}
+Callum Smith, Jessica C.~A. Baker, and Dominick~V. Spracklen.
+\newblock Tropical deforestation causes large reductions in observed
+  precipitation.
+\newblock \emph{Nature}, 615:\penalty0 270--275, 2023.
+\newblock \doi{10.1038/s41586-022-05690-1}.
+
+\bibitem[{NEBIOT}(n.d.)]{NEBIOTMethods}
+{NEBIOT}.
+\newblock Fundamentos te{\'o}ricos: {NEB001} and {NEB002}.
+\newblock Institutional methodology documentation, n.d.
+\newblock URL \url{https://www.nebiot.org/fundamentos-teoricos}.
+\newblock Accessed 16 September 2026. Methodology authorship, applications and
+  stated commercial-use restrictions.
+
+\bibitem[Solazzo et~al.(2021)Solazzo, Crippa, Guizzardi, Muntean, Choulga, and
+  Janssens-Maenhout]{Solazzo2021}
+Emilio Solazzo, Monica Crippa, Diego Guizzardi, Marilena Muntean, Margarita
+  Choulga, and Greet Janssens-Maenhout.
+\newblock Uncertainties in the {Emissions Database for Global Atmospheric
+  Research (EDGAR)} emission inventory of greenhouse gases.
+\newblock \emph{Atmospheric Chemistry and Physics}, 21:\penalty0 5655--5683,
+  2021.
+\newblock \doi{10.5194/acp-21-5655-2021}.
+
+\end{thebibliography}

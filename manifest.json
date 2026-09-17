@@ -1,0 +1,229 @@
+{
+  "release": "5.0",
+  "snapshot_date": "2026-09-16",
+  "repository": "https://github.com/hyrucanji77/Tropical_Forest_Carbon-",
+  "algorithm": "SHA-256",
+  "scope": "Distributed research files; excludes this manifest, verification result and ZIP to avoid recursion.",
+  "files": {
+    "CHANGES.md": {
+      "bytes": 659,
+      "sha256": "fd988c17de7032670d8c0fa166ecc9e455503405219500ad766b4f256b397099"
+    },
+    "CITATION.cff": {
+      "bytes": 824,
+      "sha256": "d5bc4d12df19dc4cdd6a44d6a20690de99aa7928fac8fd646eb907cc469f8456"
+    },
+    "README.md": {
+      "bytes": 5121,
+      "sha256": "5a07c8c879c79d7fb2ed464350e67541519c24e109187d6dd1c03bd73433cb27"
+    },
+    "RIGHTS.md": {
+      "bytes": 2050,
+      "sha256": "4e3a8d828a1a52522691aae59a9ecc882723740fe30b736adc57c2bc8e5636f1"
+    },
+    "SOURCE_AVAILABILITY.md": {
+      "bytes": 1920,
+      "sha256": "5feafcd396aad741a19dca0d319a8e72b87e2d6c4bdc88f38257b5f5aad08f47"
+    },
+    "audit/source_deposit.json": {
+      "bytes": 917,
+      "sha256": "3cdb23e5e34f0d90345f9c845fa7def0a96df8a95adbf3578cfda72f7ffcf97a"
+    },
+    "data/annual_cohort_examples.csv": {
+      "bytes": 247,
+      "sha256": "5e1674527f3f7307290e9c26cf761226408a17e88138f74516cb0ecdd76bff2b"
+    },
+    "data/calculations.json": {
+      "bytes": 21156,
+      "sha256": "611d5a1b7982d2ced8e47f7ac749e90367780158e18c96d6c8fcff5350bba4eb"
+    },
+    "data/carbon_fraction_sensitivity.csv": {
+      "bytes": 525,
+      "sha256": "ff32e003909bbc84bc75070ba9e6c491134cbdd5265cc670090cc5f88856f078"
+    },
+    "data/census_criteria.csv": {
+      "bytes": 288,
+      "sha256": "ec63bba8fa663fb63664f68e2c3dfaf4383f0235f00589b52594cea93de86115"
+    },
+    "data/census_differential.csv": {
+      "bytes": 352,
+      "sha256": "2102eb97f5d7e4eae16efa269c2e262e9f625bf1211a75a5a0dfcabb293ea143"
+    },
+    "data/census_rows.tex": {
+      "bytes": 136,
+      "sha256": "0ceb7ee91b6ae9ae782c0f04abf98bfc73f164d72877efbd7af35101bcd835fb"
+    },
+    "data/density_audit.csv": {
+      "bytes": 540,
+      "sha256": "92344c93e27467a750c642b66ba3a2a4dc37ae05624a08c92ac3b2a3dcfcef8b"
+    },
+    "data/density_rows.tex": {
+      "bytes": 295,
+      "sha256": "7f4b8d70dd5c72064d019024bf1b9fbf287572c5c35f373573cabec7ee72f568"
+    },
+    "data/derived.tex": {
+      "bytes": 386,
+      "sha256": "be8415a013ac518185fbdd445ac8c1ca68d3f0eeea1c85a4f7d0d6a24efe5b59"
+    },
+    "data/display_model_normalization.csv": {
+      "bytes": 1504,
+      "sha256": "8629a090bc2d91b79917ea9fc6a790ef24f7a04d0a97793613f7dd3adfe0d775"
+    },
+    "data/display_precision_audit.json": {
+      "bytes": 6533,
+      "sha256": "dcec4492903297542ac95d0384d59ab7a1af18bc60f9a649adb9b38ef2b645e8"
+    },
+    "data/edgar_land_reference.csv": {
+      "bytes": 791,
+      "sha256": "d1819b54aa3740b5738f5290bdaf02efac9752d3edc0d2b2202740638bf6364a"
+    },
+    "data/historical_calculations.csv": {
+      "bytes": 264,
+      "sha256": "364389596a248bc547f64b1f63dda3c1a051fc83aab0152647a1a94a1afc71e8"
+    },
+    "data/historical_rows.tex": {
+      "bytes": 70,
+      "sha256": "0ca17c691046a7432c6ab3e8b4c49d30611cfde77f53d2d2b5ab81a2dd871cad"
+    },
+    "data/inputs.json": {
+      "bytes": 7313,
+      "sha256": "e71b8999a013bd0fc8ea3b8d42633d1217b0d7552946c3c654e165e9eddb82a4"
+    },
+    "data/interval_swap_diagnostic.csv": {
+      "bytes": 265,
+      "sha256": "0d2d523117ba2597a740174148d07d2d2dbcf6c4b1c40e1658f2d9710795e190"
+    },
+    "data/nearlinear_examples.csv": {
+      "bytes": 424,
+      "sha256": "62938194285bca52c81be0757a1d5efcee79e8d5d58585e5cdbd2e25f55a4aec"
+    },
+    "data/normalization_diagnostic.csv": {
+      "bytes": 561,
+      "sha256": "5fd844486ef01056f2995b7bf71a4a6dea8842167d39428711fa934c944e4d5e"
+    },
+    "data/paired_rows.tex": {
+      "bytes": 269,
+      "sha256": "21e730c64ec8587242c45f513ff629ac875ec0cb71963bede71f940818862492"
+    },
+    "data/paired_source_sink.csv": {
+      "bytes": 483,
+      "sha256": "54c63f2ca4fb8ebd3a108e341d3c90dc1f234c3a134fa6ecfca971c4cf50cf40"
+    },
+    "data/power_thresholds.csv": {
+      "bytes": 148,
+      "sha256": "4bd64fef404a078b1365498c3d7e92457185a8fbb3e04b17d687de071535e4c5"
+    },
+    "data/printed_percentage_audit.csv": {
+      "bytes": 499,
+      "sha256": "65128a6101c2c235c529d72caba10b97dc82d4d6dd16c7a1212bae63d91fd136"
+    },
+    "data/regrowth_examples.csv": {
+      "bytes": 224,
+      "sha256": "2c665821c1bdbf3be7ecc7007d0b35ff11240862750213d16da46f5cdc7ca75e"
+    },
+    "data/source_provenance.csv": {
+      "bytes": 13103,
+      "sha256": "589fc324127548dd5fc89d22373d656f35b89a7259d24df7d2cfb191424da696"
+    },
+    "data/subset_bound_scenarios.csv": {
+      "bytes": 257,
+      "sha256": "1331dcc9e43b05c882b3976323dbad75f79faec48678127e84dfe2e7258d8bd8"
+    },
+    "data/support_comparison.csv": {
+      "bytes": 439,
+      "sha256": "9dab2fccb5bc0f8e523dc0f8736e2737cf374e2a5c3d0f46ec0f1749bfd83ccb"
+    },
+    "data/timing_examples.csv": {
+      "bytes": 260,
+      "sha256": "46a46d3983086d92921e78a9776d13df4dffb74b01bcb2d6d53fa018cc3008a9"
+    },
+    "data/validation.json": {
+      "bytes": 2778,
+      "sha256": "2e1ff5109b04757c16e7241c10740575809cc58b39742134fcba24cf3e8327db"
+    },
+    "figure_plates.tex": {
+      "bytes": 4589,
+      "sha256": "9982167e55bc7c86c8e0238d1400549997b7e62402813d7fa0e97cb957f28f9a"
+    },
+    "figures/figure1.pdf": {
+      "bytes": 44804,
+      "sha256": "576429a3db32542138cf77c43011bb86d6e0dc863859f1a6deffc9eaef1a38e8"
+    },
+    "figures/figure2.pdf": {
+      "bytes": 49024,
+      "sha256": "064da92ae154add15b6563bec0d62b156c1849f4c10a5947794f7797ec8d56ca"
+    },
+    "figures/figure_plates.pdf": {
+      "bytes": 212009,
+      "sha256": "a408e3cecf10fec7060e3db3d2ff39dd7fc1727bbe9e44c7b0ff6f3b5eda8fb3"
+    },
+    "main.bbl": {
+      "bytes": 14179,
+      "sha256": "796dc168d473ad92f0a063d046c7470c642700b0e90745efd16920f7b718eb62"
+    },
+    "main.pdf": {
+      "bytes": 468266,
+      "sha256": "c8c0265bdd374382669692e59ea881928a11259c90367ea58b1608cfdc912859"
+    },
+    "main.tex": {
+      "bytes": 92017,
+      "sha256": "881f2ef2158f81ba07ca301ab4952ea4db7e43567f3c2a999b689e52e0bd127f"
+    },
+    "references.bib": {
+      "bytes": 13507,
+      "sha256": "c3fd77f5c1171cfd5a7026f15940e7dd48b73516424f792da143f06f265eb785"
+    },
+    "response_to_review.bbl": {
+      "bytes": 3644,
+      "sha256": "35c348179aa523192196ae04beb98a17c4a9fb16059ee9dfc1078544b536feed"
+    },
+    "response_to_review.pdf": {
+      "bytes": 180642,
+      "sha256": "ec31c79aa21d019e92d86ff4c32e0d69a235a05bfabdf924bf42293352f4f681"
+    },
+    "response_to_review.tex": {
+      "bytes": 12362,
+      "sha256": "95485d3b3e8c16fa91739818b6ce3c4afd4f8ed9b4efdb5aec09a510c5805c3d"
+    },
+    "scripts/audit_extensions.py": {
+      "bytes": 11919,
+      "sha256": "0054bdf82535643b4f87d5951276384d17627db6a58ed8154566a6cf566da560"
+    },
+    "scripts/build_local.sh": {
+      "bytes": 669,
+      "sha256": "aa52c47b9a8763c759b698cf74594976c73a0bc808e820db7417ac2978f52d35"
+    },
+    "scripts/extensions.py": {
+      "bytes": 10946,
+      "sha256": "c10c7af398be62d91439b917ac941995450fa10d75a0a612b263fff57e511a25"
+    },
+    "scripts/make_manifest.py": {
+      "bytes": 1342,
+      "sha256": "d7f9eceda5e2d55a8a5283198c0be6cfca725f2e9861e83652c5c625aac9ce5c"
+    },
+    "scripts/package_release.py": {
+      "bytes": 1211,
+      "sha256": "bbc960156cbe11068b877aa8cbb01ac1e44336e32b39da029a39297fc7a0f6de"
+    },
+    "scripts/rebuild_artwork.py": {
+      "bytes": 1120,
+      "sha256": "226e629d33baf10c1f43f28d742939eb7c489d9e649dbbf43c78c6fe974bdcb4"
+    },
+    "scripts/reproduce.py": {
+      "bytes": 17821,
+      "sha256": "7b6769eb1d5a24a88e214754f0ddde342b2a77ccbc41e7b1de76edaa06bcea17"
+    },
+    "scripts/verify_package.py": {
+      "bytes": 4318,
+      "sha256": "1860165cb60afe182c526737823e2731283827ed7f02c5a4c017cd1cdf3c2623"
+    },
+    "source_figures/figure_1_reported_2025.svg": {
+      "bytes": 32478,
+      "sha256": "0f8e9427c6922580d80d4127e387d61e40604ae6dafd625f5107c028ca61d039"
+    },
+    "source_figures/figure_2_forest_carbon_reassessment.svg": {
+      "bytes": 28526,
+      "sha256": "40a7a17d0e35fc704122ae78ce618cbb453c962add81861a004671ce8120f890"
+    }
+  }
+}

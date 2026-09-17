@@ -1,0 +1,78 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Arellano-P. and Rangel-Ch.(2016)]{Arellano2016}
+H.~Arellano-P. and J.~O. Rangel-Ch.
+\newblock A solution for reducing high bias in estimates of stored carbon in
+  tropical forests (aboveground biomass).
+\newblock arXiv:1508.03667v2, 2016.
+\newblock URL \url{https://arxiv.org/abs/1508.03667}.
+\newblock Preprint. First posted 14 August 2015; version 2, 17 June 2016.
+
+\bibitem[Feldpausch et~al.(2012)Feldpausch, Lloyd, Lewis, Brienen, Gloor,
+  Monteagudo~Mendoza, Lopez-Gonzalez, Banin, Salim, Affum-Baffoe,
+  et~al.]{Feldpausch2012}
+T.~R. Feldpausch, J.~Lloyd, S.~L. Lewis, R.~J.~W. Brienen, M.~Gloor,
+  A.~Monteagudo~Mendoza, G.~Lopez-Gonzalez, L.~Banin, K.~A. Salim,
+  K.~Affum-Baffoe, et~al.
+\newblock Tree height integrated into pantropical forest biomass estimates.
+\newblock \emph{Biogeosciences}, 9:\penalty0 3381--3403, 2012.
+\newblock \doi{10.5194/bg-9-3381-2012}.
+\newblock URL \url{https://bg.copernicus.org/articles/9/3381/2012/}.
+\newblock Table 5: forest area 1667.5 million hectares; height-integrated
+  carbon 285.1 PgC.
+
+\bibitem[Demol et~al.(2024)]{Demol2024}
+Miro Demol et~al.
+\newblock Multi-scale lidar measurements suggest miombo woodlands contain
+  substantially more carbon than thought.
+\newblock \emph{Communications Earth \& Environment}, 5:\penalty0 366, 2024.
+\newblock \doi{10.1038/s43247-024-01448-x}.
+\newblock URL \url{https://www.nature.com/articles/s43247-024-01448-x}.
+
+\bibitem[Crippa et~al.(2026)Crippa, Guizzardi, Pagani, Banja, Ciarlantini,
+  et~al.]{Crippa2026}
+Monica Crippa, Diego Guizzardi, Federico Pagani, Manjola Banja, Sara
+  Ciarlantini, et~al.
+\newblock {GHG} emissions of all world countries: 2026 report.
+\newblock Technical Report JRC147815; EUR 40827, Publications Office of the
+  European Union, Luxembourg, 2026.
+\newblock URL \url{https://data.europa.eu/doi/10.2760/7717504}.
+\newblock PDF edition, doi:\,10.2760/7717504. Sections 2--3 and Annex 2;
+  estimates through 2025.
+
+\bibitem[Price(1970)]{Price1970}
+George~R. Price.
+\newblock Selection and covariance.
+\newblock \emph{Nature}, 227:\penalty0 520--521, 1970.
+\newblock \doi{10.1038/227520a0}.
+
+\bibitem[Chaplin-Kramer et~al.(2015)Chaplin-Kramer, Ramler, Sharp, Haddad,
+  Gerber, West, Mandle, Engstrom, Baccini, Sim, Mueller, and
+  King]{ChaplinKramer2015}
+Rebecca Chaplin-Kramer, Ivan Ramler, Richard Sharp, Nick~M. Haddad, James~S.
+  Gerber, Paul~C. West, Lisa Mandle, Peder Engstrom, Alessandro Baccini, Sarah
+  Sim, Carina Mueller, and Henry King.
+\newblock Degradation in carbon stocks near tropical forest edges.
+\newblock \emph{Nature Communications}, 6:\penalty0 10158, 2015.
+\newblock \doi{10.1038/ncomms10158}.
+\newblock URL \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC4703854/}.
+
+\bibitem[{Gonzalez de Tanago} et~al.(2018){Gonzalez de Tanago}, Lau,
+  Bartholomeus, Herold, Avitabile, Raumonen, Martius, Goodman, Disney, Manuri,
+  Burt, and Calders]{Gonzalez2018}
+J.~{Gonzalez de Tanago}, A.~Lau, H.~Bartholomeus, M.~Herold, V.~Avitabile,
+  P.~Raumonen, C.~Martius, R.~C. Goodman, M.~Disney, S.~Manuri, A.~Burt, and
+  K.~Calders.
+\newblock Estimation of above-ground biomass of large tropical trees with
+  terrestrial {LiDAR}.
+\newblock \emph{Methods in Ecology and Evolution}, 9\penalty0 (2):\penalty0
+  223--234, 2018.
+\newblock \doi{10.1111/2041-210X.12904}.
+\newblock URL \url{https://discovery.ucl.ac.uk/id/eprint/10022856/}.
+
+\end{thebibliography}
