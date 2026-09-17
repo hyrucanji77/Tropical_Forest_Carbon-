@@ -11,6 +11,7 @@ def main() -> None:
     except ImportError as exc:
         raise SystemExit('Install CairoSVG or use the included vector PDFs.') from exc
     root=Path(__file__).resolve().parents[1]
+    (root/'figures').mkdir(parents=True,exist_ok=True)
     for i,name in enumerate(('figure_1_reported_2025.svg','figure_2_forest_carbon_reassessment.svg'),1):
         svg=(root/'source_figures'/name).read_text(encoding='utf-8')
         svg=svg.replace('font-family:Source Serif 4,Georgia,Liberation Serif,serif','font-family:Liberation Serif')
