@@ -1,0 +1,7 @@
+{
+  "snapshot": "5.0",
+  "request": "compile-verify-deposit",
+  "source_archive_sha256": "01aac3035a917daf866658187d12ba75c8eca23eba1c4ed42d2f9f75c595ddcd",
+  "source_transport_commit": "eb12432c4eb792ed9ae454531abd5d01712dfb87",
+  "requested_outputs": ["main.pdf", "response_to_review.pdf", "figures/figure_plates.pdf", "manifest.json", "verification.json", "release/Tropical_Forest_Carbon_Overleaf_v5.zip"]
+}
