@@ -1,0 +1,49 @@
+name: Build research snapshot
+on:
+  push:
+    paths: [repository_build.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: research-snapshot
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out the requested source revision
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          git clone https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git research
+          cd research
+          git checkout "$SOURCE_SHA"
+      - name: Install document-build dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-science python3-cairosvg
+      - name: Reproduce and compile
+        run: |
+          cd research
+          python3 scripts/reproduce.py
+          python3 scripts/rebuild_artwork.py
+          pdflatex -interaction=nonstopmode -halt-on-error figure_plates.tex
+          cp figure_plates.pdf figures/figure_plates.pdf
+          bash scripts/build_local.sh
+          python3 scripts/make_manifest.py
+          python3 scripts/verify_package.py > verification.json
+          python3 scripts/package_release.py
+      - name: Deposit generated public research files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          cd research
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -C main
+          git add data figures main.pdf main.bbl response_to_review.pdf manifest.json verification.json release
+          git diff --cached --quiet && exit 0
+          git commit -m "Build verified research snapshot from ${SOURCE_SHA}"
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git HEAD:main
