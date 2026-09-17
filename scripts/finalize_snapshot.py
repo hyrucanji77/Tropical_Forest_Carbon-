@@ -30,9 +30,18 @@ def main() -> None:
     replace('main.tex',
         r"The author declares no competing interests. Henry Arellano-Pe\~na owns the methodologies examined and is founder and director of NEBIOT S.A.S., the sole company currently affiliated with this work. For transparency, NEB001 supplies the CCA--Fuzzy Land Cover vegetation mapping and NEB002 the voxel, elemental-carbon and neural-network quantification chain underlying the historical estimate audited here \citep{Arellano2016,NEBIOTMethods}. These ownership and methodological relationships are stated explicitly alongside the author's declaration.",
         r'Henry Arellano-Pe\~na owns the methodologies examined and is founder and director of NEBIOT S.A.S., the sole company currently affiliated with this work. NEB001 supplies the CCA--Fuzzy Land Cover vegetation mapping and NEB002 the voxel, elemental-carbon and neural-network quantification chain underlying the historical estimate audited here \citep{Arellano2016,NEBIOTMethods}. These ownership and professional relationships are disclosed; the author declares no other competing interests.')
-    replace('main.tex',
-        r'The associated research snapshot is identified by release metadata and a SHA-256 manifest; the repository commit history records subsequent changes.',
-        r'The versioned deposit is \href{' + RELEASE + r'}{research release 5.1}, which includes the compiled manuscript and the complete Overleaf archive. Its metadata and SHA-256 manifest identify the distributed files; the associated Git commit records the source snapshot. No archival DOI has been assigned.')
+    target = ROOT / 'main.tex'
+    text = target.read_text(encoding='utf-8')
+    start_marker = r'\section*{Data and code availability}'
+    end_marker = r'\section*{Author contribution}'
+    start = text.index(start_marker) + len(start_marker)
+    end = text.index(end_marker, start)
+    old = text[start:end].strip()
+    new = (r'The manuscript, Overleaf source, transcribed inputs, provenance records, editable figures and numerical outputs are available as \href{' + RELEASE + r'}{research release 5.1} in \url{' + REPO + r'} \citep{Repository2026}. Release metadata, the Git commit and the SHA-256 manifest identify the snapshot. \path{data/source_provenance.csv} documents sources and inference limits; \path{data/display_precision_audit.json} gives both display-error models; \path{verification.json} records package checks. Running \texttt{python scripts/reproduce.py} regenerates the numerical tables without network access. The deposit supports published-data and analytical reproduction; unrecovered original records are described in \path{SOURCE_AVAILABILITY.md}. No archival DOI has been assigned.')
+    if old != new:
+        if not old.startswith('The manuscript, transcribed inputs, provenance table, analytical scripts'):
+            raise RuntimeError('Unexpected availability section')
+        target.write_text(text[:start] + '\n' + new + '\n\n' + text[end:], encoding='utf-8')
     replace('response_to_review.tex',
         'together with my statement of no competing interests.',
         'together with my declaration of no other competing interests beyond these disclosed relationships.')
