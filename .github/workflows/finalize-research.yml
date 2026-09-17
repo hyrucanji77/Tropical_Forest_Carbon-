@@ -1,0 +1,98 @@
+name: Build and publish research release 5.1
+on:
+  push:
+    paths:
+      - .github/workflows/finalize-research.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: research-snapshot
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Read the requested source revision
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          git clone https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git research
+          cd research
+          git checkout "$SOURCE_SHA"
+      - name: Install document-build dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-science texlive-plain-generic tex-gyre lmodern cm-super poppler-utils
+      - name: Finalize, reproduce and compile
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          cd research
+          python3 scripts/finalize_snapshot.py
+          python3 scripts/finalize_snapshot.py
+          python3 scripts/reproduce.py > /tmp/research-calculations.log
+          bash scripts/build_local.sh > /tmp/document-build.log 2>&1 || { tail -100 /tmp/document-build.log; exit 1; }
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          from pathlib import Path
+          report = {'source_commit': os.environ['SOURCE_SHA'], 'release': '5.1', 'documents': {}}
+          for document in ['main', 'response_to_review']:
+              log = Path(document + '.log').read_text(errors='replace')
+              bad = re.findall(r'Overfull[^\n]*|[^\n]*(?:Citation|Reference)[^\n]*undefined[^\n]*', log)
+              if bad:
+                  raise RuntimeError(document + ': ' + str(bad))
+              info = subprocess.check_output(['pdfinfo', document + '.pdf'], text=True)
+              report['documents'][document] = {'layout_or_reference_warnings': bad, 'pdfinfo': info}
+          report['compiler'] = subprocess.check_output(['pdflatex', '--version'], text=True).splitlines()[0]
+          Path('audit/build_checks.json').write_text(json.dumps(report, indent=2) + '\n')
+          PY
+          python3 scripts/make_manifest.py
+          python3 scripts/verify_package.py > verification.json
+          python3 scripts/package_release.py
+      - name: Verify the actual distributed archive
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess, zipfile
+          archive = Path('research/release/Tropical_Forest_Carbon_Overleaf_v5_1.zip')
+          with zipfile.ZipFile(archive) as z:
+              z.extractall('archive-check')
+          with open('archive-verification.json', 'w') as output:
+              subprocess.run(['python3', 'scripts/verify_package.py'], cwd='archive-check', stdout=output, check=True)
+          PY
+      - name: Commit the source and verified deliverables
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          cd research
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -C main
+          git add main.tex main.pdf main.bbl references.bib response_to_review.tex response_to_review.pdf response_to_review.bbl README.md CITATION.cff CHANGES.md data scripts audit manifest.json verification.json release
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish verified forest-carbon research snapshot 5.1 from ${SOURCE_SHA}"
+            git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git HEAD:main
+          fi
+          git rev-parse HEAD > ../published-commit.txt
+      - name: Publish a separate versioned research release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd research
+          if gh release view v5.1 --repo hyrucanji77/Tropical_Forest_Carbon- >/dev/null 2>&1; then
+            echo 'Existing release left unchanged.'
+          else
+            gh release create v5.1 --repo hyrucanji77/Tropical_Forest_Carbon- --target "$(git rev-parse HEAD)" --title 'Forest-carbon measurement — research snapshot 5.1' --notes 'Henry Arellano-Peña. From tropical forest-carbon measurement to annual carbon accounts. Includes the research manuscript, Overleaf source, response to review, vector figure plates, published-data audit, executable numerical analysis and SHA-256 verification. This version clarifies inventory booking versus physical release and provides a versioned repository citation. Numerical checks are analytical tests, not empirical validation of a new carbon inventory. No Zenodo DOI is assigned. See RIGHTS.md for source attribution and methodology rights. Research release 5.0 remains available unchanged.' main.pdf response_to_review.pdf figures/figure_plates.pdf release/Tropical_Forest_Carbon_Overleaf_v5_1.zip verification.json manifest.json
+          fi
+      - name: Attach the checked archive and commit record
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-forest-carbon-v5-1
+          path: |
+            research/release/Tropical_Forest_Carbon_Overleaf_v5_1.zip
+            archive-verification.json
+            published-commit.txt
+          if-no-files-found: error
+          retention-days: 30
