@@ -1,9 +1,9 @@
 {
-  "version": "5.1",
+  "version": "5.2",
   "snapshot_date": "2026-09-16",
-  "archive": "Tropical_Forest_Carbon_Overleaf_v5_1.zip",
-  "bytes": 1059177,
-  "sha256": "161578797b64f053c8851fd83db18d62cd7f3d209be0c84e0ce5967947f2428f",
+  "archive": "Tropical_Forest_Carbon_Overleaf_v5_2.zip",
+  "bytes": 1060842,
+  "sha256": "053ae202cc95291e8b8e0d43016ca89bd9bb0172ec77135be8732f7067861fc4",
   "repository": "https://github.com/hyrucanji77/Tropical_Forest_Carbon-",
   "doi": null,
   "evidence_status": "Analytical research and published-data audit; not a new field inventory."

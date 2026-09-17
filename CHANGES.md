@@ -1,3 +1,7 @@
+# Research snapshot 5.2
+
+Concise, directly linked availability statement and final pagination. Scientific equations, numerical inputs and artwork are unchanged from 5.1. Prior releases remain separately available.
+
 # Research snapshot 5.1
 
 Clarifies conversion-year inventory booking versus physical release in the single-cohort example; consolidates the ownership and NEBIOT declaration; and pins the citation and availability statement to the versioned research release. Numerical inputs, identities and figure artwork are unchanged from 5.0.
