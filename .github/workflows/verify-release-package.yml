@@ -1,0 +1,33 @@
+name: Verify release package
+on:
+  push:
+    paths: [.github/workflows/verify-release-package.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Read the exact public repository revision
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          git clone https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git research
+          cd research
+          git checkout "$SOURCE_SHA"
+      - name: Verify the distributed Overleaf package
+        run: |
+          mkdir extracted
+          python3 -m zipfile -e research/release/Tropical_Forest_Carbon_Overleaf_v5.zip extracted
+          cd extracted
+          python3 scripts/verify_package.py > ../independent-verification.json
+      - name: Make the verified package available as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-forest-carbon-package
+          path: |
+            research/release/Tropical_Forest_Carbon_Overleaf_v5.zip
+            independent-verification.json
+          if-no-files-found: error
+          retention-days: 30
