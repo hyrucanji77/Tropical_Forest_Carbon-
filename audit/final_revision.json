@@ -1,0 +1,13 @@
+{
+  "release": "5.1",
+  "base_release": "https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v5.0",
+  "base_research_commit": "f8c617ef452e3e375833b51ed98174c0918ffe45",
+  "changes": [
+    "Clarify physical release versus inventory booking",
+    "Disclose methodology ownership and NEBIOT relationship with no other competing interests",
+    "Cite versioned deposit and update package metadata"
+  ],
+  "numerical_research_inputs_changed": false,
+  "figures_changed": false,
+  "doi_assigned": false
+}

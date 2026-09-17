@@ -1,0 +1,15 @@
+{
+  "source_commit": "64ea633dbedfe58d80087c72eaa6bebfff092ab5",
+  "release": "5.1",
+  "documents": {
+    "main": {
+      "layout_or_reference_warnings": [],
+      "pdfinfo": "Title:           From tropical forest-carbon measurement to annual carbon accounts\nSubject:         Research article: stock-to-flux identities, census calibration and historical-data audit\nKeywords:        tropical forest carbon, measurement bias, stock-to-flux transfer, annual cohorts, census calibration, carbon accounting, historical data audit\nAuthor:          Henry Arellano-Pe\u00f1a\nCreator:         LaTeX with hyperref\nProducer:        pdfTeX-1.40.25\nCreationDate:    Thu Sep 17 02:09:00 2026 UTC\nModDate:         Thu Sep 17 02:09:00 2026 UTC\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           29\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       469139 bytes\nOptimized:       no\nPDF version:     1.5\n"
+    },
+    "response_to_review": {
+      "layout_or_reference_warnings": [],
+      "pdfinfo": "Title:           Response to review: forest-carbon measurement and annual accounts\nSubject:         Author response to methodological and source-audit review\nKeywords:        \nAuthor:          Henry Arellano-Pe\u00f1a\nCreator:         LaTeX with hyperref\nProducer:        pdfTeX-1.40.25\nCreationDate:    Thu Sep 17 02:09:02 2026 UTC\nModDate:         Thu Sep 17 02:09:02 2026 UTC\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           4\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       180674 bytes\nOptimized:       no\nPDF version:     1.5\n"
+    }
+  },
+  "compiler": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)"
+}

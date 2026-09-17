@@ -6,9 +6,9 @@ authors:
     given-names: "Henry"
     affiliation: "NEBIOT S.A.S."
     email: "harellano@unal.edu.co"
-version: "5.0"
+version: "5.1"
 date-released: "2026-09-16"
-url: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-"
+url: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v5.1"
 repository-code: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-"
 abstract: "Research article and reproducible published-data audit on stock-to-flux covariance, paired carbon accounts, census calibration, display precision and annual disturbance cohorts."
 keywords:

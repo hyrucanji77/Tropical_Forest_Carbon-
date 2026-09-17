@@ -2,13 +2,13 @@
 
 **Henry Arellano-Peña — NEBIOT S.A.S.**  
 Stock-to-flux identities, census calibration and a historical-data audit.  
-Research snapshot **5.0**, 16 September 2026.
+Research snapshot **5.1**, 16 September 2026.
 
 Repository: https://github.com/hyrucanji77/Tropical_Forest_Carbon-
 
 ## Read or use Overleaf
 
-`main.pdf` is the paper; `main.tex` is its complete editable LaTeX source. `figures/figure_plates.pdf` contains the two large-format vector plates. `response_to_review.pdf` and its LaTeX source are separate from the paper. The complete Overleaf ZIP is in `release/` after the build finishes.
+`main.pdf` is the paper; `main.tex` is its complete editable LaTeX source. `figures/figure_plates.pdf` contains the two large-format vector plates. `response_to_review.pdf` and its LaTeX source are separate from the paper. The complete Overleaf ZIP is `release/Tropical_Forest_Carbon_Overleaf_v5_1.zip`. Versioned files are published at https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v5.1 .
 
 For Overleaf, upload the ZIP as an existing project and compile `main.tex` with pdfLaTeX. Figure PDFs, bibliography and generated numerical tables are included, so normal document compilation requires no Python execution, external fonts, network retrieval or shell escape. Locally, run `bash scripts/build_local.sh`.
 
@@ -58,6 +58,6 @@ The GitHub build workflow performs these steps. A build-generated commit records
 
 ## Attribution and declarations
 
-The author is the sole author of this paper, owns the methodologies discussed and is founder/director of NEBIOT, the only company currently affiliated with the work. The paper records the author's no-competing-interests declaration and the specific NEB001/NEB002 methodological connection. It states that no external funding is reported and discloses ChatGPT and Claude assistance. Earlier publications retain their published author lists in citations.
+The author is the sole author of this paper, owns the methodologies discussed and is founder/director of NEBIOT, the only company currently affiliated with the work. The paper explicitly discloses these ownership/professional relationships, records the author's declaration of no other competing interests, and states the specific NEB001/NEB002 methodological connection. It states that no external funding is reported and discloses ChatGPT and Claude assistance. Earlier publications retain their published author lists in citations.
 
 The diagram organization credits WRI and Ecofys; EDGAR's data are identified separately. `RIGHTS.md` distinguishes the report's licence from third-party artwork and proprietary methodology rights. The repository does not grant a blanket licence to protected third-party material or to the underlying NEB methodologies.

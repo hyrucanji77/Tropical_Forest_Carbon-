@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "release": "5.0",
-  "manifest_members_checked": 55,
+  "release": "5.1",
+  "manifest_members_checked": 59,
   "numerical_files_regenerated": 26,
   "byte_identical": true,
   "nonidentical_files": [],

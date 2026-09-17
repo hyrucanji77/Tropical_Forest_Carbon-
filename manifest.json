@@ -1,21 +1,21 @@
 {
-  "release": "5.0",
+  "release": "5.1",
   "snapshot_date": "2026-09-16",
   "repository": "https://github.com/hyrucanji77/Tropical_Forest_Carbon-",
   "algorithm": "SHA-256",
   "scope": "Distributed research files; excludes this manifest, verification result and ZIP to avoid recursion.",
   "files": {
     "CHANGES.md": {
-      "bytes": 659,
-      "sha256": "fd988c17de7032670d8c0fa166ecc9e455503405219500ad766b4f256b397099"
+      "bytes": 990,
+      "sha256": "f5903efbeb402f39b2f24d9817cdf77ef871b0067b36e033b396315e5249c3f3"
     },
     "CITATION.cff": {
-      "bytes": 824,
-      "sha256": "d5bc4d12df19dc4cdd6a44d6a20690de99aa7928fac8fd646eb907cc469f8456"
+      "bytes": 842,
+      "sha256": "a2ddbbb4c5d66dd1a6fb094e571900b84a857c6f60902acbce0396cea724c256"
     },
     "README.md": {
-      "bytes": 5121,
-      "sha256": "5a07c8c879c79d7fb2ed464350e67541519c24e109187d6dd1c03bd73433cb27"
+      "bytes": 5323,
+      "sha256": "9b4e24ea28e5649b91f61b4727329eeefbaed1cf84891873154b3df89238623e"
     },
     "RIGHTS.md": {
       "bytes": 2050,
@@ -24,6 +24,18 @@
     "SOURCE_AVAILABILITY.md": {
       "bytes": 1920,
       "sha256": "5feafcd396aad741a19dca0d319a8e72b87e2d6c4bdc88f38257b5f5aad08f47"
+    },
+    "audit/build_checks.json": {
+      "bytes": 1964,
+      "sha256": "a2af084942a86abbbc2fadd51834ed7ea5535ec7a32749aa0deb01f82b2026c8"
+    },
+    "audit/final_revision.json": {
+      "bytes": 516,
+      "sha256": "2957878453398ac4c13619843cd9995805f04f25256d90090ae84d7168baa46c"
+    },
+    "audit/release_v5_independent_check.json": {
+      "bytes": 2919,
+      "sha256": "f4386cb084186c1a913df389b4da94627823b97b3bd56358efa61713e2e72236"
     },
     "audit/source_deposit.json": {
       "bytes": 917,
@@ -87,7 +99,7 @@
     },
     "data/inputs.json": {
       "bytes": 7313,
-      "sha256": "e71b8999a013bd0fc8ea3b8d42633d1217b0d7552946c3c654e165e9eddb82a4"
+      "sha256": "f18e0545368443cb75dc203e0a9980b05b710a7a2ae8182f3e0088eb343b4675"
     },
     "data/interval_swap_diagnostic.csv": {
       "bytes": 265,
@@ -122,8 +134,8 @@
       "sha256": "2c665821c1bdbf3be7ecc7007d0b35ff11240862750213d16da46f5cdc7ca75e"
     },
     "data/source_provenance.csv": {
-      "bytes": 13103,
-      "sha256": "589fc324127548dd5fc89d22373d656f35b89a7259d24df7d2cfb191424da696"
+      "bytes": 13068,
+      "sha256": "34c9c7658f8210df45504b74dee14bd2e104fce560b257b7ba4c18e7527386ab"
     },
     "data/subset_bound_scenarios.csv": {
       "bytes": 257,
@@ -158,32 +170,32 @@
       "sha256": "a408e3cecf10fec7060e3db3d2ff39dd7fc1727bbe9e44c7b0ff6f3b5eda8fb3"
     },
     "main.bbl": {
-      "bytes": 14179,
-      "sha256": "796dc168d473ad92f0a063d046c7470c642700b0e90745efd16920f7b718eb62"
+      "bytes": 14199,
+      "sha256": "ff0e1a709cd1f981deb86f2f4fb309765938dd02f96f240c209e86eb99ac4e40"
     },
     "main.pdf": {
-      "bytes": 468266,
-      "sha256": "c8c0265bdd374382669692e59ea881928a11259c90367ea58b1608cfdc912859"
+      "bytes": 469139,
+      "sha256": "11f9e8ba279a6edfda612b88474c1ba848dd764e31eabdb8705ece389c8d490c"
     },
     "main.tex": {
-      "bytes": 92017,
-      "sha256": "881f2ef2158f81ba07ca301ab4952ea4db7e43567f3c2a999b689e52e0bd127f"
+      "bytes": 92292,
+      "sha256": "3effd7e7280021c6d51180325ab527a0892f02886f0450d8b927d329b2fd9ea0"
     },
     "references.bib": {
-      "bytes": 13507,
-      "sha256": "c3fd77f5c1171cfd5a7026f15940e7dd48b73516424f792da143f06f265eb785"
+      "bytes": 13525,
+      "sha256": "8f31e43198ea1720e52bbf9697488f5c66e246620bf774c8b5eced5eab2b0c02"
     },
     "response_to_review.bbl": {
       "bytes": 3644,
       "sha256": "35c348179aa523192196ae04beb98a17c4a9fb16059ee9dfc1078544b536feed"
     },
     "response_to_review.pdf": {
-      "bytes": 180642,
-      "sha256": "ec31c79aa21d019e92d86ff4c32e0d69a235a05bfabdf924bf42293352f4f681"
+      "bytes": 180674,
+      "sha256": "a58cf47edd4f448fb637b9655e008ed9dc5d4b83a89bd0e9ce1be1d289a08f4c"
     },
     "response_to_review.tex": {
-      "bytes": 12362,
-      "sha256": "95485d3b3e8c16fa91739818b6ce3c4afd4f8ed9b4efdb5aec09a510c5805c3d"
+      "bytes": 12407,
+      "sha256": "fb96959e9e4e625e734ae3160a5d6cf601bfc47f34994bec66e1c81b1ebef2da"
     },
     "scripts/audit_extensions.py": {
       "bytes": 11919,
@@ -197,13 +209,17 @@
       "bytes": 10946,
       "sha256": "c10c7af398be62d91439b917ac941995450fa10d75a0a612b263fff57e511a25"
     },
+    "scripts/finalize_snapshot.py": {
+      "bytes": 6236,
+      "sha256": "948e36bf2fb35c3658a1be4a8d267a3ffdf2d463f3e12394570862e858fee553"
+    },
     "scripts/make_manifest.py": {
       "bytes": 1342,
-      "sha256": "d7f9eceda5e2d55a8a5283198c0be6cfca725f2e9861e83652c5c625aac9ce5c"
+      "sha256": "8c72090a8ba5a9c37fbdf6b74a1e82685df05232e5fef644d9ae6ecb40b83783"
     },
     "scripts/package_release.py": {
-      "bytes": 1211,
-      "sha256": "bbc960156cbe11068b877aa8cbb01ac1e44336e32b39da029a39297fc7a0f6de"
+      "bytes": 1213,
+      "sha256": "865c011c2af4d365c7d76e3e8031eb880bb4482b081bdb1d39e68b24eaa1f547"
     },
     "scripts/rebuild_artwork.py": {
       "bytes": 1120,
