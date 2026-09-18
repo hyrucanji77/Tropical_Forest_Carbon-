@@ -1,0 +1,73 @@
+{
+  "evidence_status": "Synthetic finite-state analytical examples, not measured forest or LiDAR bias.",
+  "architecture_population": {
+    "carbon_states": [
+      100.0,
+      200.0
+    ],
+    "calibration_probabilities": [
+      0.5,
+      0.5
+    ],
+    "application_probabilities": [
+      0.2,
+      0.8
+    ],
+    "source_mean_prediction": 150.0,
+    "target_mean_carbon": 180.0,
+    "prediction_minus_target": -30.0,
+    "relative_error": -0.16666666666666666
+  },
+  "shared_bias_example": [
+    {
+      "independent_labels": 1,
+      "shared_bias": -30.0,
+      "individual_noise_sd": 10.0,
+      "mean_squared_error": 1000.0,
+      "root_mean_squared_error": 31.622776601683793
+    },
+    {
+      "independent_labels": 10,
+      "shared_bias": -30.0,
+      "individual_noise_sd": 10.0,
+      "mean_squared_error": 910.0,
+      "root_mean_squared_error": 30.166206257996713
+    },
+    {
+      "independent_labels": 100,
+      "shared_bias": -30.0,
+      "individual_noise_sd": 10.0,
+      "mean_squared_error": 901.0,
+      "root_mean_squared_error": 30.01666203960727
+    },
+    {
+      "independent_labels": 1000,
+      "shared_bias": -30.0,
+      "individual_noise_sd": 10.0,
+      "mean_squared_error": 900.1,
+      "root_mean_squared_error": 30.001666620372944
+    },
+    {
+      "independent_labels": 10000,
+      "shared_bias": -30.0,
+      "individual_noise_sd": 10.0,
+      "mean_squared_error": 900.01,
+      "root_mean_squared_error": 30.000166666203707
+    }
+  ],
+  "zero_conditional_bias_example": {
+    "true_conditional_mean": {
+      "0": 150.0
+    },
+    "label_conditional_mean": {
+      "0": 150.0
+    },
+    "conditional_reference_bias": {
+      "0": 0.0
+    },
+    "difference": {
+      "0": 0.0
+    }
+  },
+  "interpretation": "Spatial precision alone does not remove a nonzero conditional reference-label bias; direct material reconstruction is a distinct calibration route. Zero conditional bias gives no inherited conditional error."
+}

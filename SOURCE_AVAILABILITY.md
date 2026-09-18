@@ -8,11 +8,11 @@ Class 5 is the published 285.03 PgC / 531,449,420.52 ha component. A positive te
 
 `python scripts/physical_closure.py --measurements measured.json --output measured_closure.json` reconstructs plot-level carbon from supplied disjoint compartments. Its structural identity is a consistency check. Independent agreement with a map and representative class-level inference require external measurement and sampling evidence. The script does not infer a typical stand from a carbon target.
 
-The tabular relabelling is unique among the 120 permutations of fixed source intervals and intact numerical rows. That result does not alone choose which historical raster legend or vegetation-description assignment should be changed. Both published values and proposed label assignment remain distinguishable.
+Direct interval membership resolves the two intermediate printed class assignments; enumeration remains a regression check. That result does not alone choose which historical raster legend or vegetation-description assignment should be changed. Both published values and proposed label assignment remain distinguishable.
 
 The common normalization admits an approximately 0.994% area-denominator difference as one possible mechanism. No original projection, geodesic/pixel-area weighting or resampling operation has been identified.
 
-This frozen research archive is identified by GitHub release v6.5. No private project or client documents are distributed.
+This edition supplies the published-data and analytical records in its companion author package. No private project or client documents are distributed.
 
 ## Córdoba empirical-input audit
 

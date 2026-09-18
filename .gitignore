@@ -1,11 +1,3 @@
-*.aux
-*.log
-*.out
-*.toc
-*.blg
-*.fls
-*.fdb_latexmk
-*.synctex.gz
 __pycache__/
 *.pyc
 .venv/

@@ -1,57 +1,44 @@
 {
-  "release": "6.5",
+  "edition": "7.0",
   "snapshot_date": "2026-09-17",
-  "repository": "https://github.com/hyrucanji77/Tropical_Forest_Carbon-",
   "algorithm": "SHA-256",
-  "scope": "Distributed research files; excludes this manifest, verification result and ZIP to avoid recursion.",
+  "scope": "Publication-only PDFs and numerical support; no document source or archives. Manifest and verification output excluded to avoid recursion.",
   "files": {
+    "Allometric_Calibration_Bias_Figures.pdf": {
+      "bytes": 289526,
+      "sha256": "ea2ad089c1e7fe4dccfd152aebbfbf46261922650dbb419f4c61c3e92e46fb62"
+    },
+    "Allometric_Calibration_Bias_Manuscript.pdf": {
+      "bytes": 514510,
+      "sha256": "e7ba8936c95f28f4a10026d1969f819f7983e4f1dd84a975f6e149278d14c58d"
+    },
+    "Allometric_Calibration_Bias_Supplement.pdf": {
+      "bytes": 267984,
+      "sha256": "3d6238d1c07455411883328fc3a944861075ea019e6d62e79c7bd2ef36868da4"
+    },
     "CHANGES.md": {
-      "bytes": 1254,
-      "sha256": "409142e61d0ee18d3a39b37e920252d7cae8304f17aaef64a56a178d93b00522"
+      "bytes": 625,
+      "sha256": "18d76cc5874de3e7ca6b2355ecdc2a8c8c202733eccefd36fcd6341104575eae"
     },
     "CITATION.cff": {
-      "bytes": 846,
-      "sha256": "e9c85947821816b566cebeaa4c40d8f795355b6160461c631cb873faf984887d"
+      "bytes": 788,
+      "sha256": "feeec73872270efe0d00344cb58d3145fac157900dddfe3dc58cc12e1c11e660"
     },
-    "DEPOSIT_STATUS.md": {
-      "bytes": 731,
-      "sha256": "ac7cea8c347a0ec1665c2d9c409aa37dbf80c68821504ae3e76be995a77e9649"
+    "NUMERICAL_OUTPUTS.json": {
+      "bytes": 1360,
+      "sha256": "5668b28c7bef93dc863975292b2a07262c6604cda9f033818d5220877d51e07d"
     },
     "README.md": {
-      "bytes": 4996,
-      "sha256": "09e42e6b659acbf424ef9bff55375dead9596d227d2575083a093f698e321184"
+      "bytes": 2492,
+      "sha256": "5ff78dccbc01625a4bbdfd12ed5ba53aba98170558a5dfa990b9f48b5195da41"
     },
     "RIGHTS.md": {
       "bytes": 2050,
       "sha256": "4e3a8d828a1a52522691aae59a9ecc882723740fe30b736adc57c2bc8e5636f1"
     },
     "SOURCE_AVAILABILITY.md": {
-      "bytes": 3087,
-      "sha256": "fa0fa0a9a54da22fa6e9ba1628dec99dcc10c1309e2a2591d8fed7151faba153"
-    },
-    "audit/build_checks.json": {
-      "bytes": 2123,
-      "sha256": "358adf2b8e88235e57745e0bc1301184b8658910d4468fc0f3814c6e645c6611"
-    },
-    "audit/comparison_source_checks.json": {
-      "bytes": 715,
-      "sha256": "30f2f6d3791ab138b8812ba25616a3b3a3996871177c04784135ae82de286bfd"
-    },
-    "audit/freeze_consistency.json": {
-      "bytes": 675,
-      "sha256": "db5939cf36ba3037d092399eedceebca74f6766b22ee92dd61e70c12765f8775"
-    },
-    "audit/new_source_checks.json": {
-      "bytes": 1031,
-      "sha256": "180514df50b09ca2cc70dde321d4b9a146e52f9adf8cf675a0797f2c2c744a29"
-    },
-    "audit/physical_source_checks.json": {
-      "bytes": 827,
-      "sha256": "4abbeb1278cfa93bfed654da86815a028e9a35195074d89263ca10858cca91b2"
-    },
-    "audit/population_and_atmosphere_sources.json": {
-      "bytes": 1639,
-      "sha256": "f59f2d2c77ee0314be7175902b0cb9a2c6e0f8c1e0683ec9dd915601c07bb8ba"
+      "bytes": 3127,
+      "sha256": "cc3e6de9d19484ab4c4674088ae389f7fcd60c54057e691d280d99119937d654"
     },
     "data/additional_source_provenance.json": {
       "bytes": 655,
@@ -85,13 +72,25 @@
       "bytes": 369,
       "sha256": "c04ad2314e9c415fb18a29f332a1377e5ab982f7c0e117a6c08ab637e9840e16"
     },
-    "data/basal_requirements_rows.tex": {
-      "bytes": 42,
-      "sha256": "5035079b9a03ca3352ace9e63094c0c4d6690b14de71b5c5447feeca00a0e180"
-    },
     "data/calculations.json": {
       "bytes": 21156,
       "sha256": "2886ba1041ee85a7d2bcee44e57797064874f3d91e9dadb1b80a65cd9fd916b9"
+    },
+    "data/calibration_bias_examples.csv": {
+      "bytes": 301,
+      "sha256": "d99ab6f9389fc66d5278162e51061d102526435123131f250d38db5899c4c1e1"
+    },
+    "data/calibration_bias_summary.json": {
+      "bytes": 1969,
+      "sha256": "10b6b6b7d28459d1ff6b7d96ba39a2c6c1fe6b21d123272294bcc5710677dc11"
+    },
+    "data/calibration_bias_validation.json": {
+      "bytes": 614,
+      "sha256": "876df8313807cf82fa4e3fa89b46a617b5701199b43491d9cc515d727b9bbbdd"
+    },
+    "data/calibration_reference_provenance.json": {
+      "bytes": 1442,
+      "sha256": "5f78507ada1a693baaefd52d4ef0af59a53ec237870518be237cd19f64ea71ea"
     },
     "data/carbon_fraction_sensitivity.csv": {
       "bytes": 525,
@@ -104,10 +103,6 @@
     "data/census_differential.csv": {
       "bytes": 352,
       "sha256": "2102eb97f5d7e4eae16efa269c2e262e9f625bf1211a75a5a0dfcabb293ea143"
-    },
-    "data/census_rows.tex": {
-      "bytes": 136,
-      "sha256": "0ceb7ee91b6ae9ae782c0f04abf98bfc73f164d72877efbd7af35101bcd835fb"
     },
     "data/class5_comparison.json": {
       "bytes": 3660,
@@ -133,10 +128,6 @@
       "bytes": 939,
       "sha256": "69b2857e0cf34380c90061d8c391a73469e4ec5fdfb2d6264154637ac37ca180"
     },
-    "data/cordoba_audit_rows.tex": {
-      "bytes": 407,
-      "sha256": "1c285d06a7860567bcf27f0e1fec4b20101f31813d91e5103ddbe31122858575"
-    },
     "data/cordoba_empirical_audit.json": {
       "bytes": 2085,
       "sha256": "e5416bab47c38d29b4134e6653bf24d7fa9a2f15f4b827ff482f92f56e64afbc"
@@ -144,14 +135,6 @@
     "data/density_audit.csv": {
       "bytes": 540,
       "sha256": "92344c93e27467a750c642b66ba3a2a4dc37ae05624a08c92ac3b2a3dcfcef8b"
-    },
-    "data/density_rows.tex": {
-      "bytes": 295,
-      "sha256": "7f4b8d70dd5c72064d019024bf1b9fbf287572c5c35f373573cabec7ee72f568"
-    },
-    "data/derived.tex": {
-      "bytes": 386,
-      "sha256": "be8415a013ac518185fbdd445ac8c1ca68d3f0eeea1c85a4f7d0d6a24efe5b59"
     },
     "data/display_model_normalization.csv": {
       "bytes": 1504,
@@ -169,17 +152,9 @@
       "bytes": 264,
       "sha256": "364389596a248bc547f64b1f63dda3c1a051fc83aab0152647a1a94a1afc71e8"
     },
-    "data/historical_rows.tex": {
-      "bytes": 70,
-      "sha256": "0ca17c691046a7432c6ab3e8b4c49d30611cfde77f53d2d2b5ab81a2dd871cad"
-    },
     "data/inputs.json": {
       "bytes": 7313,
-      "sha256": "de0ff73f171c8e6e75d2f1d45a146bfdc73f9ce85d89ad032d616473b98c5bb0"
-    },
-    "data/intermediate_stem_rows.tex": {
-      "bytes": 399,
-      "sha256": "8f8e7dd2ef797dbbfd08e8d6f7103e476f9b4852ca2bf2c3a104851bcd4b2daa"
+      "sha256": "d0b5b374f9ed6eb590c7350bab370ac51da1fd765429a5c9ec6588f1045643df"
     },
     "data/interval_swap_diagnostic.csv": {
       "bytes": 265,
@@ -193,10 +168,6 @@
       "bytes": 424,
       "sha256": "62938194285bca52c81be0757a1d5efcee79e8d5d58585e5cdbd2e25f55a4aec"
     },
-    "data/network_gap_rows.tex": {
-      "bytes": 151,
-      "sha256": "e3eb16bc2598c3c4d549cbde2e7acd3c8db20a6ebccfab205acab690ef98133c"
-    },
     "data/normalization_area_hypothesis.json": {
       "bytes": 504,
       "sha256": "d7e5c630c95f76088b5428aa50a05e7707e05ce156c2970ae599742fdbcd5937"
@@ -205,17 +176,9 @@
       "bytes": 561,
       "sha256": "5fd844486ef01056f2995b7bf71a4a6dea8842167d39428711fa934c944e4d5e"
     },
-    "data/normalization_requirements_rows.tex": {
-      "bytes": 307,
-      "sha256": "acde5dcc98b931f1e076c9dbbb2c1cf2d67533174be2e2130fa9edb7f6404584"
-    },
     "data/original_measurement_evidence.json": {
       "bytes": 3081,
       "sha256": "e5c5ccc559139602bedf40f8c6450ef3660e44b6535f3ef1d28bd09898f1dc61"
-    },
-    "data/paired_rows.tex": {
-      "bytes": 269,
-      "sha256": "21e730c64ec8587242c45f513ff629ac875ec0cb71963bede71f940818862492"
     },
     "data/paired_source_sink.csv": {
       "bytes": 483,
@@ -232,14 +195,6 @@
     "data/physical_requirements.csv": {
       "bytes": 605,
       "sha256": "f4f31df8d2cdc96d5eebd4caa79b8d60c5b6ab4917387c4bbc3a563d6941ee32"
-    },
-    "data/physical_requirements_rows.tex": {
-      "bytes": 104,
-      "sha256": "928d8418f63110872985fa7081d3d4620e953ddba775b92bd753694f66d67538"
-    },
-    "data/physical_validation_rows.tex": {
-      "bytes": 193,
-      "sha256": "e57c4d7c48bbf147352a4fdf94bde0152b3f3905475114655801ec2c40c09f60"
     },
     "data/physical_validation_summary.csv": {
       "bytes": 305,
@@ -301,58 +256,6 @@
       "bytes": 2778,
       "sha256": "21712476bfd83d6179f85a33d7cfc0306ad62f46aec6bae17d6e2e4bf869385f"
     },
-    "figure_plates.tex": {
-      "bytes": 9390,
-      "sha256": "c78865a3f9f4ab8d6a78bc96be8eedb7a1765427862e069840517c879fbe0483"
-    },
-    "figures/figure1.pdf": {
-      "bytes": 44805,
-      "sha256": "3275a097d2ba90ab62973897854412ed2f8f2b6c5c162f633e62181e48a0ed3a"
-    },
-    "figures/figure2.pdf": {
-      "bytes": 54990,
-      "sha256": "0a45bc9faefb42aa148b1eb92288b7ce7e2c7f53ca56c8024647a724ad86bcd2"
-    },
-    "figures/figure3.pdf": {
-      "bytes": 42512,
-      "sha256": "9533dca5a36701a8b4906102d5ceb2ff1049a620cf0b908411dee54be4ce34e2"
-    },
-    "figures/figure_plates.pdf": {
-      "bytes": 294234,
-      "sha256": "bf9ca611930d87687acd1edf64af0b7fa0cb33d0ff92fafea00257b987676cf2"
-    },
-    "forest_carbon_figures.html": {
-      "bytes": 118227,
-      "sha256": "3c1e0cd6dfe0d1d1e07a93b0c39abf0731295a0d08a608a1071dcc6cef7d2605"
-    },
-    "main.bbl": {
-      "bytes": 17100,
-      "sha256": "f554c3d2704f66fe4b00d32037757dc94112c2ce84a74340de9ce6ed58da5fbc"
-    },
-    "main.pdf": {
-      "bytes": 589980,
-      "sha256": "06ad5e074806dea545d46d3c98f170d72b806730836605e234b13e7c4b94d996"
-    },
-    "main.tex": {
-      "bytes": 137760,
-      "sha256": "8ddb222f917a1cfc9dbe1350b75881f82c4682b0bee7c219583db46b22894414"
-    },
-    "references.bib": {
-      "bytes": 16555,
-      "sha256": "476b55b5c7c19fe0deccc03f7e5b37d602c7bbebdf904b297dbd737fbcd6c6d0"
-    },
-    "response_to_review.bbl": {
-      "bytes": 3320,
-      "sha256": "3205263439c986c717b0f070dd6119e70c1519a1c1ec272be439b0161507638b"
-    },
-    "response_to_review.pdf": {
-      "bytes": 160552,
-      "sha256": "78ea50d4dcb156d61301b0cb40a3bc883ee6383c6c1eac9ca83a81ae71108a7a"
-    },
-    "response_to_review.tex": {
-      "bytes": 7027,
-      "sha256": "51739a01c7f3afe8bed9e9925ecf3c24b728ba6f130ebc77de5280ed804a1538"
-    },
     "scripts/admissibility.py": {
       "bytes": 9120,
       "sha256": "109f351edd3346366d804574ab7d5e28c277a5b7f1f016e63c1cafcd9dbf1b81"
@@ -361,17 +264,9 @@
       "bytes": 11919,
       "sha256": "0054bdf82535643b4f87d5951276384d17627db6a58ed8154566a6cf566da560"
     },
-    "scripts/build_companion_html.py": {
-      "bytes": 8293,
-      "sha256": "f93d45c3753e2dde0e4d4e5704fc70c19ac24b57e4e1a480c81193a0ef71e076"
-    },
-    "scripts/build_local.sh": {
-      "bytes": 669,
-      "sha256": "aa52c47b9a8763c759b698cf74594976c73a0bc808e820db7417ac2978f52d35"
-    },
-    "scripts/build_physical_figure.py": {
-      "bytes": 6509,
-      "sha256": "4cdd8108f6ad312df55c8753827042a9f2576fd20b8075b01b180b0e9afb22dc"
+    "scripts/calibration_bias.py": {
+      "bytes": 7455,
+      "sha256": "cd3fb072ae1620a9a09a1cc044ecb229fd352e2c66847779d6950360da89c5e8"
     },
     "scripts/class5_comparison.py": {
       "bytes": 7222,
@@ -381,17 +276,9 @@
       "bytes": 10946,
       "sha256": "c10c7af398be62d91439b917ac941995450fa10d75a0a612b263fff57e511a25"
     },
-    "scripts/make_manifest.py": {
-      "bytes": 1414,
-      "sha256": "f833bf1816138143a36750adaec5621aa7ce45c1ca399aaad2427d43ebdca4e2"
-    },
     "scripts/measurement_evidence.py": {
       "bytes": 1453,
       "sha256": "fe00ae791c94a2cdad6bb044df0050e892b23767e463fb203aad5340a4bfc826"
-    },
-    "scripts/package_release.py": {
-      "bytes": 1213,
-      "sha256": "cb143c076e3b0fb69ce4095c5a0a9bc6004f9ecf6dea701774e5b732086f1242"
     },
     "scripts/physical_closure.py": {
       "bytes": 13929,
@@ -401,33 +288,13 @@
       "bytes": 7555,
       "sha256": "5943bd050d1ff99841d8b0fe88ef328b56c7833ec3008dfa0e7b522824fc1e22"
     },
-    "scripts/rebuild_artwork.py": {
-      "bytes": 1151,
-      "sha256": "0b682ebd3a927543fdac419e5c205748b71e6ff2faf80b008be79f4870a50a39"
-    },
     "scripts/reproduce.py": {
-      "bytes": 18366,
-      "sha256": "cde3e3bc7c2f7d9c27d0ebaf3e2423846abae96bc14688d527b61a8bcb83e1d5"
+      "bytes": 18495,
+      "sha256": "3f56d923e7e1ddacd4ef3b9c2d20d33ebc4823039b1e944503881ca40738e6d0"
     },
-    "scripts/verify_package.py": {
-      "bytes": 5515,
-      "sha256": "ea4e3ee0e1e71ee007953f313ba140c6d5ae93c89fef18d526ca0be803de73b6"
-    },
-    "source_figures/figure_1_reported_2025.svg": {
-      "bytes": 32571,
-      "sha256": "2c77034676c873585fbbb029234b1dc9902184c07b169ee5f0a1339eb785f4d2"
-    },
-    "source_figures/figure_2_forest_carbon_reassessment.svg": {
-      "bytes": 28734,
-      "sha256": "307b3f99d7682b83f923c55d49d9396917978f5be60fd5ae4e16f82c6fd98553"
-    },
-    "source_figures/figure_3_stand_structure.svg": {
-      "bytes": 12084,
-      "sha256": "1c92d6e513e80aa7560f8ffb6037a018d9f20966624a5b42353f2b6c811e3b0c"
-    },
-    "zenodo_metadata.json": {
-      "bytes": 859,
-      "sha256": "b13545d083e75bdc68c32245af47955f4a61567e65ff8552807c8ebb4d40e093"
+    "scripts/verify_public.py": {
+      "bytes": 2939,
+      "sha256": "3dbbafe29e068943803356f9a892971ece09554c4865784bff330d5656bac759"
     }
   }
 }

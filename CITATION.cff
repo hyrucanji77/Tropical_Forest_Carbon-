@@ -1,20 +1,25 @@
 cff-version: 1.2.0
-message: "Cite frozen release 6.5 using the versioned URL and SHA-256 manifest."
-title: "From tropical forest-carbon measurement to annual carbon accounts"
+message: "Cite the article and specify the edition used."
+type: software
+title: "Allometric calibration bias in tropical forest carbon"
 authors:
   - family-names: "Arellano-Peña"
     given-names: "Henry"
     affiliation: "NEBIOT S.A.S."
-    email: "harellano@unal.edu.co"
-version: "6.5"
+version: "7.0"
 date-released: "2026-09-17"
-url: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v6.5"
 repository-code: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-"
-abstract: "A measurement protocol linking stand structure, carbon calibration and annual accounts, with three conclusive decision outcomes and explicit unresolved comparisons."
 keywords:
-  - pantropical carbon
-  - measurement protocol
+  - allometric calibration bias
+  - architecture-informed measurement
+  - tropical forest carbon
+  - lidar reference labels
   - stock-to-flux transfer
-  - census calibration
-  - annual carbon accounts
-  - published-data audit
+preferred-citation:
+  type: article
+  title: "Allometric calibration bias in tropical forest carbon"
+  authors:
+    - family-names: "Arellano-Peña"
+      given-names: "Henry"
+  year: 2026
+  url: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-"

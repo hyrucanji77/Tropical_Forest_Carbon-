@@ -290,3 +290,7 @@ if __name__=='__main__':
 if __name__ == "__main__":
     from admissibility import main as additional_checks
     additional_checks()
+
+if __name__ == '__main__':
+    from calibration_bias import main as reproduce_calibration_bias
+    reproduce_calibration_bias()

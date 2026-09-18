@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "seed": 20260922,
+  "randomized_cases": 1000,
+  "assertions": 8014,
+  "absolute_tolerance": 1e-09,
+  "relative_tolerance": 1e-11,
+  "max_absolute_residuals": {
+    "label_inheritance": 1.341149413747189e-13,
+    "conditional_transfer": 1.1368683772161603e-13,
+    "population_shift": 6.394884621840902e-14,
+    "conditional_variance": 1.0913936421275139e-11,
+    "architecture_example": 0.0,
+    "zero_conditional_bias": 0.0,
+    "shared_bias_mse": 1.1368683772161603e-13
+  },
+  "scope": "Conditional-expectation algebra on synthetic finite supports; no empirical fitting or validation."
+}

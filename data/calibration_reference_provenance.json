@@ -1,0 +1,33 @@
+{
+  "checked_date": "2026-09-17",
+  "primary_sources": [
+    {
+      "key": "Goodman2014",
+      "doi": "10.1890/13-0070.1",
+      "role": "Harvested-tree architectural evidence",
+      "domain": "51 trees in southwestern Amazonia",
+      "claim_scope": "Crown omission and sample-level allometric discrepancy, not a pantropical multiplier."
+    },
+    {
+      "key": "Calders2015",
+      "doi": "10.1111/2041-210X.12301",
+      "role": "Direct TLS material-volume pathway",
+      "domain": "Australian eucalypt open forest; 65 reference trees",
+      "claim_scope": "Geometric reconstruction with basic density reduces biomass-allometry dependence; not universally error-free."
+    },
+    {
+      "key": "GEDIL4A",
+      "doi": "10.3334/ORNLDAAC/1986",
+      "url": "https://daac.ornl.gov/GEDI/guides/GEDI_L4A_AGB_Density_V2.html",
+      "role": "Version-specific relative-height/reference-biomass calibration documentation",
+      "claim_scope": "Identifies calibration pathway and support flags; no empirical bias amount assigned to GEDI."
+    },
+    {
+      "key": "Chave2014",
+      "doi": "10.1111/gcb.12629",
+      "role": "Scope of biomass-allometry validation",
+      "claim_scope": "Natural-forest equations can be validated within stated domains; architecture transfer must still be assessed."
+    }
+  ],
+  "new_equations": "Conditional-expectation identities derived in the article, not attributed as empirical source results."
+}
