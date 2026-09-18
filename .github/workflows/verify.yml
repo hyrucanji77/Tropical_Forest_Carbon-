@@ -3,9 +3,15 @@ on:
   push:
     branches: [main]
     paths:
-      - manifest.json
+      - PUBLICATION_MANIFEST.json
+      - PUBLICATION_VERIFICATION.json
+      - NUMERICAL_OUTPUTS.json
       - data/**
       - scripts/**
+      - '**/*.pdf'
+      - README.md
+      - CITATION.cff
+      - .github/workflows/verify.yml
   workflow_dispatch:
 permissions:
   contents: read
