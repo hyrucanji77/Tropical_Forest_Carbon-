@@ -1,0 +1,37 @@
+{
+  "rows": [
+    {
+      "comparison_stock_pgc": 285.1,
+      "imposed_component_multiplier": 2.539354612416696,
+      "component_percent_original_total": 26.15535250789197,
+      "land_group_percent_original_total": 30.555352507891968,
+      "revised_total_gtco2e": 56.33929937106278,
+      "revised_land_group_gtco2e": 14.858762371062785,
+      "unchanged_industry_gtco2e": 14.151038999999999,
+      "land_group_percent_revised_total": 26.37370811660218,
+      "industry_percent_revised_total": 25.117527477220126,
+      "land_group_exceeds_industry": true,
+      "component_alone_exceeds_industry": false
+    },
+    {
+      "comparison_stock_pgc": 228.7,
+      "imposed_component_multiplier": 3.165588106689987,
+      "component_percent_original_total": 32.60555749890687,
+      "land_group_percent_original_total": 37.00555749890687,
+      "revised_total_gtco2e": 59.47596955614341,
+      "revised_land_group_gtco2e": 17.99543255614342,
+      "unchanged_industry_gtco2e": 14.151038999999999,
+      "land_group_percent_revised_total": 30.256644305993717,
+      "industry_percent_revised_total": 23.79286812069851,
+      "land_group_exceeds_industry": true,
+      "component_alone_exceeds_industry": true
+    }
+  ],
+  "land_group_multiplier_threshold": 2.3980582524271847,
+  "component_alone_multiplier_threshold": 2.825242718446602,
+  "category_scope": "Ecofys (2013) 2010 sector allocation: Land Use Change combines the 10.3% deforestation/afforestation and land-use CO2 component with 4.4% agricultural soils. Industry subflows sum to 22.8% + 6.3% = 29.1% (headline rounded to 29%). These are not the modern EDGAR LULUCF categories, and the conceptual network has a separate layout convention.",
+  "evidence_status": "Conditional numerical reconstruction. The stock-ratio multipliers are imposed on the historical annual component; matched spatial support, component provenance and stock-to-flux transfer have not been empirically established. Remaining components are held fixed in absolute amounts. No 2025 percentage, fossil-source error or atmospheric concentration correction is measured.",
+  "conclusion": "Both imposed multiplier endpoints make the historical Ecofys land-use group the largest sector; the component alone does not rank first at the lower endpoint.",
+  "energy_supersector_claim": false,
+  "contemporary_lulucf_measurement": false
+}

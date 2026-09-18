@@ -1,0 +1,153 @@
+{
+  "edition": "7.2",
+  "class5_bounds": [
+    {
+      "mean_convention": "Stock-area ratio",
+      "threshold_MgC_ha": 523.0,
+      "mean_MgC_ha": 536.3257329758882,
+      "minimum_exceeding_area_percent": 16.2508938730343,
+      "minimum_exceeding_area_Mha": 86.36528131756097,
+      "cap_change_min_PgC": 7.08195306804,
+      "cap_change_max_PgC": 20.013925301559684,
+      "cap_min_percent_reported_total": 0.9782108468638203,
+      "cap_max_percent_reported_total": 2.7644688732350353,
+      "status": "Conditional bounded-moment cap calculation; not an empirical error bound"
+    },
+    {
+      "mean_convention": "Printed mean",
+      "threshold_MgC_ha": 523.0,
+      "mean_MgC_ha": 531.05,
+      "minimum_exceeding_area_percent": 9.817073170731707,
+      "minimum_exceeding_area_Mha": 52.17277847787805,
+      "cap_change_min_PgC": 4.278167835186,
+      "cap_change_max_PgC": 18.20360727719726,
+      "cap_min_percent_reported_total": 0.590931645673992,
+      "cap_max_percent_reported_total": 2.5144145858526263,
+      "status": "Conditional bounded-moment cap calculation; not an empirical error bound"
+    },
+    {
+      "mean_convention": "Stock-area ratio",
+      "threshold_MgC_ha": 523.4,
+      "mean_MgC_ha": 536.3257329758882,
+      "minimum_exceeding_area_percent": 15.840359039078587,
+      "minimum_exceeding_area_Mha": 84.18349632147059,
+      "cap_change_min_PgC": 6.869373299832,
+      "cap_change_max_PgC": 19.91629639764964,
+      "cap_min_percent_reported_total": 0.94884778372474,
+      "cap_max_percent_reported_total": 2.7509836592192545,
+      "status": "Conditional bounded-moment cap calculation; not an empirical error bound"
+    },
+    {
+      "mean_convention": "Printed mean",
+      "threshold_MgC_ha": 523.4,
+      "mean_MgC_ha": 531.05,
+      "minimum_exceeding_area_percent": 9.375,
+      "minimum_exceeding_area_Mha": 49.82338317375,
+      "cap_change_min_PgC": 4.065588066978,
+      "cap_change_max_PgC": 18.114809192918248,
+      "cap_min_percent_reported_total": 0.5615685825349117,
+      "cap_max_percent_reported_total": 2.5021491488484675,
+      "status": "Conditional bounded-moment cap calculation; not an empirical error bound"
+    }
+  ],
+  "biomass_bounds": [
+    {
+      "density_convention": "Class-5 lower edge",
+      "carbon_MgC_ha": 478.0,
+      "minimum_dry_biomass_Mg_ha": 956.1912382476495,
+      "maximum_dry_biomass_Mg_ha": 1162.734127949404,
+      "condition": "All compartment fractions contained in reported tissue range"
+    },
+    {
+      "density_convention": "Stock-area ratio",
+      "carbon_MgC_ha": 536.3257329758882,
+      "minimum_dry_biomass_Mg_ha": 1072.8660391596081,
+      "maximum_dry_biomass_Mg_ha": 1304.6113670053226,
+      "condition": "All compartment fractions contained in reported tissue range"
+    },
+    {
+      "density_convention": "Printed mean",
+      "carbon_MgC_ha": 531.05,
+      "minimum_dry_biomass_Mg_ha": 1062.3124624924985,
+      "maximum_dry_biomass_Mg_ha": 1291.7781561663828,
+      "condition": "All compartment fractions contained in reported tissue range"
+    }
+  ],
+  "regional_preprint_ratio_of_displayed_means": 2.8827552515876893,
+  "gcb_pairs": [
+    {
+      "process_pair": "Selected total",
+      "period": "2015-2024",
+      "source_GtC_yr": 1.9,
+      "removal_GtC_yr": 1.3,
+      "net_GtC_yr": 0.6,
+      "gross_sum_GtC_yr": 3.2,
+      "eta": 0.1875,
+      "source_GtCO2_yr": 6.966666666666667,
+      "removal_GtCO2_yr": 4.766666666666667,
+      "shift_at_delta_0_1_GtC_yr": 0.16,
+      "origin": "Rounded source totals"
+    },
+    {
+      "process_pair": "Permanent change",
+      "period": "2015-2024",
+      "source_GtC_yr": 1.1,
+      "removal_GtC_yr": 0.6,
+      "net_GtC_yr": 0.5,
+      "gross_sum_GtC_yr": 1.7,
+      "eta": 0.29411764705882354,
+      "source_GtCO2_yr": 4.033333333333333,
+      "removal_GtCO2_yr": 2.2,
+      "shift_at_delta_0_1_GtC_yr": 0.085,
+      "origin": "Rounded source components"
+    },
+    {
+      "process_pair": "Shifting cultivation",
+      "period": "2015-2024",
+      "source_GtC_yr": 0.8,
+      "removal_GtC_yr": 0.7,
+      "net_GtC_yr": 0.1,
+      "gross_sum_GtC_yr": 1.5,
+      "eta": 0.06666666666666667,
+      "source_GtCO2_yr": 2.933333333333333,
+      "removal_GtCO2_yr": 2.566666666666667,
+      "shift_at_delta_0_1_GtC_yr": 0.075,
+      "origin": "Differences of rounded source totals and components"
+    }
+  ],
+  "permanent_source_only_example_GtC_yr": 0.22,
+  "permanent_both_exposed_example_GtC_yr": 0.1,
+  "multiyear_scenarios": [
+    {
+      "scenario": "Reported rounded baseline",
+      "period": "1959-2024",
+      "source_increment_GtC": 0.0,
+      "other_net_adjustment_GtC": 0.0,
+      "imbalance_GtC": 35.0
+    },
+    {
+      "scenario": "Extra 0.5 GtC/yr; other terms fixed",
+      "period": "1959-2024",
+      "source_increment_GtC": 33.0,
+      "other_net_adjustment_GtC": 0.0,
+      "imbalance_GtC": 68.0
+    },
+    {
+      "scenario": "Retain baseline residual",
+      "period": "1959-2024",
+      "source_increment_GtC": 33.0,
+      "other_net_adjustment_GtC": -33.0,
+      "imbalance_GtC": 35.0
+    },
+    {
+      "scenario": "Close constructed account to zero",
+      "period": "1959-2024",
+      "source_increment_GtC": 33.0,
+      "other_net_adjustment_GtC": -68.0,
+      "imbalance_GtC": 0.0
+    }
+  ],
+  "cumulative_residual_fraction_of_530": 0.0660377358490566,
+  "no_empirical_calibration_error_inferred": true,
+  "no_geographic_flux_fractions_inferred": true
+}

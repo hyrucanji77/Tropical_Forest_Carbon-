@@ -294,3 +294,19 @@ if __name__ == "__main__":
 if __name__ == '__main__':
     from calibration_bias import main as reproduce_calibration_bias
     reproduce_calibration_bias()
+
+if __name__ == '__main__':
+    from review_update import main as reproduce_review_update
+    reproduce_review_update()
+
+if __name__ == "__main__":
+    from support_budget import main as reproduce_support_budget
+    reproduce_support_budget()
+
+if __name__ == '__main__':
+    from structural_constraints import main as reproduce_structural_constraints
+    reproduce_structural_constraints()
+
+if __name__ == '__main__':
+    from sector_ranking import main as reproduce_sector_ranking
+    reproduce_sector_ranking()

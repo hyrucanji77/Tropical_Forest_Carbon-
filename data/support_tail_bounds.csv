@@ -1,0 +1,5 @@
+mean_convention,threshold_MgC_ha,mean_MgC_ha,minimum_exceeding_area_percent,minimum_exceeding_area_Mha,cap_change_min_PgC,cap_change_max_PgC,cap_min_percent_reported_total,cap_max_percent_reported_total,status
+Stock-area ratio,523.0,536.3257329758882,16.2508938730343,86.36528131756097,7.08195306804,20.013925301559684,0.9782108468638203,2.7644688732350353,Conditional bounded-moment cap calculation; not an empirical error bound
+Printed mean,523.0,531.05,9.817073170731707,52.17277847787805,4.278167835186,18.20360727719726,0.590931645673992,2.5144145858526263,Conditional bounded-moment cap calculation; not an empirical error bound
+Stock-area ratio,523.4,536.3257329758882,15.840359039078587,84.18349632147059,6.869373299832,19.91629639764964,0.94884778372474,2.7509836592192545,Conditional bounded-moment cap calculation; not an empirical error bound
+Printed mean,523.4,531.05,9.375,49.82338317375,4.065588066978,18.114809192918248,0.5615685825349117,2.5021491488484675,Conditional bounded-moment cap calculation; not an empirical error bound

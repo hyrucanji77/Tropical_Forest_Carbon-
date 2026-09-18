@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "seed": 20260925,
+  "randomized_cases": 1000,
+  "assertions": 8017,
+  "absolute_tolerance": 1e-10,
+  "relative_tolerance": 1e-12,
+  "max_absolute_residuals": {
+    "volume_fraction": 1.4033219031261979e-13,
+    "mass_fraction_density": 7.673861546209082e-13,
+    "branch_stem_ratio": 1.4210854715202004e-14,
+    "weighted_plot": 2.220446049250313e-16,
+    "carbon_sum": 5.684341886080802e-14,
+    "mean_counterexample": 0.0,
+    "mean_substitution": 0.0,
+    "printed_scenarios": 0.0,
+    "fossil_reassignment": 0.0,
+    "uncertainty_scale": 0.0
+  },
+  "scope": "Synthetic algebra, specified sensitivity scenarios and source-input regression; no empirical class-5 bound"
+}

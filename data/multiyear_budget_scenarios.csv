@@ -1,0 +1,5 @@
+scenario,period,source_increment_GtC,other_net_adjustment_GtC,imbalance_GtC
+Reported rounded baseline,1959-2024,0.0,0.0,35.0
+Extra 0.5 GtC/yr; other terms fixed,1959-2024,33.0,0.0,68.0
+Retain baseline residual,1959-2024,33.0,-33.0,35.0
+Close constructed account to zero,1959-2024,33.0,-68.0,0.0

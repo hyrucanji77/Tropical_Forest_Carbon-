@@ -1,25 +1,18 @@
 cff-version: 1.2.0
-message: "Cite the article and specify the edition used."
-type: software
-title: "Allometric calibration bias in tropical forest carbon"
+message: "Cite the article and this edition when using its numerical support."
+type: article
+title: "Allometric calibration bias in tropical forest carbon: Architecture-informed measurement, LiDAR dependence and annual greenhouse-gas attribution"
 authors:
   - family-names: "Arellano-Peña"
     given-names: "Henry"
     affiliation: "NEBIOT S.A.S."
-version: "7.0"
-date-released: "2026-09-17"
+version: "7.5"
+date-released: "2026-09-18"
+url: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v7.5"
 repository-code: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-"
 keywords:
   - allometric calibration bias
-  - architecture-informed measurement
   - tropical forest carbon
-  - lidar reference labels
+  - tree architecture
+  - LiDAR
   - stock-to-flux transfer
-preferred-citation:
-  type: article
-  title: "Allometric calibration bias in tropical forest carbon"
-  authors:
-    - family-names: "Arellano-Peña"
-      given-names: "Henry"
-  year: 2026
-  url: "https://github.com/hyrucanji77/Tropical_Forest_Carbon-"

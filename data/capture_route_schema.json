@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Recover acquisition/validation provenance, not fabricate route counts for the 221 trees.",
+  "required_fields": [
+    "tree_id",
+    "site_id",
+    "capture_date",
+    "observed_inputs",
+    "photographic_scale_reference",
+    "procedural_components",
+    "raw_geometry_identifier",
+    "volume_algorithm",
+    "mesh_closure_check",
+    "voxel_inclusion_rule",
+    "independent_geometry_reference",
+    "validation_status"
+  ],
+  "allowed_validation_status": [
+    "independently_checked",
+    "internal_consistency_only",
+    "not_checked",
+    "unknown"
+  ],
+  "records": [],
+  "initial_tree_count_reported": 221,
+  "independent_route_counts": null
+}

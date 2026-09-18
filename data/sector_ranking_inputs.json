@@ -1,0 +1,14 @@
+{
+  "reference_year": 2010,
+  "reference_total_gtco2e": 48.629,
+  "land_component_share": 0.103,
+  "retained_land_group_share": 0.044,
+  "industry_share": 0.291,
+  "arxiv_stock_pgc": 723.97,
+  "comparison_stocks_pgc": [285.1, 228.7],
+  "category_scope": "Ecofys (2013) 2010 sector allocation: Land Use Change combines the 10.3% deforestation/afforestation and land-use CO2 component with 4.4% agricultural soils. Industry subflows sum to 22.8% + 6.3% = 29.1% (headline rounded to 29%). These are not the modern EDGAR LULUCF categories, and the conceptual network has a separate layout convention.",
+  "evidence_status": "Conditional numerical reconstruction. The stock-ratio multipliers are imposed on the historical annual component; matched spatial support, component provenance and stock-to-flux transfer have not been empirically established. Remaining components are held fixed in absolute amounts. No 2025 percentage, fossil-source error or atmospheric concentration correction is measured.",
+  "source_url": "https://twosides.info/includes/files/upload/files/UK/Myths_and_Facts_2016_Sources/8-9/ECOFYS_2013-world-ghg-emissions-flow-chart-2010.pdf",
+  "source_location": "Single-page original Ecofys chart: Land Use Change lower sector block and Industry outgoing subflows; inspected as a rendered page, 18 September 2026.",
+  "rounding": "All baseline percentages are source-displayed values. Derived numbers are conditional on those rounded inputs. Historical 26.15–32.60 labels are retained by attribution; nearest rounding of the displayed inputs gives 26.16–32.61."
+}

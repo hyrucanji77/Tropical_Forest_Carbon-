@@ -1,0 +1,6 @@
+quantity,period,estimate_GtC_yr,uncertainty_GtC_yr,uncertainty_type
+fossil_CO2,2024,10.3,0.5,one_standard_deviation
+atmospheric_growth_surface,2024,7.9,0.2,one_standard_deviation
+atmospheric_growth_decadal,2015–2024,5.6,0.02,one_standard_deviation
+net_land_use,2015–2024,1.4,0.7,one_standard_deviation
+environmental_land_sink,2015–2024,2.4,0.8,one_standard_deviation

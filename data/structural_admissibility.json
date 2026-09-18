@@ -1,0 +1,51 @@
+{
+  "edition": "7.3",
+  "scope": "Conditional requirements and exact algebra; no new field inventory",
+  "class5_carbon_mgc_per_ha": 536.3257329758882,
+  "illustrative_beta_mgc_per_m3": 0.282,
+  "illustrative_wood_volume_m3_per_ha": 1901.864301332937,
+  "weighted_counterexample": {
+    "cylinder_weights": [
+      0.5,
+      0.5
+    ],
+    "stem_ratios": [
+      0.5,
+      0.5
+    ],
+    "branch_volume_fractions": [
+      0.2,
+      0.68
+    ],
+    "mean_fraction": 0.44000000000000006,
+    "true_weighted_whole_wood_ratio": 1.09375,
+    "ratio_from_mean_fraction": 0.892857142857143
+  },
+  "illustrative_class_bound": {
+    "positive_joint_bound_required": true,
+    "bounds_are_empirically_established": false,
+    "beta_max": 0.282,
+    "stem_ratio_max": 0.6,
+    "branch_volume_fraction_max": 0.44,
+    "remainder_max": 0,
+    "carbon_at_cylinder_cap_1200": 362.5714285714285,
+    "carbon_at_cylinder_cap_2000": 604.2857142857142
+  },
+  "low_cylinder_branch_to_stem_range": [
+    1.6414781962957457,
+    4.282956392591491
+  ],
+  "low_cylinder_branch_volume_fraction_range": [
+    0.621424094508014,
+    0.810712047254007
+  ],
+  "differential_example": {
+    "F": 6,
+    "U": 5.8,
+    "common_scale": 1,
+    "delta": 0.1,
+    "baseline_net": 0.2,
+    "differential_net_increment": 0.59,
+    "corrected_net": 0.79
+  }
+}

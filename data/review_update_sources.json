@@ -1,0 +1,132 @@
+{
+  "verified_on": "2026-09-18",
+  "initial_preprint": {
+    "url": "https://arxiv.org/pdf/1508.03667v2",
+    "pages": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      23,
+      25
+    ],
+    "status": "Initial arXiv preprint; not peer-reviewed",
+    "first_posted": "2015-08-14",
+    "version2_posted": "2016-06-17",
+    "nominal_map_epoch": "2007–2008",
+    "predictor_Baccini_range_MgC_ha": [
+      0,
+      190
+    ],
+    "predictor_Simard_height_range_m": [
+      0,
+      38
+    ],
+    "response_carbon_range_MgC_ha": [
+      0,
+      523
+    ],
+    "regional_mean_MgC_ha": 177.03,
+    "class5_carbon_PgC": 285.03,
+    "class5_area_ha": 531449420.52,
+    "independent_class5_residual": null,
+    "volume_means_cm3": {
+      "displacement": 1240,
+      "integration": 1217.76,
+      "voxel_1cm": 1211,
+      "voxel_1mm": 1189.92
+    }
+  },
+  "gross_pair": {
+    "url": "https://essd.copernicus.org/articles/18/3211/2026/",
+    "section": "3.2.2; gross process decomposition",
+    "period": "2015–2024",
+    "deforestation_GtC_yr": 1.9,
+    "forest_regrowth_GtC_yr": 1.3,
+    "all_land_use_net_GtC_yr": 1.4,
+    "source_status": "Bookkeeping-model process attribution; rounded means, not field-weighed transfers"
+  },
+  "tls2trees": {
+    "doi": "10.1111/2041-210X.14233",
+    "table": "2 and 4",
+    "total_area_ha": 7.5,
+    "forest_types": 7,
+    "plot_count": 10,
+    "segmented_trees": 10557,
+    "manual_reference_trees": 1281,
+    "paired_reference_trees": 1053,
+    "NOU_area_ha": 1,
+    "MLA_area_ha": 1,
+    "NOU_max_instance_RAM_GB": 51.6,
+    "MLA_max_instance_RAM_GB": 129.8,
+    "NOU_instance_wall_hours": 16,
+    "MLA_instance_wall_hours": 18,
+    "scope": "Hardware/implementation-specific instance-segmentation benchmarks, not full biomass workflow timing."
+  },
+  "calders2022": {
+    "doi": "10.1002/2688-8319.12197",
+    "area_ha": 1.4,
+    "live_tree_count": 815,
+    "AGB_TLS_Mg_ha": 409.9,
+    "AGB_allometry_Mg_ha": 231.9,
+    "scope": "Temperate Wytham Woods; quantitative structure models and assigned densities, not complete destructive weighing."
+  },
+  "budget_constraints": [
+    {
+      "quantity": "fossil_CO2",
+      "period": "2024",
+      "estimate_GtC_yr": 10.3,
+      "uncertainty_GtC_yr": 0.5,
+      "uncertainty_type": "one_standard_deviation"
+    },
+    {
+      "quantity": "atmospheric_growth_surface",
+      "period": "2024",
+      "estimate_GtC_yr": 7.9,
+      "uncertainty_GtC_yr": 0.2,
+      "uncertainty_type": "one_standard_deviation"
+    },
+    {
+      "quantity": "atmospheric_growth_decadal",
+      "period": "2015–2024",
+      "estimate_GtC_yr": 5.6,
+      "uncertainty_GtC_yr": 0.02,
+      "uncertainty_type": "one_standard_deviation"
+    },
+    {
+      "quantity": "net_land_use",
+      "period": "2015–2024",
+      "estimate_GtC_yr": 1.4,
+      "uncertainty_GtC_yr": 0.7,
+      "uncertainty_type": "one_standard_deviation"
+    },
+    {
+      "quantity": "environmental_land_sink",
+      "period": "2015–2024",
+      "estimate_GtC_yr": 2.4,
+      "uncertainty_GtC_yr": 0.8,
+      "uncertainty_type": "one_standard_deviation"
+    }
+  ],
+  "budget_imbalance": {
+    "annual2024_GtC": -1.7,
+    "cumulative1959_2024_GtC": 35,
+    "decadal2015_2024_absolute_GtC_yr_less_than": 0.1,
+    "section": "GCB 2025 3.9.1–3.9.2"
+  },
+  "source_inconsistency": {
+    "topic": "Annual 2024 atmospheric standard uncertainty",
+    "adopted": 0.2,
+    "unit": "GtC",
+    "source": "GCB 2025 Section 3.5.1 and article abstract",
+    "executive_summary_prints": 0.02,
+    "decadal_uncertainty": 0.02
+  },
+  "new_author_calibration": {
+    "status": "In development, as stated by author",
+    "new_total": null,
+    "new_public_map_identifier": null
+  },
+  "EDGAR_scope": "Existing five-category booklet transcription retained; catalogue and headline 2025 totals rechecked. No new category decomposition inferred."
+}

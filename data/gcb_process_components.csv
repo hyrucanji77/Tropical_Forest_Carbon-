@@ -1,0 +1,4 @@
+process_pair,period,source_GtC_yr,removal_GtC_yr,net_GtC_yr,gross_sum_GtC_yr,eta,source_GtCO2_yr,removal_GtCO2_yr,shift_at_delta_0_1_GtC_yr,origin
+Selected total,2015-2024,1.9,1.3,0.6,3.2,0.1875,6.966666666666667,4.766666666666667,0.16,Rounded source totals
+Permanent change,2015-2024,1.1,0.6,0.5,1.7,0.29411764705882354,4.033333333333333,2.2,0.085,Rounded source components
+Shifting cultivation,2015-2024,0.8,0.7,0.1,1.5,0.06666666666666667,2.933333333333333,2.566666666666667,0.075,Differences of rounded source totals and components

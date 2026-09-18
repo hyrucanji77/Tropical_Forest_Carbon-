@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "seed": 20260918,
+  "randomized_cases": 1000,
+  "assertions": 5902,
+  "empirical_validation": false,
+  "scope": "Accounting identities, ranking invariance and historical scenario regression."
+}

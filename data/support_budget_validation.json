@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "assertions": 5055,
+  "seed": 20260924,
+  "randomized_cases": 1000,
+  "maximum_absolute_identity_residual": 1.199040866595169e-13,
+  "absolute_tolerance": 1e-10,
+  "relative_tolerance": 1e-12,
+  "scope": "Exact printed-input bounds, source decomposition and synthetic checks; not empirical validation"
+}

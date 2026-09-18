@@ -1,0 +1,6 @@
+quantity,GtC_yr,status
+deforestation,1.9,Selected source-reported pair; derived arithmetic
+regrowth,1.3,Selected source-reported pair; derived arithmetic
+net,0.5999999999999999,Selected source-reported pair; derived arithmetic
+gross_sum,3.2,Selected source-reported pair; derived arithmetic
+differential_shift,0.16000000000000003,"Illustrative delta=0.1, not observed correction"

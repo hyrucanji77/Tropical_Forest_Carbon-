@@ -2,26 +2,29 @@
 
 **Henry Arellano-Peña — NEBIOT S.A.S.**  
 Architecture-informed measurement, LiDAR dependence and annual greenhouse-gas attribution.  
-Publication edition **7.0**.
+Publication edition **7.5**, 18 September 2026 — corrected Figure 2 and compile-ready document edition.
 
-## Read
+## Read the current edition
 
-- `Allometric_Calibration_Bias_Manuscript.pdf`: main article.
-- `Allometric_Calibration_Bias_Supplement.pdf`: technical derivations, conditional material comparisons and published-data provenance.
-- `Allometric_Calibration_Bias_Figures.pdf`: three vector figure plates.
+- [Main article](Allometric_Calibration_Bias_Manuscript.pdf) — 30 pages, including the three figure plates.
+- [Technical supplement](Allometric_Calibration_Bias_Supplement.pdf) — 18 pages.
+- [Three vector figure plates](Allometric_Calibration_Bias_Figures.pdf).
+- [Versioned release](https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v7.5).
 
-Architecture and organ allocation are mechanisms of allometric calibration bias. Increased LiDAR coverage cannot by itself remove a nonzero bias inherited from reference labels; direct 3D material reconstruction provides a distinct calibration pathway. The published 723.97 PgC result retains its mapped pantropical coverage, Australian-tropics exclusion and nominal 2007–2008 epoch. Annual emissions require disturbance, decomposition and removal information. The article does not report a new field inventory or a measured 2025 forest-loss percentage.
+Architecture and organ allocation are mechanisms of allometric calibration bias. Greater LiDAR coverage cannot by itself remove a bias inherited from reference labels; independently checked three-dimensional material reconstruction offers a distinct calibration pathway. The initial 723.97 PgC estimate reported on arXiv retains its mapped pantropical coverage, Australian-tropics exclusion and nominal 2007–2008 epoch. Its annual implications require disturbance, decomposition and removal observations.
 
-## Computational reproduction
+Figure 2 retains the questioned total, double-headed arrow and historical numerical interpretation. Its conditional largest-land-group example uses the specified 2010 Ecofys grouping; it is not a measured 2025 LULUCF ranking. The historical component heading is on two lines and its box is centered alongside the land-use sector. Standing stock remains separate from annual flows.
+
+## Numerical reproduction
 
 ```sh
 python scripts/verify_public.py
 ```
 
-Python 3.9 or later; standard library only. The verifier checks SHA-256 integrity, runs the numerical analysis in a temporary directory and compares **42 JSON/CSV outputs**. Temporary LaTeX table fragments are not published. The full author package reproduces 54 numerical/table outputs. The core suite has 257,167 assertions; later material/population suites add 6,623; a physical-volume regression adds one; the calibration-label suite adds 8,014. These checks test the specified algebra and transcriptions, not an independent forest inventory.
+Python 3.9 or later; standard library only. The verifier checks the permitted publication files, verifies SHA-256 hashes, runs the analysis in a temporary directory, and checks **60 JSON/CSV outputs** for byte-identical regeneration. The complete author package regenerates 76 numerical/table outputs; temporary LaTeX table fragments are not published here. All recorded suite seeds, assertion counts and inference limits appear in `PUBLICATION_VERIFICATION.json`. These are analytical and transcription checks, not an independent field inventory.
 
-## Publication files and provenance
+## Distribution and provenance
 
-This distribution intentionally excludes `.tex`, HTML, SVG, document-build code and compressed source archives. Complete editable materials are delivered separately to the author. `PUBLICATION_MANIFEST.json` identifies the permitted file snapshot. `NUMERICAL_OUTPUTS.json` lists the regenerated public outputs. `SOURCE_AVAILABILITY.md` separates published source values from unrecovered original records.
+The publication tree excludes LaTeX, HTML, SVG, document-build code and compressed archives. The editable Overleaf and webpage versions are supplied separately to the author. `PUBLICATION_MANIFEST.json` identifies the exact publication bytes; `NUMERICAL_OUTPUTS.json` lists generated public outputs. Original-record limitations and source conventions are documented in `SOURCE_AVAILABILITY.md` and the numerical provenance files.
 
-The methodological focus and interpretations supersede the prior publication layout. The published source studies retain their original bibliographic attribution. Third-party data and methodology rights are described in `RIGHTS.md`. No Zenodo DOI is claimed. Publication in this repository is not a journal submission or replacement of the original arXiv preprint.
+Edition 7.5 supersedes the prior public edition. Obsolete active files and superseded release assets are retired after the replacement is verified; Git commit history is retained. The compiled scientific documents are copied unchanged from the approved compile-ready package. Historical source publications keep their original attribution. See `RIGHTS.md` for methodology and third-party rights. No archival DOI has been assigned, and repository publication is not a journal submission or arXiv replacement.
