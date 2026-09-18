@@ -118,14 +118,16 @@ jobs:
           manifest=json.loads((stage/'manifest.json').read_text())
           wanted=list(manifest['files'])+['manifest.json','verification.json','release/release.json','release/Tropical_Forest_Carbon_Overleaf_v6_5.zip']
           old=subprocess.check_output(['git','ls-files','-z'],cwd=repo).decode().split('\0')
+          # Workflow administration is performed through the authorized connector.
+          # This contents-only publication job preserves all workflow bytes unchanged.
+          shutil.copytree(repo/'.github',Path('workflow-backup'))
           subprocess.run(['git','rm','-r','--ignore-unmatch','.'],cwd=repo,check=True,stdout=subprocess.DEVNULL)
           for name in wanted:
               target=repo/name; target.parent.mkdir(parents=True,exist_ok=True)
               shutil.copy2(stage/name,target)
+          shutil.copytree(Path('workflow-backup'),repo/'.github',dirs_exist_ok=True)
           (repo/'.gitignore').write_text('*.aux\n*.log\n*.out\n*.toc\n*.blg\n*.fls\n*.fdb_latexmk\n*.synctex.gz\n__pycache__/\n*.pyc\n.venv/\n')
-          workflow=repo/'.github/workflows/verify.yml'; workflow.parent.mkdir(parents=True,exist_ok=True)
-          workflow.write_text('name: Verify frozen research package\non: [push, workflow_dispatch]\npermissions:\n  contents: read\njobs:\n  verify:\n    runs-on: ubuntu-24.04\n    steps:\n      - uses: actions/checkout@v4\n      - run: python3 scripts/verify_package.py\n      - name: Verify distributed archive\n        run: |\n          python3 -m zipfile -e release/Tropical_Forest_Carbon_Overleaf_v6_5.zip /tmp/overleaf-check\n          cd /tmp/overleaf-check\n          python3 scripts/verify_package.py\n')
-          removed=[n for n in old if n and n not in wanted and n not in ['.gitignore','.github/workflows/verify.yml']]
+          removed=[n for n in old if n and n not in wanted and n!='.gitignore' and not n.startswith('.github/')]
           Path('cleanup-report.json').write_text(json.dumps({'removed_active_paths':removed,'git_history_rewritten':False},indent=2)+'\n')
           PY
           cd research
@@ -135,6 +137,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git switch -C main
           git add -A
+          git diff --cached --exit-code -- .github
           git commit -m 'Freeze verified manuscript v6.5; replace obsolete source and generated files'
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git HEAD:main
           git rev-parse HEAD > ../published-commit.txt
@@ -188,6 +191,7 @@ jobs:
           Path('cleanup-report.json').write_text(json.dumps(report,indent=2)+'\n')
           PY
       - name: Attach the verified distribution and publication record
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: frozen-forest-carbon-v6-5
