@@ -1,0 +1,201 @@
+name: Freeze verified forest-carbon release 6.5
+on:
+  push:
+    paths:
+      - .github/workflows/freeze-v6-5.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: research-snapshot
+  cancel-in-progress: false
+jobs:
+  freeze:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Read the requested repository revision
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          git clone https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git research
+          cd research
+          git checkout "$SOURCE_SHA"
+      - name: Reconstruct the verified source payload
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import hashlib, io, json, lzma, re, subprocess, zipfile
+          root = Path('research')
+          parts = sorted((root / '.publication').glob('part*.xz'))
+          if len(parts) != 11:
+              raise RuntimeError('Incomplete source payload')
+          payload = b''.join(p.read_bytes() for p in parts)
+          if hashlib.sha256(payload).hexdigest() != 'f0128867c7cdfc561355b89082ad83041413d306d6864c2551f9f18a6474b0ec':
+              raise RuntimeError('Source payload integrity failure')
+          packet = json.loads(lzma.decompress(payload))
+          base = subprocess.check_output(['git','show','v5.2:release/Tropical_Forest_Carbon_Overleaf_v5_2.zip'], cwd=root)
+          if hashlib.sha256(base).hexdigest() != packet['base_zip_sha256']:
+              raise RuntimeError('Base archive integrity failure')
+          dest = Path('frozen'); dest.mkdir()
+          with zipfile.ZipFile(io.BytesIO(base)) as z:
+              for name in packet['paths']:
+                  path = PurePosixPath(name)
+                  if path.is_absolute() or '..' in path.parts:
+                      raise RuntimeError('Unsafe source path')
+                  op = packet['ops'].get(name)
+                  if op and 'text' in op:
+                      data = op['text'].encode('utf-8')
+                  else:
+                      data = z.read(name)
+                      if op:
+                          if hashlib.sha256(data).hexdigest() != op['base_sha256']:
+                              raise RuntimeError('Unexpected base member: ' + name)
+                          chunks = re.split(packet['split_pattern'], data.decode('utf-8'))
+                          for i,j,replacement in reversed(op['edits']):
+                              chunks[i:j] = replacement
+                          data = ''.join(chunks).encode('utf-8')
+                  if hashlib.sha256(data).hexdigest() != packet['sha256'][name]:
+                      raise RuntimeError('Reconstructed source mismatch: ' + name)
+                  target = dest / name; target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(data)
+          print('Verified', len(packet['paths']), 'source files.')
+          PY
+      - name: Install reproducible document dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-science texlive-plain-generic tex-gyre lmodern cm-super fonts-liberation2 python3-cairosvg python3-bs4 poppler-utils
+      - name: Reproduce calculations and build all documents
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          cd frozen
+          python3 scripts/reproduce.py > /tmp/reproduction.log
+          python3 scripts/build_physical_figure.py
+          python3 scripts/rebuild_artwork.py
+          python3 scripts/build_companion_html.py
+          pdflatex -interaction=nonstopmode -halt-on-error figure_plates.tex > /tmp/plates.log 2>&1 || { tail -100 /tmp/plates.log; exit 1; }
+          cp figure_plates.pdf figures/figure_plates.pdf
+          bash scripts/build_local.sh > /tmp/documents.log 2>&1 || { tail -100 /tmp/documents.log; exit 1; }
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, os, re, subprocess
+          report = {'release':'6.5','source_commit':os.environ['SOURCE_SHA'],'documents':{}}
+          for name in ('main','response_to_review'):
+              log = Path(name+'.log').read_text(errors='replace')
+              warnings = re.findall(r'Overfull[^\n]*|[^\n]*(?:Citation|Reference)[^\n]*undefined[^\n]*', log)
+              if warnings: raise RuntimeError(str(warnings))
+              report['documents'][name] = {'layout_reference_warnings':warnings,'pdfinfo':subprocess.check_output(['pdfinfo',name+'.pdf'],text=True)}
+          report['compiler'] = subprocess.check_output(['pdflatex','--version'],text=True).splitlines()[0]
+          report['scope'] = 'Build and numerical reproduction; not independent field validation.'
+          Path('audit/build_checks.json').write_text(json.dumps(report,indent=2)+'\n')
+          PY
+          python3 scripts/make_manifest.py
+          python3 scripts/verify_package.py > verification.json
+          python3 scripts/package_release.py
+      - name: Verify the actual Overleaf distribution
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess, zipfile
+          archive=Path('frozen/release/Tropical_Forest_Carbon_Overleaf_v6_5.zip')
+          with zipfile.ZipFile(archive) as z:
+              for name in z.namelist():
+                  if Path(name).is_absolute() or '..' in Path(name).parts: raise RuntimeError('Unsafe archive')
+              z.extractall('archive-check')
+          with open('archive-verification.json','w') as out:
+              subprocess.run(['python3','scripts/verify_package.py'],cwd='archive-check',stdout=out,check=True)
+          PY
+      - name: Replace obsolete active files with the frozen snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, shutil, subprocess
+          repo=Path('research'); stage=Path('frozen')
+          manifest=json.loads((stage/'manifest.json').read_text())
+          wanted=list(manifest['files'])+['manifest.json','verification.json','release/release.json','release/Tropical_Forest_Carbon_Overleaf_v6_5.zip']
+          old=subprocess.check_output(['git','ls-files','-z'],cwd=repo).decode().split('\0')
+          subprocess.run(['git','rm','-r','--ignore-unmatch','.'],cwd=repo,check=True,stdout=subprocess.DEVNULL)
+          for name in wanted:
+              target=repo/name; target.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copy2(stage/name,target)
+          (repo/'.gitignore').write_text('*.aux\n*.log\n*.out\n*.toc\n*.blg\n*.fls\n*.fdb_latexmk\n*.synctex.gz\n__pycache__/\n*.pyc\n.venv/\n')
+          workflow=repo/'.github/workflows/verify.yml'; workflow.parent.mkdir(parents=True,exist_ok=True)
+          workflow.write_text('name: Verify frozen research package\non: [push, workflow_dispatch]\npermissions:\n  contents: read\njobs:\n  verify:\n    runs-on: ubuntu-24.04\n    steps:\n      - uses: actions/checkout@v4\n      - run: python3 scripts/verify_package.py\n      - name: Verify distributed archive\n        run: |\n          python3 -m zipfile -e release/Tropical_Forest_Carbon_Overleaf_v6_5.zip /tmp/overleaf-check\n          cd /tmp/overleaf-check\n          python3 scripts/verify_package.py\n')
+          removed=[n for n in old if n and n not in wanted and n not in ['.gitignore','.github/workflows/verify.yml']]
+          Path('cleanup-report.json').write_text(json.dumps({'removed_active_paths':removed,'git_history_rewritten':False},indent=2)+'\n')
+          PY
+          cd research
+          CURRENT=$(gh api repos/hyrucanji77/Tropical_Forest_Carbon-/git/ref/heads/main --jq .object.sha)
+          test "$CURRENT" = "$SOURCE_SHA" || { echo 'Repository changed concurrently; publication stopped.'; exit 1; }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -C main
+          git add -A
+          git commit -m 'Freeze verified manuscript v6.5; replace obsolete source and generated files'
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push https://github.com/hyrucanji77/Tropical_Forest_Carbon-.git HEAD:main
+          git rev-parse HEAD > ../published-commit.txt
+      - name: Publish and verify release 6.5
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd research
+          gh release create v6.5 --repo hyrucanji77/Tropical_Forest_Carbon- --target "$(git rev-parse HEAD)" --title 'Forest-carbon measurement — frozen manuscript 6.5' --notes 'Henry Arellano-Peña. Frozen manuscript and executable Overleaf project. Includes three vector figure plates, a self-contained figures webpage, measurement protocol, source provenance, numerical inputs and outputs, methodological notes, SHA-256 manifest and reproduction checks. Supports corroboration, downward revision and upward revision under the stated decision rule. No empirical class-5 residual or archival DOI is claimed. See RIGHTS.md for methodology ownership and third-party attribution.' main.pdf response_to_review.pdf figures/figure_plates.pdf forest_carbon_figures.html release/Tropical_Forest_Carbon_Overleaf_v6_5.zip verification.json manifest.json
+          gh api repos/hyrucanji77/Tropical_Forest_Carbon-/releases/tags/v6.5 > ../published-release.json
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          release=json.loads(Path('../published-release.json').read_text())
+          meta=json.loads(Path('release/release.json').read_text())
+          assets={a['name']:a for a in release['assets']}
+          expected=['main.pdf','response_to_review.pdf','figure_plates.pdf','forest_carbon_figures.html','Tropical_Forest_Carbon_Overleaf_v6_5.zip','verification.json','manifest.json']
+          if release['draft'] or any(n not in assets for n in expected): raise RuntimeError('Incomplete published release')
+          archive=assets[meta['archive']]
+          if archive['size']!=meta['bytes'] or archive.get('digest')!='sha256:'+meta['sha256']: raise RuntimeError('Published archive digest mismatch')
+          print('Published archive matches verified distribution.')
+          PY
+      - name: Remove superseded releases, tags and older package artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, subprocess
+          repo='hyrucanji77/Tropical_Forest_Carbon-'
+          report=json.loads(Path('cleanup-report.json').read_text())
+          releases=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/releases?per_page=100'],text=True))
+          obsolete={'v5.0','v5.1','v5.2'}
+          removed=[]
+          for release in releases:
+              tag=release['tag_name']
+              if tag in obsolete:
+                  subprocess.run(['gh','release','delete',tag,'--cleanup-tag','--yes','--repo',repo],check=True)
+                  removed.append(tag)
+          artifacts=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/actions/artifacts?per_page=100'],text=True))
+          old_names={'verified-forest-carbon-v5','verified-forest-carbon-v5-1','verified-forest-carbon-v5-2'}
+          deleted_artifacts=[]
+          for artifact in artifacts.get('artifacts',[]):
+              if artifact['name'] in old_names:
+                  subprocess.run(['gh','api','--method','DELETE',f'repos/{repo}/actions/artifacts/{artifact["id"]}'],check=True)
+                  deleted_artifacts.append({'id':artifact['id'],'name':artifact['name']})
+          report['removed_releases_and_tags']=removed
+          report['removed_obsolete_package_artifacts']=deleted_artifacts
+          report['published_commit']=Path('published-commit.txt').read_text().strip()
+          report['release_url']=f'https://github.com/{repo}/releases/tag/v6.5'
+          Path('cleanup-report.json').write_text(json.dumps(report,indent=2)+'\n')
+          PY
+      - name: Attach the verified distribution and publication record
+        uses: actions/upload-artifact@v4
+        with:
+          name: frozen-forest-carbon-v6-5
+          path: |
+            frozen/release/Tropical_Forest_Carbon_Overleaf_v6_5.zip
+            archive-verification.json
+            cleanup-report.json
+            published-commit.txt
+            published-release.json
+          if-no-files-found: error
+          retention-days: 30
