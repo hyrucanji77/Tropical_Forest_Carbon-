@@ -1,0 +1,44 @@
+{
+  "permutations_tested": 120,
+  "original_labels_in_source_row_order": [
+    5,
+    4,
+    2,
+    3,
+    1
+  ],
+  "admissible_assignments": [
+    [
+      5,
+      4,
+      3,
+      2,
+      1
+    ]
+  ],
+  "tested_conditions": "Fixed numerical rows, existing five intervals; printed means and stock/area ratios both within interval",
+  "unique_within_tested_model": true,
+  "raster_or_vegetation_reassignment_confirmed": false,
+  "density_order": [
+    {
+      "class_id": 1,
+      "carbon_MgC_ha": 13.227018409194962
+    },
+    {
+      "class_id": 2,
+      "carbon_MgC_ha": 115.94335038776458
+    },
+    {
+      "class_id": 3,
+      "carbon_MgC_ha": 251.6378972382851
+    },
+    {
+      "class_id": 4,
+      "carbon_MgC_ha": 421.2310856329802
+    },
+    {
+      "class_id": 5,
+      "carbon_MgC_ha": 536.3257329758882
+    }
+  ]
+}

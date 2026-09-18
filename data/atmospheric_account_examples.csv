@@ -1,0 +1,8 @@
+case,forest_release,other_source_sum,source_total,removal_sum,atmospheric_increment,forest_is_largest_source,forest_is_majority_source,atmospheric_increment_difference_from_baseline
+Baseline,1,5.0,6.0,2,4.0,False,False,0.0
+"Omitted forest release included, other terms fixed",2,5.0,7.0,2,5.0,False,False,1.0
+"Larger forest attribution, same source total and removals",2,4.0,6.0,2,4.0,False,False,0.0
+Independently specified larger removal,2,5.0,7.0,3,4.0,False,False,0.0
+Leading forest source,5,5.0,10.0,2,8.0,True,False,4.0
+Majority forest source,6,5.0,11.0,2,9.0,True,True,5.0
+Forest release plus reduced uptake,2,5.0,7.0,1.5,5.5,False,False,1.5

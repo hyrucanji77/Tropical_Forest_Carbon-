@@ -1,0 +1,11 @@
+{
+  "q": 0.99016,
+  "effective_area_ratio": 1.0099377878322695,
+  "effective_area_increase_percent": 0.9937787832269507,
+  "class1_mean_from_candidate": 13.096864548048483,
+  "class1_printed_mean": 13.1,
+  "class1_difference_MgC_ha": 0.0031354519515165435,
+  "rounding_half_unit_MgC_ha": 0.005,
+  "possible_area_workflow": "Different area denominators, pixel weighting, planar/geodesic conventions, resampling or masks; cause not inferred from a constant ratio alone",
+  "projection_identified": false
+}

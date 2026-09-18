@@ -1,0 +1,47 @@
+{
+  "edition": "6.5",
+  "status": "Published aggregate transcriptions and explicitly conditional calculations; no new class-5 observations",
+  "carbon_fraction_scenario": 0.47,
+  "basic_density_Mg_m3_scenario": 0.60,
+  "class5_lower_edge_MgC_ha": 478,
+  "lower_edge_scope": "Operational edge of the published mapped-density class, conditional on the raster classification; not an observed lower bound on plots or subpixel patches",
+  "remainder_carbon_fraction_screen": 0.10,
+  "remainder_screen_status": "Generous illustrative carbon-share screen, not a universal ecological bound",
+  "geometry_scenarios": [
+    {"basal_area_m2_ha": 30, "basal_area_weighted_height_m": 30},
+    {"basal_area_m2_ha": 40, "basal_area_weighted_height_m": 30}
+  ],
+  "higuchi1998": {
+    "doi": "10.1590/1809-43921998282166",
+    "table": "3(b), nutrient-analysis subset n=38",
+    "mean_dry_leaf_mass_kg": 23.58,
+    "mean_total_dry_mass_kg": 2238.30,
+    "status": "Ratio of published dry-mass sample means, not mean individual fraction or plot-level area fraction"
+  },
+  "gomez2017": {
+    "doi": "10.1177/1940082917698468",
+    "living_epiphytes_kg_ha": 6214,
+    "total_epiphytic_matter_kg_ha": 16439,
+    "dead_organic_matter_kg_ha": 10225,
+    "status": "Sampled and weighed epiphytes with regression-based stand extrapolation; live and dead pools separated"
+  },
+  "cordoba": {
+    "source": "Vasquez and Arellano (2012), Table 170, printed p.942, arXiv:1208.0248",
+    "community": "Acalypha sp. and Guazuma ulmifolia",
+    "basis_area_ha": 0.05,
+    "classes": ["I", "II", "III", "IV", "V", "VI"],
+    "basal_area_m2_per_basis": [0.11, 0.74, 0.56, 0.43, 0.43, 0.0],
+    "height_min_m": [1.5, 2.5, 6.0, 7.0, 8.0, 0.0],
+    "height_max_m": [16.0, 23.0, 16.0, 18.0, 8.0, 0.0],
+    "stems_per_basis": [42.67, 30.0, 4.67, 1.67, 0.67, 0.0],
+    "reported_total_basal_area_m2": 2.26,
+    "reported_total_stems": 79.67,
+    "reported_total_biomass_Mg": 7.39,
+    "reported_total_carbon_MgC": 3.34,
+    "carbon_method": "Selected Chave allometries for biomass; measured tissue-carbon fractions",
+    "geometry_records": null,
+    "plot_geolocation_to_mapped_target": null,
+    "mapped_plot_carbon": null,
+    "matched_epoch": null
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source": {
+    "title": "A solution for reducing high bias in estimates of stored carbon in tropical forests (aboveground biomass)",
+    "identifier": "arXiv:1508.03667v2",
+    "url": "https://arxiv.org/pdf/1508.03667",
+    "verified_on": "2026-09-17",
+    "status": "Reported in the original preprint; underlying individual measurements have not been reprocessed in this package."
+  },
+  "reconstruction": {
+    "individuals": 221,
+    "species": 127,
+    "source_pages": [
+      6,
+      7
+    ]
+  },
+  "chemistry": {
+    "samples": 2232,
+    "individuals": 186,
+    "instrument": "LECO CHN-600",
+    "reference_check_every_samples": 10,
+    "measured_carbon_fraction_range": [
+      0.4111,
+      0.4999
+    ],
+    "source_pages": [
+      7,
+      16,
+      17
+    ]
+  },
+  "volume_validation": {
+    "individuals": 10,
+    "species": "Aphelandra pulcherrima",
+    "height_m": [
+      1.54,
+      2.9
+    ],
+    "reference_mean_cm3": "1240",
+    "source_page": 25,
+    "source_figure": 11,
+    "methods": [
+      {
+        "method": "Water displacement",
+        "latex_label": "Water displacement (reference)",
+        "mean_cm3": "1240"
+      },
+      {
+        "method": "Numerical integration",
+        "latex_label": "Numerical integration",
+        "mean_cm3": "1217.76",
+        "source_reported_difference_percent": "1.798"
+      },
+      {
+        "method": "Voxelization, 1 cm",
+        "latex_label": "Voxelization, 1-cm resolution",
+        "mean_cm3": "1211",
+        "source_reported_difference_percent": "2.338"
+      },
+      {
+        "method": "Voxelization, 1 mm",
+        "latex_label": "Voxelization, 1-mm resolution",
+        "mean_cm3": "1189.92",
+        "source_reported_difference_percent": "4.038"
+      }
+    ],
+    "metric": "100*abs(displayed method mean-displayed reference mean)/displayed reference mean; shown to one decimal place. Source percentages retained separately rather than overwritten.",
+    "inference_scope": "Difference of sample means for the tested material, not per-tree error or a confidence interval for the pantropical map."
+  },
+  "regional_extension": {
+    "tree_predictions_more_than": 6000,
+    "tree_prediction_vegetation_types": 27,
+    "regional_comparison_vegetation_types": 54,
+    "architectural_mean_mgc_ha": 177.03,
+    "allometric_comparison_mean_mgc_ha": 61.41,
+    "pages": [
+      22,
+      23,
+      24
+    ],
+    "target": "Regional architecture-informed carbon",
+    "predictors": "Baccini carbon map and Simard tree-height map",
+    "global_stock_pgc": 723.97,
+    "reference_years": "2007-2008"
+  },
+  "evidence_distinctions": [
+    "Physical volume comparison",
+    "Tissue chemistry",
+    "Geometric representation",
+    "Neural-network extension",
+    "Vegetation-based spatial calibration",
+    "Annual stock-to-flux inference"
+  ],
+  "spatiotemporal_provenance_file": "data/spatiotemporal_provenance.json",
+  "epoch_interpretation": "2007–2008 is the nominal output-map reference period explicitly stated on preprint p. 23; not a common acquisition year for Baccini and Simard predictors."
+}

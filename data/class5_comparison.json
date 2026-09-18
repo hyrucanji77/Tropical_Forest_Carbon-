@@ -1,0 +1,102 @@
+{
+  "requirements": [
+    {
+      "basis": "Class 5: printed mean",
+      "carbon_MgC_ha": 531.05,
+      "conditional_biomass_Mg_ha": 1129.8936170212767,
+      "woody_volume_m3_ha": 1883.1560283687943,
+      "equivalent_layer_cm": 18.831560283687942,
+      "carbon_fraction": 0.47,
+      "basic_density_Mg_m3": 0.6,
+      "remainder_MgC_ha": 0
+    },
+    {
+      "basis": "Class 5: stock / area",
+      "carbon_MgC_ha": 536.3257329758882,
+      "conditional_biomass_Mg_ha": 1141.1185807997622,
+      "woody_volume_m3_ha": 1901.864301332937,
+      "equivalent_layer_cm": 19.01864301332937,
+      "carbon_fraction": 0.47,
+      "basic_density_Mg_m3": 0.6,
+      "remainder_MgC_ha": 0
+    },
+    {
+      "basis": "Classes 4 and 5",
+      "carbon_MgC_ha": 472.18888242565583,
+      "conditional_biomass_Mg_ha": 1004.6571966503316,
+      "woody_volume_m3_ha": 1674.428661083886,
+      "equivalent_layer_cm": 16.74428661083886,
+      "carbon_fraction": 0.47,
+      "basic_density_Mg_m3": 0.6,
+      "remainder_MgC_ha": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "source_key": "Lewis2013",
+      "label": "African network mean",
+      "comparison_biomass_Mg_ha": 395.7,
+      "ratio_target_biomass_Mg_ha": 1141.1185807997622,
+      "printed_target_biomass_Mg_ha": 1129.8936170212767,
+      "ratio_from_stock_area": 2.8837972726807233,
+      "ratio_from_printed_mean": 2.8554299141300903,
+      "excess_from_stock_area_Mg_ha": 745.4185807997621,
+      "doi": "10.1098/rstb.2012.0295"
+    },
+    {
+      "source_key": "Malhi2006",
+      "label": "Amazonian regional upper value",
+      "comparison_biomass_Mg_ha": 350.0,
+      "ratio_target_biomass_Mg_ha": 1141.1185807997622,
+      "printed_target_biomass_Mg_ha": 1129.8936170212767,
+      "ratio_from_stock_area": 3.260338802285035,
+      "ratio_from_printed_mean": 3.2282674772036475,
+      "excess_from_stock_area_Mg_ha": 791.1185807997622,
+      "doi": "10.1111/j.1365-2486.2006.01120.x"
+    },
+    {
+      "source_key": "Malhi2006",
+      "label": "Amazonian regional lower value",
+      "comparison_biomass_Mg_ha": 200.0,
+      "ratio_target_biomass_Mg_ha": 1141.1185807997622,
+      "printed_target_biomass_Mg_ha": 1129.8936170212767,
+      "ratio_from_stock_area": 5.705592903998811,
+      "ratio_from_printed_mean": 5.649468085106383,
+      "excess_from_stock_area_Mg_ha": 941.1185807997622,
+      "doi": "10.1111/j.1365-2486.2006.01120.x"
+    }
+  ],
+  "beta_sensitivity": [
+    {
+      "beta_MgC_m3": 0.25,
+      "carbon_target_MgC_ha": 536.3257329758882,
+      "remainder_MgC_ha": 0,
+      "required_volume_m3_ha": 2145.3029319035527,
+      "dvolume_dbeta": -8581.21172761421
+    },
+    {
+      "beta_MgC_m3": 0.282,
+      "carbon_target_MgC_ha": 536.3257329758882,
+      "remainder_MgC_ha": 0,
+      "required_volume_m3_ha": 1901.864301332937,
+      "dvolume_dbeta": -6744.199650116799
+    },
+    {
+      "beta_MgC_m3": 0.3,
+      "carbon_target_MgC_ha": 536.3257329758882,
+      "remainder_MgC_ha": 0,
+      "required_volume_m3_ha": 1787.7524432529606,
+      "dvolume_dbeta": -5959.174810843202
+    }
+  ],
+  "normalization_biomass_change_percent": 0.9836807468877162,
+  "hypothetical_remainder": {
+    "hypothetical_matched_woody_mass_Mg_ha": 395.7,
+    "assumed_carbon_fraction": 0.47,
+    "woody_carbon_MgC_ha": 185.97899999999998,
+    "required_other_aboveground_carbon_MgC_ha": 350.3467329758882,
+    "target_share_percent": 65.32349865667155,
+    "status": "Scale calculation, not a finding that Lewis et al. omitted this amount; actual source pool coverage must be matched."
+  },
+  "evidence_status": "Calculated comparisons and sensitivities only; no recovered or simulated field observations."
+}

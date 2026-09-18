@@ -1,0 +1,63 @@
+{
+  "class5": {
+    "domain": "Class 5",
+    "stock_PgC": 285.03,
+    "area_ha": 531449420.52,
+    "carbon_MgC_ha": 536.3257329758882,
+    "assumed_carbon_fraction": 0.47,
+    "assumed_basic_density_Mg_m3": 0.6,
+    "conditional_biomass_Mg_ha": 1141.1185807997622,
+    "equivalent_woody_volume_m3_ha": 1901.864301332937,
+    "equivalent_layer_cm": 19.01864301332937,
+    "inference": "Requirement under specified uniform properties and zero remainder; not observed stand geometry"
+  },
+  "class5_stock_fraction_of_feldpausch": 0.9997544721150472,
+  "class5_area_fraction_of_feldpausch": 0.31871029716341825,
+  "conditional_requirements": [
+    {
+      "domain": "Class 5",
+      "stock_PgC": 285.03,
+      "area_ha": 531449420.52,
+      "carbon_MgC_ha": 536.3257329758882,
+      "assumed_carbon_fraction": 0.47,
+      "assumed_basic_density_Mg_m3": 0.6,
+      "conditional_biomass_Mg_ha": 1141.1185807997622,
+      "equivalent_woody_volume_m3_ha": 1901.864301332937,
+      "equivalent_layer_cm": 19.01864301332937,
+      "inference": "Requirement under specified uniform properties and zero remainder; not observed stand geometry"
+    },
+    {
+      "domain": "Classes 4 and 5",
+      "stock_PgC": 566.79,
+      "area_ha": 1200345923.1999998,
+      "carbon_MgC_ha": 472.18888242565583,
+      "assumed_carbon_fraction": 0.47,
+      "assumed_basic_density_Mg_m3": 0.6,
+      "conditional_biomass_Mg_ha": 1004.6571966503316,
+      "equivalent_woody_volume_m3_ha": 1674.428661083886,
+      "equivalent_layer_cm": 16.74428661083886,
+      "inference": "Requirement under specified uniform properties and zero remainder; not observed stand geometry"
+    }
+  ],
+  "basal_area_tradeoffs": [
+    {
+      "assumed_basal_area_m2_ha": 40,
+      "required_basal_weighted_Hpsi_m": 47.546607533323424,
+      "inference": "Conditional trade-off; neither basal area nor Hpsi is a recovered measurement"
+    },
+    {
+      "assumed_basal_area_m2_ha": 60,
+      "required_basal_weighted_Hpsi_m": 31.69773835554895,
+      "inference": "Conditional trade-off; neither basal area nor Hpsi is a recovered measurement"
+    },
+    {
+      "assumed_basal_area_m2_ha": 80,
+      "required_basal_weighted_Hpsi_m": 23.773303766661712,
+      "inference": "Conditional trade-off; neither basal area nor Hpsi is a recovered measurement"
+    }
+  ],
+  "low_biomass_example_Mg_ha": 147.79999999999998,
+  "physical_closure": "c=beta_V*G_b*<H psi>_a + c_remainder; independent measured inputs, fixed mask and epoch",
+  "existing_data_status": "Class-level stocks and areas only; original representative class-5 structural records not recovered",
+  "classes4and5_are_not_class5": true
+}

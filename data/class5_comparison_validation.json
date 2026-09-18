@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "deterministic_assertions": 55,
+  "max_arithmetic_residual": 2.2737367544323206e-13,
+  "direct_interval_assignment": [
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "scope": "Published-input arithmetic, physical sensitivity signs and logical counterexamples; not field validation."
+}

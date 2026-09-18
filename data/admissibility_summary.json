@@ -1,0 +1,102 @@
+{
+  "requirements": [
+    {
+      "basis": "Class 5: lower class edge",
+      "carbon_MgC_ha": 478,
+      "biomass_Mg_ha": 1017.0212765957448,
+      "woody_volume_m3_ha": 1695.035460992908,
+      "layer_cm": 16.95035460992908
+    },
+    {
+      "basis": "Class 5: printed mean",
+      "carbon_MgC_ha": 531.05,
+      "biomass_Mg_ha": 1129.8936170212767,
+      "woody_volume_m3_ha": 1883.1560283687943,
+      "layer_cm": 18.831560283687942
+    },
+    {
+      "basis": "Class 5: stock / area",
+      "carbon_MgC_ha": 536.3257329758882,
+      "biomass_Mg_ha": 1141.1185807997622,
+      "woody_volume_m3_ha": 1901.864301332937,
+      "layer_cm": 19.01864301332937
+    },
+    {
+      "basis": "Classes 4 and 5",
+      "carbon_MgC_ha": 472.18888242565583,
+      "biomass_Mg_ha": 1004.6571966503316,
+      "woody_volume_m3_ha": 1674.428661083886,
+      "layer_cm": 16.74428661083886
+    }
+  ],
+  "geometry_scenarios": [
+    {
+      "basal_area_m2_ha": 30,
+      "basal_area_weighted_height_m": 30,
+      "basis": "Class 5: lower class edge",
+      "psi_aH_required": 1.8833727344365643
+    },
+    {
+      "basal_area_m2_ha": 30,
+      "basal_area_weighted_height_m": 30,
+      "basis": "Class 5: printed mean",
+      "psi_aH_required": 2.092395587076438
+    },
+    {
+      "basal_area_m2_ha": 30,
+      "basal_area_weighted_height_m": 30,
+      "basis": "Class 5: stock / area",
+      "psi_aH_required": 2.1131825570365965
+    },
+    {
+      "basal_area_m2_ha": 40,
+      "basal_area_weighted_height_m": 30,
+      "basis": "Class 5: lower class edge",
+      "psi_aH_required": 1.4125295508274234
+    },
+    {
+      "basal_area_m2_ha": 40,
+      "basal_area_weighted_height_m": 30,
+      "basis": "Class 5: printed mean",
+      "psi_aH_required": 1.5692966903073287
+    },
+    {
+      "basal_area_m2_ha": 40,
+      "basal_area_weighted_height_m": 30,
+      "basis": "Class 5: stock / area",
+      "psi_aH_required": 1.5848869177774474
+    }
+  ],
+  "remainder": {
+    "screen_carbon_fraction": 0.1,
+    "screen_remainder_MgC_ha": 53.63257329758882,
+    "remaining_wood_C_MgC_ha": 482.69315967829937,
+    "conditional_min_woody_volume_m3_ha": 1711.6778711996433,
+    "conditional_min_woody_mass_Mg_ha": 1027.006722719786,
+    "required_carbon_remainder_at_395_7": 350.3467329758882,
+    "required_remainder_fraction_at_395_7": 0.6532349865667155,
+    "status": "Generous illustrative carbon-share screen, not a universal ecological bound"
+  },
+  "component_evidence": {
+    "higuchi_dry_leaf_mass_fraction": 0.010534780860474465,
+    "higuchi_reference": {
+      "doi": "10.1590/1809-43921998282166",
+      "table": "3(b), nutrient-analysis subset n=38",
+      "mean_dry_leaf_mass_kg": 23.58,
+      "mean_total_dry_mass_kg": 2238.3,
+      "status": "Ratio of published dry-mass sample means, not mean individual fraction or plot-level area fraction"
+    },
+    "epiphytes_live_Mg_ha": 6.214,
+    "epiphytes_dead_Mg_ha": 10.225,
+    "comparison_warning": "Different taxa, pools, populations and estimators; not a pooled universal bound"
+  },
+  "source_class_area_km2": 5314494.2052,
+  "hypothesis_set": [
+    "volume_or_architecture_difference",
+    "material_properties",
+    "separately_measured_remainder",
+    "spatial_population_selection",
+    "mapped_target_overestimate"
+  ],
+  "empirical_closure_status": "not_identifiable_from_available_aggregates"
+}

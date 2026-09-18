@@ -1,0 +1,28 @@
+{
+  "EDGAR_2025": {
+    "value": 0.9,
+    "unit": "GtCO2e/year",
+    "quantity": "net LULUCF",
+    "source": "Crippa et al. 2026, booklet"
+  },
+  "GCB_2025": {
+    "value": 4.1,
+    "unit": "GtCO2/year",
+    "quantity": "projected net land-use CO2",
+    "status": "low-confidence projection",
+    "source": "Friedlingstein et al. 2026"
+  },
+  "difference_status": "Different gas coverage and attribution conventions; not an uncertainty interval for one matched estimand.",
+  "Grassi_2023": {
+    "period": "2000-2020",
+    "unit": "GtCO2/year",
+    "bookkeeping": 4.8,
+    "national_inventories": -1.9,
+    "unadjusted_gap": 6.7,
+    "managed_forest_environmental_sink": -6.4,
+    "adjusted_gap": 0.3,
+    "doi": "10.5194/essd-15-1093-2023",
+    "location": "Abstract and Sections 2-3",
+    "status": "Published harmonization using a model-estimated sink; not direct verification of tree biomass or a decomposition of the 2025 gap."
+  }
+}

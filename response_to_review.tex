@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,newtxtext,newtxmath,microtype,booktabs,tabularx}
+\usepackage[numbers,sort&compress]{natbib}\usepackage[hyphens]{xurl}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\hypersetup{pdftitle={Two-sided forest-carbon calibration: methodological and source notes},pdfauthor={Henry Arellano-Peña},pdfsubject={Model alternatives, component evidence and empirical input audit},pdfkeywords={forest carbon, mapped bias, material volume, foliage, empirical identifiability}}
+\title{Two-sided forest-carbon calibration\\[.4em]\large Methodological and source notes}
+\author{Henry Arellano-Pe\~na\\NEBIOT S.A.S.}\date{17 September 2026}
+\setlength{\emergencystretch}{2em}
+\begin{document}\maketitle
+\section{An independent test permits corroboration and both revision directions}
+The protocol compares independently reconstructed class carbon with mapped carbon, retaining their joint uncertainty. The hypothesis set contains five explanations of the class-5 contrast: sound material volume, material properties, disjoint remainder compartments, spatial population selection and an overestimated mapped target. A negative measured-minus-mapped interval lying below a prespecified equivalence margin supports the last possibility when the independent measurements and support are adequately validated. Agreement within the margin supports the target at the stated precision. An interval wholly above the positive margin supports an underestimated map and an upward revision; one wholly below the negative margin supports an overestimated map and a downward revision. An interval crossing a boundary remains unresolved.
+
+Potential mapping errors include extrapolation across architecture and vegetation domains, errors in regional-to-pantropical calibration, and inadequate discrimination of high-carbon states by the Baccini and Simard predictors \citep{Arellano2016}. These mechanisms are tested with held-out plots or sites, explicit feature-support diagnostics and residuals against independent height and material volume. Predictor saturation is a loss of information, not proof of one error direction. Neither the mapped target nor the comparison products are designated true by construction.
+
+\section{Physical constraints and component evidence}
+For mapped carbon $c$, disjoint remainder $c_R$ and measured woody-material carbon density $\beta>0$, required volume is $(c-c_R)/\beta$. Lower $\beta$ increases that volume. Basal-area-weighted height and basal-area--height-weighted architecture separate exactly:
+\[
+\bar H_a=\frac{\sum aH}{\sum a},\quad
+\bar\psi_{aH}=\frac{\sum aH\psi}{\sum aH},\quad
+\Lambda=\bar H_a\bar\psi_{aH}.
+\]
+Thus the ratio-based target, under the stated illustrative properties, requires $\bar\psi_{aH}\simeq2.1$ at $G_b=30$\,m$^2$\,ha$^{-1}$ and $\bar H_a=30$\,m, or approximately 1.6 at $G_b=40$. These are scenarios of solid material relative to summed cylinders, not observed architectural parameters.
+
+The published lower class edge, 478\,MgC\,ha$^{-1}$ \citep[Table~3]{Arellano2016}, implies approximately 1,020\,Mg dry biomass and 1,700\,m$^3$\,ha$^{-1}$ under $f_C=0.47$, basic density 0.60 and zero remainder. It constrains assigned \emph{model cells} only if the operational raster uses the printed interval. It is not a measured lower bound for every hectare or subpixel patch. Full numerical precision is retained in the archive; public requirements are rounded.
+
+Higuchi et al.'s 38-tree nutrient subset reports dry leaf and total mass means of 23.58 and 2,238.30\,kg, giving a sample-total foliage fraction of 1.05\% \citep[Table~3(b)]{Higuchi1998}. The table's mean fresh-weight percentage is a different statistic. G\'omez Gonz\'alez et al. report approximately 6.2\,Mg\,ha$^{-1}$ live epiphytes after sampled masses and stand extrapolation, separately from dead organic material \citep{Gomez2017}. Those observations do not support using ordinary foliage or live epiphytes to absorb a 65.3\% carbon remainder. They are not universal bounds. Liana stems and small trees are woody components; a small-tree/liana addition cannot be relabelled a nonwoody remainder \citep{Malhi2006}.
+
+The ten-percent carbon-remainder screen is explicitly hypothetical. Even with that allowance, the ratio-based class-5 target requires approximately 1,030\,Mg dry woody material and 1,710\,m$^3$\,ha$^{-1}$ at the assumed properties. Closing the contrast solely by an unmeasured remainder is therefore unsupported within that screen.
+
+\section{Real published inputs and the missing residual}
+The C\'ordoba community audit transcribes Table~170 in V\'asquez and Arellano \citep[p.~942]{Vasquez2012}. It reproduces 45.2\,m$^2$\,ha$^{-1}$ mean basal area, 147.8\,Mg\,ha$^{-1}$ allometry-based biomass and 66.8\,MgC\,ha$^{-1}$ source-method carbon. The displayed class basal areas and height limits give a nominal cylinder-sum envelope of 236.5--778.4\,m$^3$\,ha$^{-1}$, not a measured wood volume or confidence interval. The source's independently rounded totals and class sums are both retained.
+
+No sound-volume records paired with material chemistry and no georeferenced, epoch-matched map value were recovered for that summary. Consequently the independent geometric residual remains unidentified. Inferring volume from the allometric biomass, or assigning a map class from that biomass, would make the comparison circular. The archive records a null residual and the missing fields, rather than creating a purported empirical test. A representative independent class-5 reconstruction remains a separate field-data requirement.
+
+\section{Source identity and reproducibility}
+The 723.97\,PgC result remains attributed to the published pantropical map, with the Australian tropics excluded and nominal epoch 2007--2008. The author-led relationship is identified in the research design. The class area of 5.31 million km$^2$ is compared only in scale with the historical Amazonian forest extent cited by Fauset et al. \citep{Fauset2015}; it is not a geographic equivalence or a contemporary coverage estimate.
+
+All pre-existing numbered mathematical expressions and substantive proofs are retained. The numerical additions concern lower-edge requirements, component evidence, weighted geometry and both signs of the residual decision rule. The published-table audit, source transcription and previous numerical checks remain separate from the new empirical-input check. Reproduction verifies the computations; it does not substitute for the absent field records.
+
+The frozen manuscript and reproducibility package are available at \url{https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v6.5}. The source citation and SHA-256 manifest identify the release. No archival DOI has been assigned; a journal submission or replacement of the historical preprint is a separate action.
+\bibliographystyle{unsrtnat}\bibliography{references}
+\end{document}

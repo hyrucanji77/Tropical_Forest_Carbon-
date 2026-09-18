@@ -1,0 +1,4 @@
+assumed_basal_area_m2_ha,required_basal_weighted_Hpsi_m,inference
+40,47.546607533323424,Conditional trade-off; neither basal area nor Hpsi is a recovered measurement
+60,31.69773835554895,Conditional trade-off; neither basal area nor Hpsi is a recovered measurement
+80,23.773303766661712,Conditional trade-off; neither basal area nor Hpsi is a recovered measurement

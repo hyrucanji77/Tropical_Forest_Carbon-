@@ -1,0 +1,44 @@
+{
+  "reported_pantropical_aboveground_carbon_pgc": 723.97,
+  "scope": {
+    "domain": "Actual mapped pantropical vegetation domain",
+    "explicit_exclusion": "Australian tropics",
+    "not_a_worldwide_total": true,
+    "forest_only_reclassification_required": true,
+    "other_pools_included_in_723_97": false
+  },
+  "nominal_map_reference_period": "2007–2008",
+  "nominal_epoch_source": {
+    "citation": "Arellano-P. and Rangel-Ch., arXiv:1508.03667v2",
+    "url": "https://arxiv.org/pdf/1508.03667",
+    "printed_page": 23
+  },
+  "geographic_exclusion_source": {
+    "url": "https://arxiv.org/pdf/1508.03667",
+    "printed_page": 24
+  },
+  "publication_years": {
+    "original_preprint": 2015,
+    "preprint_version_2": 2016,
+    "Baccini_carbon_predictor": 2012,
+    "Simard_height_predictor": 2011
+  },
+  "Baccini2012": {
+    "doi": "10.1038/nclimate1354",
+    "nominal_map_period": "2007–2008",
+    "field_calibration_period": "2008–2010",
+    "locator": "p. 182; Figure 1 caption on p. 183 excludes Australia"
+  },
+  "Simard2011": {
+    "doi": "10.1029/2011JG001708",
+    "GLAS_L3C_start": "2005-05-20",
+    "GLAS_L3C_end": "2005-06-23",
+    "MODIS_tree_cover_year": 2005,
+    "locator": "Section 2.2, paragraph 11"
+  },
+  "worldwide_stock_pgc": null,
+  "worldwide_extension": "Add omitted regions on the same pool, reference epoch and harmonized vegetation support. A forest-only mask requires a separate partition.",
+  "annual_global_extension": "Sum disjoint regional sources and removals; the net increment need not be positive.",
+  "current_stock_update": "Requires intervening carbon dynamics; no 2012 or 2025 stock is inferred from publication year.",
+  "source_check_date": "2026-09-17"
+}

@@ -1,0 +1,3 @@
+domain,stock_PgC,area_ha,carbon_MgC_ha,assumed_carbon_fraction,assumed_basic_density_Mg_m3,conditional_biomass_Mg_ha,equivalent_woody_volume_m3_ha,equivalent_layer_cm,inference
+Class 5,285.03,531449420.52,536.3257329758882,0.47,0.6,1141.1185807997622,1901.864301332937,19.01864301332937,Requirement under specified uniform properties and zero remainder; not observed stand geometry
+Classes 4 and 5,566.79,1200345923.1999998,472.18888242565583,0.47,0.6,1004.6571966503316,1674.428661083886,16.74428661083886,Requirement under specified uniform properties and zero remainder; not observed stand geometry

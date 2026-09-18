@@ -16,7 +16,16 @@ GENERATED=(
  'census_rows.tex','normalization_diagnostic.csv','carbon_fraction_sensitivity.csv','census_criteria.csv',
  'power_thresholds.csv','timing_examples.csv','edgar_land_reference.csv','display_precision_audit.json',
  'display_model_normalization.csv','printed_percentage_audit.csv','annual_cohort_examples.csv',
- 'nearlinear_examples.csv','subset_bound_scenarios.csv')
+ 'nearlinear_examples.csv','subset_bound_scenarios.csv','physical_validation_summary.csv','physical_validation_rows.tex',
+ 'population_atmosphere_summary.json','population_atmosphere_validation.json',
+ 'atmospheric_account_examples.csv','intermediate_stem_rows.tex',
+ 'physical_closure_summary.json','physical_requirements.csv','physical_requirements_rows.tex',
+ 'basal_area_requirements.csv','basal_requirements_rows.tex','class_label_assignments.json',
+ 'normalization_area_hypothesis.json','stand_closure_validation.json',
+ 'class5_comparison.json','class5_comparisons.csv','material_sensitivity.csv',
+ 'normalization_requirements_rows.tex','network_gap_rows.tex','class5_comparison_validation.json',
+ 'admissibility_requirements.csv','admissibility_summary.json','cordoba_empirical_audit.json',
+ 'cordoba_audit_rows.tex','admissibility_validation.json')
 REQUIRED=('main.tex','main.pdf','main.bbl','references.bib','README.md','response_to_review.tex',
  'response_to_review.pdf','scripts/reproduce.py','scripts/extensions.py','scripts/audit_extensions.py',
  'scripts/verify_package.py','data/inputs.json','data/source_provenance.csv','figures/figure_plates.pdf',
@@ -73,6 +82,10 @@ def main():
  'byte_identical':not changed,'nonidentical_files':changed,'incompatible_files':bad,
  'numeric_absolute_tolerance':1e-10,'numeric_relative_tolerance':1e-12,
  'analytical_checks':json.loads((ROOT/'data/validation.json').read_text()),
+ 'population_atmosphere_checks':json.loads((ROOT/'data/population_atmosphere_validation.json').read_text()),
+ 'stand_closure_checks':json.loads((ROOT/'data/stand_closure_validation.json').read_text()),
+ 'class5_comparison_checks':json.loads((ROOT/'data/class5_comparison_validation.json').read_text()),
+ 'admissibility_checks':json.loads((ROOT/'data/admissibility_validation.json').read_text()),
  'scope':'Integrity and computational reproduction, not empirical validation or digital authentication.'}
  print(json.dumps(result,indent=2));return int(bool(bad))
 if __name__=='__main__':

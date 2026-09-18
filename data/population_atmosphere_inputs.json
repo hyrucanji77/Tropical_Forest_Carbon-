@@ -1,0 +1,40 @@
+{
+  "evidence_status": "Published aggregate transcriptions, derived means and separately identified synthetic accounts; no new field observations.",
+  "intermediate_class": {
+    "source": "Vasquez and Arellano (2012), arXiv:1208.0248, Table 170, printed page 942",
+    "source_url": "https://arxiv.org/pdf/1208.0248",
+    "community": "Acalypha sp. and Guazuma ulmifolia",
+    "dbh_class_cm": [10, 30],
+    "class_definition_note": "Table 170 defines class II as 10-30 cm; the abstract's alternative 10-20 cm wording is not silently substituted.",
+    "plot_basis_ha": 0.05,
+    "stems_per_plot_basis": 30,
+    "biomass_tonnes_per_plot_basis": 2.88,
+    "carbon_tonnes_per_plot_basis": 1.3,
+    "biomass_share_percent_reported": 38.97,
+    "carbon_share_percent_reported": 38.79,
+    "class_III_biomass_share_percent_reported": 23.74,
+    "combined_II_III_biomass_share_percent_reported": 62.71,
+    "mass_method": "Biomass estimated using selected Chave et al. relationships; tissue carbon fractions measured separately. This is evidence about the reported class distribution, not independent validation of the architecture-informed pantropical stock."
+  },
+  "architectural_records": [
+    {"taxon": "Inga sp. 10", "dbh_cm": 15.24, "aboveground_biomass_kg": 104.82, "source_printed_page": 39},
+    {"taxon": "Pouteria sp. 4", "dbh_cm": 11.58, "aboveground_biomass_kg": 109.84, "source_printed_page": 39},
+    {"taxon": "Virola elongata", "dbh_cm": 14.63, "aboveground_biomass_kg": 115.74, "source_printed_page": 38}
+  ],
+  "architectural_source": "Arellano-P. and Rangel-Ch., arXiv:1508.03667v2, Table 1. These are reported biomass outputs, not carbon kilograms or new weighed measurements.",
+  "synthetic_abundance": [
+    {"class": "Numerous intermediate stems", "stems": 1000, "biomass_kg_per_stem": 100, "carbon_fraction": 0.45, "affected_fraction": 1.0, "first_year_release_fraction": 0.2},
+    {"class": "Sparse large stems", "stems": 10, "biomass_kg_per_stem": 5000, "carbon_fraction": 0.45, "affected_fraction": 1.0, "first_year_release_fraction": 0.2}
+  ],
+  "synthetic_annual_accounts": [
+    {"case": "Baseline", "forest_release": 1, "other_sources": [4, 1], "land_removal": 1, "ocean_removal": 1},
+    {"case": "Omitted forest release included, other terms fixed", "forest_release": 2, "other_sources": [4, 1], "land_removal": 1, "ocean_removal": 1},
+    {"case": "Larger forest attribution, same source total and removals", "forest_release": 2, "other_sources": [3, 1], "land_removal": 1, "ocean_removal": 1},
+    {"case": "Independently specified larger removal", "forest_release": 2, "other_sources": [4, 1], "land_removal": 2, "ocean_removal": 1},
+    {"case": "Leading forest source", "forest_release": 5, "other_sources": [4, 1], "land_removal": 1, "ocean_removal": 1},
+    {"case": "Majority forest source", "forest_release": 6, "other_sources": [4, 1], "land_removal": 1, "ocean_removal": 1},
+    {"case": "Forest release plus reduced uptake", "forest_release": 2, "other_sources": [4, 1], "land_removal": 0.5, "ocean_removal": 1}
+  ],
+  "synthetic_units": "Common carbon-mass units per year; not measured global emissions or a fitted atmospheric model.",
+  "delay_example": {"omitted_carbon": 10, "annual_release_fractions": [0.2, 0.5, 0.3], "assumed_airborne_retention_fraction": 0.5, "note": "Prescribed illustrative retention is not an empirical airborne fraction; all fractions refer to one non-overlapping carbon cohort."}
+}

@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "release": "5.2",
-  "manifest_members_checked": 60,
-  "numerical_files_regenerated": 26,
+  "release": "6.5",
+  "manifest_members_checked": 106,
+  "numerical_files_regenerated": 51,
   "byte_identical": true,
   "nonidentical_files": [],
   "incompatible_files": [],
@@ -10,7 +10,7 @@
   "numeric_relative_tolerance": 1e-12,
   "analytical_checks": {
     "status": "PASS",
-    "revision_date": "2026-09-16",
+    "revision_date": "2026-09-17",
     "seed": 20260916,
     "randomized_cases": 1000,
     "assertions": 257167,
@@ -87,6 +87,85 @@
       },
       "probability_scope": "Explicit display-error reference models, not posterior model selection."
     }
+  },
+  "population_atmosphere_checks": {
+    "status": "PASS",
+    "deterministic_checks": 40,
+    "checks": [
+      "biomass mean 96 kg",
+      "carbon mean separate",
+      "biomass is not carbon",
+      "table class limits",
+      "class share reported",
+      "carbon share reported",
+      "combined smaller-class share",
+      "majority community contribution",
+      "three original records",
+      "Inga sp. 10 within reported near-100 range",
+      "Inga sp. 10 below20cm",
+      "Pouteria sp. 4 within reported near-100 range",
+      "Pouteria sp. 4 below20cm",
+      "Virola elongata within reported near-100 range",
+      "Virola elongata below20cm",
+      "intermediate population stock greater",
+      "intermediate population release greater",
+      "smaller individual",
+      "Baseline balance",
+      "Omitted forest release included, other terms fixed balance",
+      "Larger forest attribution, same source total and removals balance",
+      "Independently specified larger removal balance",
+      "Leading forest source balance",
+      "Majority forest source balance",
+      "Forest release plus reduced uptake balance",
+      "omitted source increases accumulation",
+      "reallocation preserves accumulation",
+      "explicit extra sink preserves accumulation",
+      "forest correction alone insufficient for leading",
+      "leading does not require majority",
+      "majority implies leading",
+      "reduced uptake adds atmospheric effect",
+      "delay conserves carbon",
+      "all delayed releases positive",
+      "retention model stated separately",
+      "no automatic full airborne retention",
+      "reject (-1, 100, 0.5)",
+      "reject (1, -100, 0.5)",
+      "reject (1, 100, 1.1)",
+      "reject (1, 100, nan)"
+    ],
+    "scope": "Transcription regressions and algebraic examples; no new inventory or atmospheric fit."
+  },
+  "stand_closure_checks": {
+    "status": "PASS",
+    "seed": 20260919,
+    "randomized_cases": 1000,
+    "assertions": 6013,
+    "maximum_absolute_arithmetic_residual": 2.2737367544323206e-13,
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-12,
+    "scope": "Synthetic closure and exact published-input diagnostics; no observed stand structure or field validation",
+    "all_permutations_enumerated": 120
+  },
+  "class5_comparison_checks": {
+    "status": "PASS",
+    "deterministic_assertions": 55,
+    "max_arithmetic_residual": 2.2737367544323206e-13,
+    "direct_interval_assignment": [
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "scope": "Published-input arithmetic, physical sensitivity signs and logical counterexamples; not field validation."
+  },
+  "admissibility_checks": {
+    "status": "PASS",
+    "assertions": 515,
+    "synthetic_cases": 250,
+    "seed": 20260921,
+    "max_geometry_residual": 1.4210854715202004e-14,
+    "scope": "Published aggregate reproduction, exact geometry decomposition and decision-rule tests; no field R5"
   },
   "scope": "Integrity and computational reproduction, not empirical validation or digital authentication."
 }

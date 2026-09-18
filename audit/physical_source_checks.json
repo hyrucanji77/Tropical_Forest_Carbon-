@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-09-17",
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/1508.03667",
+      "locator": "Table3,printedpage41",
+      "verified": "Class5stock285.03PgC,area531449420.52ha,printedmean531.05; all five intervals and numerical rows"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1208.0248",
+      "locator": "Table170,printedpage942",
+      "verified": "Acalypha-Guazuma total biomass7.39Mg/.05ha, classII2.88Mg and30stems"
+    },
+    {
+      "url": "https://essd.copernicus.org/articles/15/1093/2023/",
+      "locator": "Abstract",
+      "verified": "2000-2020: bookkeeping+4.8,nationalinventories-1.9,model-estimated environmental managed-forest sink-6.4;residualgap0.3GtCO2/yr"
+    }
+  ],
+  "limits": "Published-data verification only; no original class-5 structural survey or raster rerun."
+}

@@ -1,0 +1,151 @@
+{
+  "source": "Vasquez and Arellano (2012), arXiv:1208.0248, Table 170, printed page 942",
+  "dbh_class_cm": [
+    10,
+    30
+  ],
+  "mean_biomass_kg_per_stem_derived": 96.0,
+  "mean_carbon_kg_per_stem_derived": 43.333333333333336,
+  "biomass_share_percent_source_reported": 38.97,
+  "carbon_share_percent_source_reported": 38.79,
+  "combined_II_III_biomass_share_percent_source_reported": 62.71,
+  "interpretation": "Ratio of displayed class aggregates, not a fixed individual mass or a pantropical threshold.",
+  "architectural_records": [
+    {
+      "taxon": "Inga sp. 10",
+      "dbh_cm": 15.24,
+      "aboveground_biomass_kg": 104.82,
+      "source_printed_page": 39
+    },
+    {
+      "taxon": "Pouteria sp. 4",
+      "dbh_cm": 11.58,
+      "aboveground_biomass_kg": 109.84,
+      "source_printed_page": 39
+    },
+    {
+      "taxon": "Virola elongata",
+      "dbh_cm": 14.63,
+      "aboveground_biomass_kg": 115.74,
+      "source_printed_page": 38
+    }
+  ],
+  "synthetic_abundance": [
+    {
+      "class": "Numerous intermediate stems",
+      "stems": 1000,
+      "biomass_kg_per_stem": 100,
+      "carbon_fraction": 0.45,
+      "affected_fraction": 1.0,
+      "first_year_release_fraction": 0.2,
+      "standing_carbon_kg": 45000.0,
+      "first_year_release_kgC": 9000.0,
+      "first_year_release_kgCO2": 33000.0
+    },
+    {
+      "class": "Sparse large stems",
+      "stems": 10,
+      "biomass_kg_per_stem": 5000,
+      "carbon_fraction": 0.45,
+      "affected_fraction": 1.0,
+      "first_year_release_fraction": 0.2,
+      "standing_carbon_kg": 22500.0,
+      "first_year_release_kgC": 4500.0,
+      "first_year_release_kgCO2": 16500.0
+    }
+  ],
+  "synthetic_annual_accounts": [
+    {
+      "case": "Baseline",
+      "forest_release": 1,
+      "other_source_sum": 5.0,
+      "source_total": 6.0,
+      "removal_sum": 2,
+      "atmospheric_increment": 4.0,
+      "forest_is_largest_source": false,
+      "forest_is_majority_source": false,
+      "atmospheric_increment_difference_from_baseline": 0.0
+    },
+    {
+      "case": "Omitted forest release included, other terms fixed",
+      "forest_release": 2,
+      "other_source_sum": 5.0,
+      "source_total": 7.0,
+      "removal_sum": 2,
+      "atmospheric_increment": 5.0,
+      "forest_is_largest_source": false,
+      "forest_is_majority_source": false,
+      "atmospheric_increment_difference_from_baseline": 1.0
+    },
+    {
+      "case": "Larger forest attribution, same source total and removals",
+      "forest_release": 2,
+      "other_source_sum": 4.0,
+      "source_total": 6.0,
+      "removal_sum": 2,
+      "atmospheric_increment": 4.0,
+      "forest_is_largest_source": false,
+      "forest_is_majority_source": false,
+      "atmospheric_increment_difference_from_baseline": 0.0
+    },
+    {
+      "case": "Independently specified larger removal",
+      "forest_release": 2,
+      "other_source_sum": 5.0,
+      "source_total": 7.0,
+      "removal_sum": 3,
+      "atmospheric_increment": 4.0,
+      "forest_is_largest_source": false,
+      "forest_is_majority_source": false,
+      "atmospheric_increment_difference_from_baseline": 0.0
+    },
+    {
+      "case": "Leading forest source",
+      "forest_release": 5,
+      "other_source_sum": 5.0,
+      "source_total": 10.0,
+      "removal_sum": 2,
+      "atmospheric_increment": 8.0,
+      "forest_is_largest_source": true,
+      "forest_is_majority_source": false,
+      "atmospheric_increment_difference_from_baseline": 4.0
+    },
+    {
+      "case": "Majority forest source",
+      "forest_release": 6,
+      "other_source_sum": 5.0,
+      "source_total": 11.0,
+      "removal_sum": 2,
+      "atmospheric_increment": 9.0,
+      "forest_is_largest_source": true,
+      "forest_is_majority_source": true,
+      "atmospheric_increment_difference_from_baseline": 5.0
+    },
+    {
+      "case": "Forest release plus reduced uptake",
+      "forest_release": 2,
+      "other_source_sum": 5.0,
+      "source_total": 7.0,
+      "removal_sum": 1.5,
+      "atmospheric_increment": 5.5,
+      "forest_is_largest_source": false,
+      "forest_is_majority_source": false,
+      "atmospheric_increment_difference_from_baseline": 1.5
+    }
+  ],
+  "synthetic_delay": {
+    "release_by_year": [
+      2.0,
+      5.0,
+      3.0
+    ],
+    "prescribed_retained_carbon_by_year": [
+      1.0,
+      2.5,
+      1.5
+    ],
+    "cumulative_release": 10.0,
+    "cumulative_retained": 5.0,
+    "status": "Illustration with prescribed retention, not a measured atmospheric response"
+  }
+}

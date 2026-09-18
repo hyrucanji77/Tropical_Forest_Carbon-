@@ -1,0 +1,5 @@
+method,mean_volume_cm3,mean_volume_difference_percent,displayed_difference_percent
+Water displacement,1240,0,0.0
+Numerical integration,1217.76,1.793548387096774193548387097,1.8
+"Voxelization, 1 cm",1211,2.338709677419354838709677419,2.3
+"Voxelization, 1 mm",1189.92,4.038709677419354838709677419,4.0

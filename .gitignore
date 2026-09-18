@@ -1,15 +1,11 @@
-# TeX intermediate files
 *.aux
 *.log
 *.out
 *.toc
+*.blg
 *.fls
 *.fdb_latexmk
-*.blg
 *.synctex.gz
-# Python caches
 __pycache__/
-*.py[cod]
-# Local verification/build directories
-_build/
+*.pyc
 .venv/

@@ -1,0 +1,14 @@
+{
+  "evidence_status": "Illustrative material properties and published-table diagnostics; not recovered class-5 measurements",
+  "illustrative_carbon_fraction": 0.47,
+  "illustrative_basic_density_Mg_m3": 0.6,
+  "illustrative_basal_area_m2_ha": [40, 60, 80],
+  "assumed_remainder_carbon_MgC_ha": 0,
+  "normalization_candidate_q": 0.99016,
+  "acalypha_total_Mg_per_plot": 7.39,
+  "acalypha_plot_area_ha": 0.05,
+  "class_table_source": "Arellano-P. and Rangel-Ch. 2016, Table 3, p.41, arXiv:1508.03667v2",
+  "acalypha_source": "Vasquez and Arellano 2012, Table 170, printed p.942, arXiv:1208.0248",
+  "randomized_cases": 1000,
+  "test_seed": 20260919
+}

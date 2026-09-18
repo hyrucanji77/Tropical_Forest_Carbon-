@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Measured stand compartments for a forward material-closure calculation",
+  "description": "No field observations are included. Positive basal areas and heights use a fixed measurement convention; compartments are disjoint solid material volumes with matching density and dry-mass carbon fraction. Class means require representative design weights. Calculation is not an authenticity check.",
+  "type": "object",
+  "required": [
+    "plots"
+  ],
+  "properties": {
+    "plots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "plot_id",
+          "plot_area_ha",
+          "trees"
+        ],
+        "properties": {
+          "plot_id": {
+            "type": "string"
+          },
+          "plot_area_ha": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "epoch": {
+            "type": "string"
+          },
+          "mapped_class": {
+            "type": "integer"
+          },
+          "stratum_id": {
+            "type": "string"
+          },
+          "sampling_weight": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "area_convention": {
+            "type": "string"
+          },
+          "material_ownership_convention": {
+            "type": "string"
+          },
+          "trees": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "tree_id",
+                "basal_area_m2",
+                "height_m",
+                "compartments"
+              ],
+              "properties": {
+                "tree_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "basal_area_m2": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "height_m": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "taxon": {
+                  "type": "string"
+                },
+                "size_class": {
+                  "type": "string"
+                },
+                "compartments": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "compartment_id",
+                      "woody",
+                      "green_solid_volume_m3",
+                      "basic_density_Mg_m3",
+                      "carbon_fraction"
+                    ],
+                    "properties": {
+                      "compartment_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "woody": {
+                        "type": "boolean"
+                      },
+                      "green_solid_volume_m3": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "basic_density_Mg_m3": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "carbon_fraction": {
+                        "type": "number",
+                        "exclusiveMinimum": 0,
+                        "maximum": 1
+                      },
+                      "volume_method": {
+                        "type": "string"
+                      },
+                      "density_measurement_id": {
+                        "type": "string"
+                      },
+                      "carbon_measurement_id": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

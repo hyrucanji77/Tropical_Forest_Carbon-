@@ -1,0 +1,36 @@
+{
+  "density_bases": "Source Table 3, arXiv:1508.03667v2, class 5; printed mean and separately computed stock/area",
+  "illustrative_carbon_fraction": 0.47,
+  "illustrative_basic_density_Mg_m3": 0.6,
+  "comparisons": [
+    {
+      "key": "Lewis2013",
+      "label": "African network mean",
+      "biomass_Mg_ha": 395.7,
+      "doi": "10.1098/rstb.2012.0295",
+      "population": "260 intact African tropical forest plots",
+      "source": "https://research.wur.nl/en/publications/above-ground-biomass-and-structure-of-260-african-tropical-forest/"
+    },
+    {
+      "key": "Malhi2006",
+      "label": "Amazonian regional upper value",
+      "biomass_Mg_ha": 350.0,
+      "doi": "10.1111/j.1365-2486.2006.01120.x",
+      "source": "https://repository.si.edu/bitstreams/86059b1f-a772-4e97-9445-b81712c2053d/download"
+    },
+    {
+      "key": "Malhi2006",
+      "label": "Amazonian regional lower value",
+      "biomass_Mg_ha": 200.0,
+      "doi": "10.1111/j.1365-2486.2006.01120.x",
+      "source": "https://repository.si.edu/bitstreams/86059b1f-a772-4e97-9445-b81712c2053d/download"
+    }
+  ],
+  "comparison_status": "Different allometry-dependent sampling populations, not measured class-5 mass and not biomass ceilings",
+  "beta_sensitivities_MgC_m3": [
+    0.25,
+    0.282,
+    0.3
+  ],
+  "source_checked": "2026-09-17"
+}

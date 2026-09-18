@@ -1,0 +1,78 @@
+{
+  "source": "Vasquez and Arellano (2012), Table 170, printed p.942, arXiv:1208.0248",
+  "community": "Acalypha sp. and Guazuma ulmifolia",
+  "reported_basal_area_m2_ha": 45.199999999999996,
+  "class_sum_basal_area_m2_ha": 45.4,
+  "stems_ha": 1593.3999999999999,
+  "allometry_based_biomass_Mg_ha": 147.79999999999998,
+  "source_method_carbon_MgC_ha": 66.8,
+  "basal_area_times_height_envelope_m3_ha": [
+    236.49999999999997,
+    778.4
+  ],
+  "envelope_status": "Calculated from displayed class basal areas and height limits; not woody volume or a confidence interval; rounded source aggregates",
+  "mapped_class": null,
+  "geometric_carbon_MgC_ha": null,
+  "measured_minus_mapped_R": null,
+  "evaluation_status": "not_identifiable_from_available_aggregates",
+  "missing_inputs": [
+    "Independent solid organ volumes",
+    "Paired volume-density-carbon measurements and remainder pools",
+    "Georeferenced map value and class on matched epoch/pool",
+    "Representative plot inclusion weights"
+  ],
+  "source_rows": {
+    "source": "Vasquez and Arellano (2012), Table 170, printed p.942, arXiv:1208.0248",
+    "community": "Acalypha sp. and Guazuma ulmifolia",
+    "basis_area_ha": 0.05,
+    "classes": [
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V",
+      "VI"
+    ],
+    "basal_area_m2_per_basis": [
+      0.11,
+      0.74,
+      0.56,
+      0.43,
+      0.43,
+      0.0
+    ],
+    "height_min_m": [
+      1.5,
+      2.5,
+      6.0,
+      7.0,
+      8.0,
+      0.0
+    ],
+    "height_max_m": [
+      16.0,
+      23.0,
+      16.0,
+      18.0,
+      8.0,
+      0.0
+    ],
+    "stems_per_basis": [
+      42.67,
+      30.0,
+      4.67,
+      1.67,
+      0.67,
+      0.0
+    ],
+    "reported_total_basal_area_m2": 2.26,
+    "reported_total_stems": 79.67,
+    "reported_total_biomass_Mg": 7.39,
+    "reported_total_carbon_MgC": 3.34,
+    "carbon_method": "Selected Chave allometries for biomass; measured tissue-carbon fractions",
+    "geometry_records": null,
+    "plot_geolocation_to_mapped_target": null,
+    "mapped_plot_carbon": null,
+    "matched_epoch": null
+  }
+}

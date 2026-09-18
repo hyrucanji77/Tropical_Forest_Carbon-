@@ -1,0 +1,37 @@
+{
+  "new_sources": [
+    [
+      "Higuchi1998",
+      "Biomassa da parte aérea",
+      "1998",
+      "Table 3(b); n=38",
+      "https://doi.org/10.1590/1809-43921998282166",
+      "dry leaf/total mean 23.58/2238.30 kg; not fresh percentage"
+    ],
+    [
+      "Gomez2017",
+      "Species richness and biomass of epiphytes",
+      "2017",
+      "Table 3 and methods",
+      "https://doi.org/10.1177/1940082917698468",
+      "live6.214 and dead10.225 Mg/ha; regression-assisted extrapolation"
+    ],
+    [
+      "Fauset2015",
+      "Hyperdominance in Amazonian forest carbon cycling",
+      "2015",
+      "Introduction",
+      "https://doi.org/10.1038/ncomms7857",
+      "5.3million km2 historical scale reference"
+    ]
+  ],
+  "cordoba": {
+    "primary": "https://arxiv.org/pdf/1208.0248",
+    "table": "170",
+    "printed_page": 942,
+    "height_class_III": "6–16 m, checked in page image",
+    "empirical_residual": null
+  },
+  "doi": null,
+  "scope": "Primary-source transcriptions and author-defined sensitivity scenarios"
+}

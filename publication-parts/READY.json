@@ -1,8 +1,0 @@
-{
-  "snapshot": "5.0",
-  "encoding": "base64+xz+tar",
-  "parts": ["source00.txt", "source01.txt", "source02.txt", "source03.txt", "source04.txt", "source05.txt", "source06.txt", "source07.txt", "source08.txt", "source09.txt"],
-  "sha256": "01aac3035a917daf866658187d12ba75c8eca23eba1c4ed42d2f9f75c595ddcd",
-  "compressed_bytes": 67824,
-  "source_files": 21
-}

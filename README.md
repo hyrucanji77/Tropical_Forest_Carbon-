@@ -1,63 +1,71 @@
 # From tropical forest-carbon measurement to annual carbon accounts
 
 **Henry Arellano-Peña — NEBIOT S.A.S.**  
-Stock-to-flux identities, census calibration and a historical-data audit.  
-Research snapshot **5.2**, 16 September 2026.
+A measurement protocol linking stand structure, carbon calibration and annual accounts.  
+**Frozen release 6.5 · 17 September 2026**
 
-Repository: https://github.com/hyrucanji77/Tropical_Forest_Carbon-
+## Read and download
 
-## Read or use Overleaf
+[Versioned release](https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v6.5) · [Manuscript](main.pdf) · [Overleaf archive](release/Tropical_Forest_Carbon_Overleaf_v6_5.zip) · [Figures webpage](forest_carbon_figures.html) · [Three vector plates](figures/figure_plates.pdf)
 
-`main.pdf` is the paper; `main.tex` is its complete editable LaTeX source. `figures/figure_plates.pdf` contains the two large-format vector plates. `response_to_review.pdf` and its LaTeX source are separate from the paper. The complete Overleaf ZIP is `release/Tropical_Forest_Carbon_Overleaf_v5_2.zip`. Versioned files are published at https://github.com/hyrucanji77/Tropical_Forest_Carbon-/releases/tag/v5.2 .
+Upload the Overleaf ZIP as an existing project and compile `main.tex` with pdfLaTeX. Prebuilt vector figure PDFs, bibliography and numerical tables are included. Ordinary Overleaf compilation needs no Python execution, network retrieval, external fonts or shell escape. `response_to_review.pdf` contains separate methodological and source notes, not an internal discussion transcript.
 
-For Overleaf, upload the ZIP as an existing project and compile `main.tex` with pdfLaTeX. Figure PDFs, bibliography and generated numerical tables are included, so normal document compilation requires no Python execution, external fonts, network retrieval or shell escape. Locally, run `bash scripts/build_local.sh`.
+The manuscript identifies the mapped pantropical estimate of 723.97 PgC, the exclusion of the Australian tropics, and the nominal 2007–2008 map epoch. Its independent protocol tests corroboration, downward revision and upward revision against representative measurements, while reporting uncertainty-overlapping comparisons as unresolved. The class-5 structural requirements remain explicit scenarios, not fabricated field observations.
 
-## Reproduce the research
+## Reproduce and verify
 
 ```sh
 python scripts/verify_package.py
 python scripts/reproduce.py
+bash scripts/build_local.sh
 ```
 
-Python 3.9 or later, standard library only, without `-O`. Verification checks SHA-256 integrity, regenerates 26 numerical/table files, compares results and restores the manifest-backed snapshot. Numerical JSON/CSV values allow absolute tolerance 1e-10 and relative tolerance 1e-12 across platforms; exact decimal strings, labels and LaTeX fragments remain exact. The result states whether all files also reproduce byte-for-byte. Compiling PDFs can change their metadata, so verify integrity before rebuilding.
+Python 3.9 or later and its standard library suffice for numerical work; run without `-O`. The verifier regenerates **51 numerical/table files**. JSON/CSV numerical comparisons permit absolute tolerance 1e-10 and relative tolerance 1e-12 across platforms; exact decimal strings, labels and LaTeX fragments are exact. The report also states whether regeneration is byte-identical. Verify before recompiling PDFs, since compilation can change metadata.
 
-The test programme has 22,100 seeded randomized cases plus regression and invalid-input checks. Exact assertion counts and residuals are in `data/validation.json`. These checks test specified calculations and analytical identities; they do not validate a forest-carbon stock or estimate a new annual emissions inventory.
+| Check programme | Cases and seed | Reported checks |
+|---|---|---:|
+| Core plus analytical/audit extensions | 1,000 / 20260916; 20,000 / 20260917; 1,100 / 20260918 | 257,167 |
+| Population and atmosphere | Deterministic | 40 |
+| Physical closure | 1,000 / 20260919 | 6,013 |
+| Class-5 comparison | Deterministic | 55 |
+| Admissibility and Córdoba inputs | 250 / 20260921 | 515 |
+| **Total of these reported suites** | | **263,790** |
 
-## Main results
+`measurement_evidence.py` performs one additional regression assertion on the four displayed physical-validation shortfalls. These checks reproduce mathematics and published inputs; they do not validate an unmeasured class-5 population or a new emissions inventory.
 
-The weighted-mean covariance identity specifies which association transfers carbon-stock correction into release. The paired-account identities distinguish emissions, removals, zero-stock regrowth and mortality/growth calibration. Exact quadratic and finite-interval power-law criteria supply calibration-specific census screens. The annual-cohort convolution distinguishes a clearing cohort's first-year timing from a mixed annual inventory.
+## Data and measurements
 
-The published-digit audit transcribes the historical preprint table, tests nearest rounding and truncation separately, and diagnoses a shared normalization and crossed class intervals. Subset comparisons distinguish a conditional lower bound from an assumed whole-domain-density benchmark. Historical percentage calculations retain their original accounting and unresolved provenance rather than becoming 2025 measurements.
+`data/inputs.json` preserves the source table. `data/source_provenance.csv` documents references, periods and inference limits. The measurement schema, observed-data eligibility check and `SOURCE_AVAILABILITY.md` identify absent independent geometry and map correspondence. No private client material or font files are distributed.
 
-## Data and provenance
+To evaluate independent measured records, use:
 
-- `data/inputs.json`: displayed historical inputs, contemporary reference values and labelled synthetic scenarios.
-- `data/source_provenance.csv`: source URLs, versions, locations and inference limits.
-- `data/display_precision_audit.json`: exact decimal interval and rational-probability diagnostics.
-- `data/annual_cohort_examples.csv`: constant, increasing and decreasing clearing examples.
-- `scripts/`: executable numerical analysis, verification, artwork and packaging tools.
-- `source_figures/`: editable SVGs; `figures/`: compiled vector artwork.
-- `manifest.json`, `verification.json`, `release/release.json`: snapshot integrity, computation and package records.
+```sh
+python scripts/physical_closure.py --measurements measured.json --output measured_closure.json
+```
 
-See `SOURCE_AVAILABILITY.md` for the empirical records that were not recovered. No private client files, original third-party datasets or font files are distributed. This deposit has a repository URL and commit history; **no Zenodo DOI is claimed**.
+Do not populate the schema by back-calculating geometry from the mapped target. The evaluator checks input and material arithmetic; it cannot authenticate records or supply missing sampling weights.
 
-## Rebuild the complete snapshot
+## Complete build
 
 ```sh
 python scripts/reproduce.py
-python scripts/rebuild_artwork.py  # optional; requires CairoSVG and a serif system font
-pdflatex figure_plates.tex
-# Copy figure_plates.pdf into figures/figure_plates.pdf.
+python scripts/build_physical_figure.py
+python scripts/rebuild_artwork.py
+python scripts/build_companion_html.py
+pdflatex -interaction=nonstopmode -halt-on-error figure_plates.tex
+cp figure_plates.pdf figures/figure_plates.pdf
 bash scripts/build_local.sh
 python scripts/make_manifest.py
 python scripts/verify_package.py > verification.json
 python scripts/package_release.py
 ```
 
-The GitHub build workflow performs these steps. A build-generated commit records the source revision used. Read the immutable commit URL when citing a particular snapshot rather than assuming `main` never changes.
+Artwork regeneration additionally requires CairoSVG and BeautifulSoup. `scripts/build_local.sh` uses pdfLaTeX and BibTeX. The release archive is extracted and verified before distribution. The manifest and `release/release.json` record SHA-256 checksums.
 
-## Attribution and declarations
+## Citation, rights and deposit
 
-The author is the sole author of this paper, owns the methodologies discussed and is founder/director of NEBIOT, the only company currently affiliated with the work. The paper explicitly discloses these ownership/professional relationships, records the author's declaration of no other competing interests, and states the specific NEB001/NEB002 methodological connection. It states that no external funding is reported and discloses ChatGPT and Claude assistance. Earlier publications retain their published author lists in citations.
+Use `CITATION.cff` or the release URL above to cite this frozen edition. **No archival DOI is assigned.** `zenodo_metadata.json` is metadata for a possible later authenticated deposit, not proof of one.
 
-The diagram organization credits WRI and Ecofys; EDGAR's data are identified separately. `RIGHTS.md` distinguishes the report's licence from third-party artwork and proprietary methodology rights. The repository does not grant a blanket licence to protected third-party material or to the underlying NEB methodologies.
+The author owns the methods examined and is founder/director of NEBIOT, the only current company affiliation. The manuscript states the NEB001/NEB002 relationship, funding statement and assistance disclosures. Published source citations retain their bibliographic identities. `RIGHTS.md` distinguishes methodological ownership, EDGAR data attribution and third-party diagram-design provenance.
+
+The current repository tree and release list contain this edition only. Historical Git commits are preserved for provenance; removal of obsolete downloads does not rewrite Git history. No journal submission or replacement of the original preprint is represented by this repository release.

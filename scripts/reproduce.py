@@ -275,3 +275,18 @@ def main() -> None:
 
 if __name__=='__main__':
     main()
+    from measurement_evidence import main as reproduce_measurement_evidence
+    reproduce_measurement_evidence()
+
+    from population_atmosphere import main as reproduce_population_atmosphere
+    reproduce_population_atmosphere()
+
+    from physical_closure import main as reproduce_physical_closure
+    reproduce_physical_closure()
+
+    from class5_comparison import main as reproduce_class5_comparison
+    reproduce_class5_comparison()
+
+if __name__ == "__main__":
+    from admissibility import main as additional_checks
+    additional_checks()
